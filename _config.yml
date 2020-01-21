@@ -6,11 +6,12 @@ description: >
   Resources and community around CRDT technology -- papers, blog posts,
   code and more.
 
+baseurl: "/crdt-website"
 url: "https://crdt.tech"
 
-repo: "https://github.com/ept/crdt.tech"
+repo: "https://github.com/ept/crdt-website"
 github_user: "ept"
-github_repo: "crdt.tech"
+github_repo: "crdt-website"
 
 # google-analytics: UA-XXXXXXXXXX
 # logo: "assets/img/logo/SRCC-square-red.png"
