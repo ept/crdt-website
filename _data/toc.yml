@@ -1,0 +1,10 @@
+- title: CRDT Resources
+  url: ""
+  links:
+    - title: "CRDT Glossary"
+      url: glossary
+#   - title: "Getting Started"
+#     url: "docs/getting-started"
+#     children:
+#       - title: Features
+#         url: "docs/getting-started#getting-started"
