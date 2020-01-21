@@ -1,0 +1,21 @@
+# Site settings: these are accessible via {{ site.title }} and so on.
+title: Conflict-free Replicated Data Types (CRDTs)
+#email: your-email@domain.com
+author: Martin Kleppmann, Annette Bieniusa, and Marc Shapiro
+description: >
+  Resources and community around CRDT technology -- papers, blog posts,
+  code and more.
+
+url: "https://crdt.tech"
+
+repo: "https://github.com/ept/crdt.tech"
+github_user: "ept"
+github_repo: "crdt.tech"
+
+# google-analytics: UA-XXXXXXXXXX
+# logo: "assets/img/logo/SRCC-square-red.png"
+logo_pixels: 34
+color: "#30638e"
+
+markdown: kramdown
+exclude: [_site, LICENSE, README.md, vendor]
