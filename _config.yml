@@ -6,7 +6,6 @@ description: >
   Resources and community around CRDT technology -- papers, blog posts,
   code and more.
 
-baseurl: "/crdt-website"
 url: "https://crdt.tech"
 
 repo: "https://github.com/ept/crdt-website"
