@@ -1,4 +1,4 @@
-<footer class="bg-dark py-5 row d-print-none">
+<footer class="bg-dark pt-3 row d-print-none">
   <div class="container-fluid mx-sm-5">
     <div class="row">
       <div class="col-6 col-sm-4 text-xs-center order-sm-2">
@@ -21,9 +21,13 @@
 </ul>
 </div>
 <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-  <small class="text-white">© 2019 {{ site.author }} All Rights Reserved</small>
+  <small class="text-white">
+    This site is maintained by {{ site.author }}.
+    If you find any problems or want to add something, please
+    <a href="{{ site.repo }}/issues/new">open an issue or PR</a>.
+    The theme is based on <a href="https://vsoch.github.io/docsy-jekyll/">Docsy Jekyll</a>.
+  </small>
   {% if site.privacy %}<small class="ml-1"><a href="{{ site.privacy }}" target="_blank">Privacy Policy</a></small>{% endif %}
-  <p class="mt-2"><a href="/about/">About Docsy</a></p>	
       </div>
     </div>
   </div>
