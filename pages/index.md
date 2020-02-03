@@ -53,8 +53,8 @@ always be merged into a consistent state. This merge is performed automatically
 by the CRDT, without requiring any special conflict resolution code or user
 intervention.
 
-For more details on CRDTs, you can read
-"[Conflict-free Replicated Data Types: An Overview](https://arxiv.org/pdf/1806.10254.pdf)"
-by Nuno Preguiça (2018), or
+For more details on CRDTs, you can read the article
+"[Conflict-free Replicated Data Types](https://arxiv.org/pdf/1805.06358.pdf)"
+by Nuno Preguiça, Carlos Baquero, and Marc Shapiro (2018), or the older
 "[A comprehensive study of Convergent and Commutative Replicated Data Types](https://hal.inria.fr/inria-00555588/document)"
 by Marc Shapiro, Nuno Preguiça, Carlos Baquero, and Marek Zawirski (2011).

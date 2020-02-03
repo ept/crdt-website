@@ -26,7 +26,8 @@ Convergent Replicated Data Type (CvRDT):
 Delta-CRDT:
 : A variant of a state-based CRDT in which replicas don't always send their
   entire state, but rather send state differences (deltas). See
-  [this paper](https://arxiv.org/abs/1603.01529).
+  [Delta State Replicated Data Types](https://arxiv.org/abs/1603.01529) by
+  Paulo Sérgio Almeida, Ali Shoker, and Carlos Baquero.
 
 Effector:
 : In operation-based CRDTs, an effector is a function that updates the state of
@@ -56,11 +57,16 @@ Operation-based CRDT:
   those operations in either order, and the outcome is the same.
 
 Optimistic replication:
-: TODO
+: An approach to replication in which a replica can process updates locally,
+  without waiting for communication with other replicas. This means that
+  replicas can become temporarily inconsistent, but CRDTs ensure that replicas
+  nevertheless converge towards a consistent state (see Strong Eventual
+  Consistency). See [Optimistic Replication](https://core.ac.uk/download/pdf/22879037.pdf)
+  by Yasushi Saito and Marc Shapiro.
 
 Replication:
 : maintaining a copy of some data on multiple computing devices (maybe servers,
-  maybe end-user devices). Those copies are called replicas.
+  maybe end-user devices). Those copies are called *replicas*.
 
 State-based CRDT:
 : A CRDT in which replicas synchronise by sending each other their entire state
@@ -73,4 +79,6 @@ State-based CRDT:
 Strong Eventual Consistency (SEC):
 : A formal consistency model for CRDTs. It requires convergence (see above) and
   eventual delivery (if one replica has processed an update, every other replica
-  that has not failed will also eventually process it).
+  that has not failed will also eventually process it). See
+  [Conflict-Free Replicated Data Types](https://pages.lip6.fr/Marek.Zawirski/papers/RR-7687.pdf)
+  by Marc Shapiro, Nuno Preguiça, Carlos Baquero, and Marek Zawirski.

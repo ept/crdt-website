@@ -1,8 +1,14 @@
-- title: CRDT Resources
+- title: About CRDTs
   url: ""
   links:
-    - title: "CRDT Glossary"
+    - title: Resources
+      url: resources
+    - title: Implementations
+      url: implementations
+    - title: CRDT Glossary
       url: glossary
+    - title: Community
+      url: community
 #   - title: "Getting Started"
 #     url: "docs/getting-started"
 #     children:

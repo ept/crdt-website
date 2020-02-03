@@ -1,10 +1,7 @@
 # Site settings: these are accessible via {{ site.title }} and so on.
-title: Conflict-free Replicated Data Types (CRDTs)
-#email: your-email@domain.com
+title: Conflict-free Replicated Data Types
 author: Martin Kleppmann, Annette Bieniusa, and Marc Shapiro
-description: >
-  Resources and community around CRDT technology -- papers, blog posts,
-  code and more.
+description: Resources and community around CRDT technology — papers, blog posts, code and more.
 
 url: "https://crdt.tech"
 
