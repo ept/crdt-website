@@ -1,35 +1,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="robots" content="index, follow">
 
-<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-
-<link rel="alternate" type="application/rss&#43;xml" href="/docs/index.xml">
-
-<link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicons/favicon-57x57.png" sizes="57x57">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicons/favicon-72x72.png" sizes="72x72">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicons/favicon-114x114.png" sizes="114x114">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicons/favicon-120x120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicons/favicon-144x144.png" sizes="144x144">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicons/favicon-152x152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicons/favicon-180x180.png" sizes="180x180">
 <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/android-96x196.png" sizes="96x196">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/android-192x192.png"sizes="192x192">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/favicon-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/favicon-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/favicon-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicons/favicon-192x192.png" sizes="192x192">
 
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+<meta name="application-name" content="{{ site.title }}">
+<meta name="msapplication-tooltip" content="{{ site.title }}">
+<meta name="msapplication-config" content="{{ site.baseurl }}/assets/favicons/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/favicons/favicon-144x144.png">
+
+<title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+<meta property="og:title" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="{{ site.url }}" />
-<meta property="og:site_name" content="{{ site.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/crdt-logo.png" />
 
-<meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta itemprop="name" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}">
 <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}"/>
 <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
