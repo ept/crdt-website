@@ -4,6 +4,8 @@ title: About CRDTs
 permalink: /
 ---
 
+<img src="{{ site.baseurl }}/assets/img/crdt-logo.png" style="width: 100%; max-width: 700px">
+
 # About CRDTs
 
 A **Conflict-free Replicated Data Type** (CRDT) is a data structure that
