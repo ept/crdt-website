@@ -1,2 +1,2 @@
-<a href="{{ site.repo }}/edit/master/{{ page.path }}" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="{{ site.repo }}/edit/master/{% if page.path == "papers.html" %}papers.bib{% else %}{{ page.path }}{% endif %}" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
 <a href="{{ site.repo }}/issues/new?body=Issue%20on%3a%20{{ site.repo }}/tree/master/{{ page.path }}" target="_blank"><i class="fab fa-github fa-fw"></i> Create issue</a>

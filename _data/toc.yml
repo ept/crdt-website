@@ -3,6 +3,8 @@
   links:
     - title: Resources
       url: resources
+    - title: Papers
+      url: papers.html
     - title: Implementations
       url: implementations
     - title: CRDT Glossary

@@ -15,4 +15,4 @@ logo_pixels: 34
 color: "#30638e"
 
 markdown: kramdown
-exclude: [_site, LICENSE, README.md, vendor]
+exclude: [_site, LICENSE, README.md, vendor, papers.bib, update.sh]
