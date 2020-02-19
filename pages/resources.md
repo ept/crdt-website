@@ -21,6 +21,10 @@ permalink: /resources
 
 ## Blog posts
 
+* Robert Lord:
+  [Notes on Splicing CRDTs for Structured Hypertext](https://lord.io/blog/2019/splicing-crdts/)
+  (October 2019)
+
 * Christopher Meiklejohn:
   [Applied Monotonicity: A Brief History of CRDTs in Riak](http://christophermeiklejohn.com/erlang/lasp/2019/03/08/monotonicity.html)
   (March 2019)
@@ -32,6 +36,10 @@ permalink: /resources
 * Alexei Baboulevitch (Archagon):
   [Data Laced with History: Causal Trees & Operational CRDTs](http://archagon.net/blog/2018/03/24/data-laced-with-history/)
   (March 2018)
+
+* Bartosz Sypytkowski:
+  [An introduction to state-based CRDTs](https://bartoszsypytkowski.com/the-state-of-a-state-based-crdts/)
+  (December 2017)
 
 * Rudi Chen:
   [A simple approach to building a real-time collaborative text editor](http://digitalfreepen.com/2017/10/06/simple-real-time-collaborative-text-editor.html)
@@ -70,6 +78,10 @@ permalink: /resources
   [Convergence versus Consensus: CRDTs and the Quest for Distributed Consistency](https://www.infoq.com/presentations/crdt-distributed-consistency/)
   (QCon London, March 2018)
   ([slides](https://speakerdeck.com/ept/convergence-versus-consensus-crdts-and-the-quest-for-distributed-consistency))
+
+* Annette Bieniusa:
+  [Antidote - a Scalable and Consistent Transactional Data Store](http://www.erlang-factory.com/euc2016/annette-bieniusa)
+  (Erlang User Conference 2016)
 
 * Dmitry Ivanov & Nami Naserazad:
   [Practical Demystification of CRDT](https://www.youtube.com/watch?v=PQzNW8uQ_Y4)
