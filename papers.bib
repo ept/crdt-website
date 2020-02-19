@@ -1,18 +1,37 @@
+% Style guide for all types of paper:
+%   - for `author`, use `Surname, Firstname` format
+%   - use `doi` whenever known. If a DOI exists, there is no need for a separate
+%     link to the publisher page in the `url` field
+%   - use `pdf` for authors' preprints, and use `url` for the primary URL of a resource
+%   - for arxiv preprints, use `eprint = {1806.10254}` (but not `url`);
+%     for arxiv-only articles, use `url` linking to the abstract page (`/abs/...`)
+
+% Style guide for conference papers:
+%   - use `booktitle` for full name of the conference (not including "Proceedings of the")
+%   - use `series` for conference abbreviation including 4-digit year
+%   - keep `publisher` as short as possible: e.g. ACM, IEEE, Springer
+%   - for volumes in a series, don't use `volume`, but put the number in the
+%     `publisher` field instead, e.g. `publisher = {Springer LNCS volume 8460}`
+%   - use `pages` and/or `articleno`, but not `number`
+%   - don't use `editor`, `location`, `address`, or `organization`
+
+% Style guide for tech reports:
+%   - use `institution` for publishing organisation and `number` for report number
+%   - use e.g. `type = {Research Report}` to customise the term "tech report"
+
+
 % General introductions to CRDTs
 
 @inproceedings{Shapiro2011CRDTs,
- author = {Shapiro, Marc and Pregui\c{c}a, Nuno and Baquero, Carlos and Zawirski, Marek},
- title = {Conflict-free Replicated Data Types},
- booktitle = {13th International Conference on Stabilization, Safety, and Security of Distributed Systems (SSS)},
- year = {2011},
- location = {Grenoble, France},
- pages = {386--400},
- numpages = {15},
- url = {http://dl.acm.org/citation.cfm?id=2050613.2050642},
- acmid = {2050642},
- publisher = {Springer-Verlag},
- address = {Berlin, Heidelberg},
- keywords = {eventual consistency, large-scale distributed systems, replicated shared objects}
+author = {Shapiro, Marc and Pregui\c{c}a, Nuno and Baquero, Carlos and Zawirski, Marek},
+title = {Conflict-free Replicated Data Types},
+booktitle = {13th International Conference on Stabilization, Safety, and Security of Distributed Systems},
+series = {SSS 2011},
+year = {2011},
+pages = {386--400},
+doi = {10.1007/978-3-642-24550-3_29},
+pdf = {https://pages.lip6.fr/Marek.Zawirski/papers/RR-7687.pdf},
+publisher = {Springer LNCS volume 6976}
 } 
 
 @techreport{Shapiro2011comprehensive,
@@ -21,7 +40,8 @@ title = {A comprehensive study of Convergent and Commutative Replicated Data Typ
 year = {2011},
 number = {7506},
 month = jan,
-institution = {INRIA Research Report},
+institution = {INRIA},
+type = {Research Report},
 url = {http://hal.inria.fr/inria-00555588/}
 }
 
@@ -34,61 +54,59 @@ volume = {44},
 number = {2},
 pages = {29--34},
 month = apr,
+publisher = {ACM},
 doi = {10.1145/1773912.1773921},
-url = {http://asc.di.fct.unl.pt/~nmp/pubs/osr-2010.pdf}
+pdf = {http://asc.di.fct.unl.pt/~nmp/pubs/osr-2010.pdf}
 }
 
 @article{Burckhardt2014principles,
 author = {Burckhardt, Sebastian},
-title = {{Principles of Eventual Consistency}},
+title = {Principles of Eventual Consistency},
 journal = {Foundations and Trends in Programming Languages},
 year = {2014},
 volume = {1},
 number = {1-2},
 pages = {1--150},
 month = oct,
+publisher = {now publishers},
 doi = {10.1561/2500000011},
-url = {http://www.nowpublishers.com/articles/foundations-and-trends-in-programming-languages/PGL-011}
+pdf = {https://www.nowpublishers.com/article/Download/PGL-011}
 }
 
 @incollection{Preguica2018encyclopedia,
 author = {Pregui{\c c}a, Nuno and Baquero, Carlos and Shapiro, Marc},
-title = {{Conflict-Free Replicated Data Types (CRDTs)}},
+title = {Conflict-Free Replicated Data Types ({CRDT}s)},
 booktitle = {Encyclopedia of Big Data Technologies},
 year = {2018},
-publisher = {Springer International Publishing},
 month = may,
+publisher = {Springer},
 doi = {10.1007/978-3-319-63962-8_185-1},
-url = {https://arxiv.org/abs/1805.06358}
+eprint = {1805.06358}
 }
 
 @article{Preguica2018crdts,
 author = {Pregui{\c c}a, Nuno},
-title = {{Conflict-free Replicated Data Types: An Overview}},
+title = {Conflict-free Replicated Data Types: An Overview},
 year = {2018},
-eprint = {1806.10254},
 month = jun,
+eprint = {1806.10254},
 url = {https://arxiv.org/abs/1806.10254}
 }
 
 % Operation-based, state-based, delta-based
 
 @inproceedings{Baquero2014opbased,
-  author =	 "Baquero, Carlos and Almeida, Paulo S{\'e}rgio and
-                  Shoker, Ali",
-  title =	 {Making Operation-Based {CRDT}s Operation-Based},
-  booktitle =	 dais,
-  year =	 2014,
-  editor =	 "Magoutis, Kostas and Pietzuch, Peter",
-  series =	 lncs,
-  volume =       8460,
-  pages =	 "126--140",
-  month =	 {jun},
-  address =	 {Berlin, Germany},
-  organization = {IFIP},
-  publisher =	 springer,
-  doi =		 "10.1007/978-3-662-43352-2_11",
-  url =		 "http://dx.doi.org/10.1007/978-3-662-43352-2_11"
+author = {Baquero, Carlos and Almeida, Paulo S{\'e}rgio and Shoker, Ali},
+title = {Making Operation-Based {CRDT}s Operation-Based},
+booktitle = {14th IFIP WG 6.1 International Conference on Distributed Applications and Interoperable Systems},
+series = {DAIS 2014},
+pages = {126--140},
+month = jun,
+year = 2014,
+publisher = {Springer LNCS volume 8460},
+doi = {10.1007/978-3-662-43352-2_11},
+pdf = {http://gsd.di.uminho.pt/members/cbm/ps/crdtOpsMiddleware.pdf},
+note = {A shorter paper with the same title appears in PaPEC 2014}
 }
 
 @article{Baquero2017pure,
@@ -96,71 +114,55 @@ author = {Baquero, Carlos and Almeida, Paulo S{\'e}rgio and Shoker, Ali},
 title = {Pure Operation-Based Replicated Data Types},
 year = {2017},
 eprint = {1710.04469},
-eprinttype = {arxiv},
 month = oct,
 url = {https://arxiv.org/abs/1710.04469}
 }
 
 @techreport{Baquero2015composition,
 author = {Baquero, Carlos and Almeida, Paulo S{\'e}rgio and Cunha, Alcino and Ferreira, Carla},
-title = {{Composition of State-based CRDTs}},
+title = {Composition of State-based {CRDTs}},
 year = {2015},
 month = may,
-institution = {INESC TEC High-assurance Software Laboratory (HASLab)},
+institution = {HASLab, INESC TEC},
 url = {http://haslab.uminho.pt/cbm/files/crdtcompositionreport.pdf}
 }
 
 @inproceedings{Almeida2015delta,
-  author =	 "Almeida, Paulo S{\'e}rgio and Shoker, Ali and Baquero,
-                  Carlos",
-  title =	 {Efficient State-Based {CRDT}s by Delta-Mutation},
-  booktitle =	 {International Conference on Networked Systems (NETYS)},
-  year =	 2015,
-  editor =	 "Bouajjani, Ahmed and Fauconnier, Hugues",
-  volume =	 9466,
-  series =	 lncs,
-  pages =	 "62--76",
-  month =	 {may},
-  address =	 {Agadir, Morocco},
-  publisher =	 springer,
-  doi =		 "10.1007/978-3-319-26850-7_5",
-  url =		 "http://dx.doi.org/10.1007/978-3-319-26850-7_5"
+author = {Almeida, Paulo S{\'e}rgio and Shoker, Ali and Baquero, Carlos},
+title = {Efficient State-Based {CRDT}s by Delta-Mutation},
+booktitle = {International Conference on Networked Systems},
+series = {NETYS 2015},
+year = 2015,
+pages = {62--76},
+month = may,
+publisher = {Springer LNCS volume 9466},
+doi = {10.1007/978-3-319-26850-7_5},
+eprint = {1410.2803}
 }
 
 @inproceedings{vanderLinde06delta,
- author = {van der Linde, Albert and Leit\~{a}o, Jo\~{a}o and Pregui\c{c}a, Nuno},
- title = {$\Delta$-CRDTs: Making {$\delta$}-CRDTs Delta-based},
- booktitle = {Proceedings of the 2Nd Workshop on the Principles and Practice of Consistency for Distributed Data},
- series = {PaPoC '16},
- year = {2016},
- isbn = {978-1-4503-4296-4},
- location = {London, United Kingdom},
- pages = {12:1--12:4},
- articleno = {12},
- numpages = {4},
- url = {http://doi.acm.org/10.1145/2911151.2911163},
- doi = {10.1145/2911151.2911163},
- acmid = {2911163},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {CRDT, replication, weak consistency}
+author = {van der Linde, Albert and Leit\~{a}o, Jo\~{a}o and Pregui\c{c}a, Nuno},
+title = {{$\Delta$-CRDTs}: Making {$\delta$-CRDTs} Delta-based},
+booktitle = {2nd Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2016},
+year = {2016},
+pages = {12:1--12:4},
+articleno = {12},
+publisher = {ACM},
+doi = {10.1145/2911151.2911163},
+pdf = {https://novasys.di.fct.unl.pt/~alinde/publications/a12-van_der_linde.pdf}
 } 
 
+% https://blog.acolyer.org/2016/04/25/delta-state-replicated-data-types/
 @article{Almeida2018delta,
-  author    = {Paulo S{\'{e}}rgio Almeida and
-               Ali Shoker and
-               Carlos Baquero},
-  title     = {{Delta state replicated data types}},
-  journal   = {J. Parallel Distrib. Comput.},
-  volume    = {111},
-  pages     = {162--173},
-  year      = {2018},
-  url       = {https://doi.org/10.1016/j.jpdc.2017.08.003},
-  url       = {http://arxiv.org/abs/1603.01529},
-  doi       = {10.1016/j.jpdc.2017.08.003},
-  timestamp = {Mon, 06 Nov 2017 12:13:23 +0100},
-  biburl    = {http://dblp.org/rec/bib/journals/jpdc/AlmeidaSB18},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
+author = {Almeida, Paulo S\'{e}rgio and Shoker, Ali and Baquero, Carlos},
+title = {Delta state replicated data types},
+journal = {Journal of Parallel and Distributed Computing},
+volume = {111},
+pages = {162--173},
+year = {2018},
+eprint = {1603.01529},
+doi = {10.1016/j.jpdc.2017.08.003}
 }
 
 
@@ -169,218 +171,206 @@ url = {http://haslab.uminho.pt/cbm/files/crdtcompositionreport.pdf}
 % WOOT
 @inproceedings{Oster2006WOOT,
 author = {Oster, G{\'e}rald and Urso, Pascal and Molli, Pascal and Imine, Abdessamad},
-title = {{Data consistency for P2P collaborative editing}},
-booktitle = {ACM Conference on Computer Supported Cooperative Work},
+title = {Data consistency for {P2P} collaborative editing},
+booktitle = {20th ACM Conference on Computer Supported Cooperative Work},
+series = {CSCW 2006},
 year = {2006},
 pages = {259--268},
-publisher = {ACM Press},
+publisher = {ACM},
 month = nov,
 doi = {10.1145/1180875.1180916},
-url = {https://hal.archives-ouvertes.fr/file/index/docid/108523/filename/OsterCSCW06.pdf}
+pdf = {https://hal.inria.fr/file/index/docid/108523/filename/OsterCSCW06.pdf}
 }
 
 % WOOTO
 @inproceedings{Weiss2007Wooki,
 author = {Weiss, St{\'e}phane and Urso, Pascal and Molli, Pascal},
-title = {{Wooki: A P2P Wiki-Based Collaborative Writing Tool}},
-booktitle = {8th International Conference on Web Information Systems Engineering (WISE)},
+title = {Wooki: A {P2P} Wiki-Based Collaborative Writing Tool},
+booktitle = {8th International Conference on Web Information Systems Engineering},
+series = {WISE 2007},
 year = {2007},
 pages = {503--512},
-publisher = {Springer Berlin Heidelberg},
+publisher = {Springer LNCS volume 4831},
 month = dec,
 doi = {10.1007/978-3-540-76993-4_42},
-url = {http://pagesperso.lina.univ-nantes.fr/~molli-p/pmwiki/uploads/Main/weiss07.pdf}
+pdf = {http://pagesperso.lina.univ-nantes.fr/~molli-p/pmwiki/uploads/Main/weiss07.pdf}
 }
 
 % Detailed specification and analysis of WOOT CRDT
 @techreport{Oster2005WOOT,
 author = {Oster, G{\'e}rald and Urso, Pascal and Molli, Pascal and Imine, Abdessamad},
-title = {{Real time group editors without operational transformation}},
+title = {Real time group editors without operational transformation},
 year = {2005},
 number = {RR-5580},
 month = may,
-annote = {},
-institution = {INRIA Research Report},
+institution = {INRIA},
+type = {Research Report},
 url = {https://hal.inria.fr/inria-00071240/document}
 }
 
 % Treedoc
 @inproceedings{Preguica2009Treedoc,
- author = {Pregui{\c c}a, Nuno and Marques, Joan Manuel and Shapiro, Marc and Letia, Mihai},
- title = {{A Commutative Replicated Data Type for Cooperative Editing}},
- booktitle = {Proceedings of the 2009 29th IEEE International Conference on Distributed Computing Systems},
- series = {ICDCS '09},
- year = {2009},
- isbn = {978-0-7695-3659-0},
- pages = {395--403},
- numpages = {9},
- url = {http://dx.doi.org/10.1109/ICDCS.2009.20},
-url = {https://hal.inria.fr/inria-00445975/document},
- doi = {10.1109/ICDCS.2009.20},
- acmid = {1584604},
- publisher = {IEEE Computer Society},
- address = {Washington, DC, USA},
- keywords = {commutative replicated data type, distributed algorithms, replicated data, co-operative editing, dense identifier space}
+author = {Pregui{\c c}a, Nuno and Marques, Joan Manuel and Shapiro, Marc and Letia, Mihai},
+title = {A Commutative Replicated Data Type for Cooperative Editing},
+booktitle = {29th IEEE International Conference on Distributed Computing Systems},
+series = {ICDCS 2009},
+year = {2009},
+pages = {395--403},
+publisher = {IEEE},
+doi = {10.1109/ICDCS.2009.20},
+pdf = {http://dx.doi.org/10.1109/ICDCS.2009.20}
 } 
 
 % Logoot
 @inproceedings{Weiss2009Logoot,
- author = {Weiss, Stephane and Urso, Pascal and Molli, Pascal},
- title = {{Logoot: A Scalable Optimistic Replication Algorithm for Collaborative Editing on P2P Networks}},
- booktitle = {Proceedings of the 2009 29th IEEE International Conference on Distributed Computing Systems},
- series = {ICDCS '09},
- year = {2009},
- isbn = {978-0-7695-3659-0},
- pages = {404--412},
- numpages = {9},
- url = {http://dx.doi.org/10.1109/ICDCS.2009.75},
- doi = {10.1109/ICDCS.2009.75},
- acmid = {1584605},
- publisher = {IEEE Computer Society},
- address = {Washington, DC, USA},
- keywords = {P2P, Collaborative Editing}
+author = {Weiss, Stephane and Urso, Pascal and Molli, Pascal},
+title = {{Logoot}: A Scalable Optimistic Replication Algorithm for Collaborative Editing on {P2P} Networks},
+booktitle = {29th IEEE International Conference on Distributed Computing Systems},
+series = {ICDCS 2009},
+year = {2009},
+pages = {404--412},
+publisher = {IEEE},
+doi = {10.1109/ICDCS.2009.75},
+pdf = {https://hal.inria.fr/inria-00432368/document}
 } 
 
 % Logoot-Undo
 @article{Weiss2010LogootUndo,
- author = {Weiss, Stephane and Urso, Pascal and Molli, Pascal},
- title = {{Logoot-Undo: Distributed Collaborative Editing System on P2P Networks}},
- journal = {IEEE Trans. Parallel Distrib. Syst.},
- issue_date = {August 2010},
- volume = {21},
- number = {8},
- month = aug,
- year = {2010},
- issn = {1045-9219},
- pages = {1162--1174},
- numpages = {13},
- url = {https://www.researchgate.net/profile/Pascal_Urso/publication/233882440_Logoot-Undo_Distributed_Collaborative_Editing_System/links/0fcfd50c84f5194937000000.pdf},
- doi = {10.1109/TPDS.2009.173},
- acmid = {1850304},
- publisher = {IEEE Press},
- address = {Piscataway, NJ, USA},
- keywords = {CRDT., Collaborative editing, Collaborative editing, P2P, group undo, scalability, optimistic replication, CRDT., P2P, group undo, optimistic replication, scalability}
+author = {Weiss, Stephane and Urso, Pascal and Molli, Pascal},
+title = {{Logoot-Undo}: Distributed Collaborative Editing System on {P2P} Networks},
+journal = {IEEE Transactions on Parallel and Distributed Systems},
+volume = {21},
+number = {8},
+month = aug,
+year = {2010},
+issn = {1045-9219},
+pages = {1162--1174},
+publisher = {IEEE},
+doi = {10.1109/TPDS.2009.173},
+pdf = {https://www.researchgate.net/profile/Pascal_Urso/publication/233882440_Logoot-Undo_Distributed_Collaborative_Editing_System/links/0fcfd50c84f5194937000000.pdf}
 } 
 
 % RGA
 @article{Roh2011RGA,
- author = {Roh, Hyun-Gul and Jeon, Myeongjae and Kim, Jin-Soo and Lee, Joonwon},
- title = {{Replicated Abstract Data Types: Building Blocks for Collaborative Applications}},
- journal = {J. Parallel Distrib. Comput.},
- issue_date = {March, 2011},
- volume = {71},
- number = {3},
- month = mar,
- year = {2011},
- issn = {0743-7315},
- pages = {354--368},
- numpages = {15},
- url = {http://dx.doi.org/10.1016/j.jpdc.2010.12.006},
- doi = {10.1016/j.jpdc.2010.12.006},
- acmid = {1931272},
- publisher = {Academic Press, Inc.},
- address = {Orlando, FL, USA},
- keywords = {Collaboration, Distributed data structures, Optimistic algorithm, Optimistic replication, Replicated abstract data types}
+author = {Roh, Hyun-Gul and Jeon, Myeongjae and Kim, Jin-Soo and Lee, Joonwon},
+title = {Replicated Abstract Data Types: Building Blocks for Collaborative Applications},
+journal = {Journal of Parallel and Distributed Computing},
+volume = {71},
+number = {3},
+month = mar,
+year = {2011},
+issn = {0743-7315},
+pages = {354--368},
+publisher = {Elsevier},
+doi = {10.1016/j.jpdc.2010.12.006},
+pdf = {http://csl.snu.ac.kr/papers/jpdc11.pdf}
 } 
 
 % LSEQ
 @inproceedings{Nedelec2013LSEQ,
 author = {N{\'e}delec, Brice and Molli, Pascal and Mostefaoui, Achour and Desmontils, Emmanuel},
-title = {{LSEQ: an Adaptive Structure for Sequences in Distributed Collaborative Editing}},
-booktitle = {13th ACM Symposium on Document Engineering (DocEng)},
+title = {{LSEQ}: an Adaptive Structure for Sequences in Distributed Collaborative Editing},
+booktitle = {13th ACM Symposium on Document Engineering},
+series = {DocEng 2013},
 year = {2013},
 pages = {37--46},
-publisher = {ACM Press},
+publisher = {ACM},
 month = sep,
 doi = {10.1145/2494266.2494278},
-url = {https://hal.archives-ouvertes.fr/file/index/docid/921633/filename/fp025-nedelec.pdf}
+pdf = {https://hal.archives-ouvertes.fr/file/index/docid/921633/filename/fp025-nedelec.pdf}
 }
 
 @inproceedings{Nedelec2016CRATE,
 author = {N{\'e}delec, Brice and Molli, Pascal and Mostefaoui, Achour},
-title = {{CRATE: Writing Stories Together with our Browsers}},
-booktitle = {25th International World Wide Web Conference (WWW)},
+title = {{CRATE}: Writing Stories Together with our Browsers},
+booktitle = {25th International World Wide Web Conference},
+series = {WWW 2016},
 year = {2016},
 pages = {231--234},
-publisher = {ACM Press},
+publisher = {ACM},
 month = apr,
 doi = {10.1145/2872518.2890539},
-url = {https://hal.archives-ouvertes.fr/hal-01303333}
+pdf = {https://hal.archives-ouvertes.fr/hal-01303333}
 }
 
 @inproceedings{AhmedNacer2011evaluating,
 author = {Ahmed-Nacer, Mehdi and Ignat, Claudia-Lavinia and Oster, G{\'e}rald and Roh, Hyun-Gul and Urso, Pascal},
-title = {{Evaluating CRDTs for real-time document editing}},
-booktitle = {11th ACM Symposium on Document Engineering (DocEng)},
+title = {Evaluating {CRDTs} for real-time document editing},
+booktitle = {11th ACM Symposium on Document Engineering},
+series = {DocEng 2011},
 year = {2011},
 pages = {103--112},
-publisher = {ACM Press},
+publisher = {ACM},
 month = sep,
 doi = {10.1145/2034691.2034717},
-url = {https://hal.inria.fr/docs/00/62/95/03/PDF/doce63-ahmednacer.pdf}
+pdf = {https://hal.inria.fr/docs/00/62/95/03/PDF/doce63-ahmednacer.pdf}
 }
 
 % RGASplit and similar block-wise variants of other algorithms
 @inproceedings{Briot2016group,
 author = {Briot, Lo{\"\i}ck and Urso, Pascal and Shapiro, Marc},
-title = {{High Responsiveness for Group Editing CRDTs}},
-booktitle = {19th International Conference on Supporting Group Work (GROUP)},
+title = {High Responsiveness for Group Editing {CRDTs}},
+booktitle = {19th International Conference on Supporting Group Work},
+series = {GROUP 2016},
 year = {2016},
 pages = {51--60},
-publisher = {ACM Press},
+publisher = {ACM},
 month = nov,
 doi = {10.1145/2957276.2957300},
-url = {https://hal.inria.fr/hal-01343941/document}
+pdf = {https://hal.inria.fr/hal-01343941/document}
 }
 
 @inproceedings{Yu2015undo,
 author = {Yu, Weihai and Andr{\'e}, Luc and Ignat, Claudia-Lavinia},
-title = {{A CRDT Supporting Selective Undo for Collaborative Text Editing}},
-booktitle = {15th IFIP WG 6.1 International Conference on Distributed Applications and Interoperable Systems (DAIS)},
+title = {A {CRDT} Supporting Selective Undo for Collaborative Text Editing},
+booktitle = {15th IFIP WG 6.1 International Conference on Distributed Applications and Interoperable Systems},
+series = {DAIS 2015},
 year = {2015},
 pages = {193--206},
-publisher = {Springer},
+publisher = {Springer LNCS volume 9038},
 month = jun,
 doi = {10.1007/978-3-319-19129-4_16},
-url = {https://members.loria.fr/CIgnat/files/pdf/YuDAIS15.pdf}
+pdf = {https://members.loria.fr/CIgnat/files/pdf/YuDAIS15.pdf}
 }
 
+% No open access version found
 @inproceedings{Lv2016stringbased,
 author = {Lv, Xiao and He, Fazhi and Cai, Weiwei and Cheng, Yuan},
 title = {An efficient collaborative editing algorithm supporting string-based operations},
-booktitle = {20th IEEE International Conference on Computer Supported Cooperative Work in Design (CSCWD)},
+booktitle = {20th IEEE International Conference on Computer Supported Cooperative Work in Design},
+series = {CSCWD 2016},
 year = {2016},
 pages = {45--50},
 publisher = {IEEE},
 month = sep,
-doi = {10.1109/CSCWD.2016.7565961},
-url = {http://ieeexplore.ieee.org/document/7565961/}
+doi = {10.1109/CSCWD.2016.7565961}
 }
 
 % Move operation for text
 @inproceedings{AhmedNacer2013concurrency,
 author = {Ahmed-Nacer, Mehdi and Urso, Pascal and Balegas, Valter and Pregui{\c c}a, Nuno},
-title = {{Concurrency Control and Awareness Support for Multi-synchronous Collaborative Editing}},
+title = {Concurrency Control and Awareness Support for Multi-synchronous Collaborative Editing},
 booktitle = {9th IEEE International Conference on Collaborative Computing},
+series = {CollaborateCom 2013},
 year = {2013},
 publisher = {ICST},
 month = oct,
-annote = {Includes a move operation for text documents},
 doi = {10.4108/icst.collaboratecom.2013.254113},
-url = {http://eudl.eu/doi/10.4108/icst.collaboratecom.2013.254113}
+pdf = {http://asc.di.fct.unl.pt/~nmp/pubs/collaboratecom-2013.pdf}
 }
 
 % YATA / Yjs
 @inproceedings{Nicolaescu2016YATA,
 author = {Nicolaescu, Petru and Jahns, Kevin and Derntl, Michael and Klamma, Ralf},
 title = {Near Real-Time Peer-to-Peer Shared Editing on Extensible Data Types},
-booktitle = {19th International Conference on Supporting Group Work (GROUP)},
+booktitle = {19th International Conference on Supporting Group Work},
+series = {GROUP 2016},
 year = {2016},
 pages = {39--49},
-publisher = {ACM Press},
+publisher = {ACM},
 month = nov,
 doi = {10.1145/2957276.2957310},
-url = {https://www.researchgate.net/publication/310212186_Near_Real-Time_Peer-to-Peer_Shared_Editing_on_Extensible_Data_Types}
+pdf = {https://www.researchgate.net/publication/310212186_Near_Real-Time_Peer-to-Peer_Shared_Editing_on_Extensible_Data_Types}
 }
 
 
@@ -389,24 +379,26 @@ url = {https://www.researchgate.net/publication/310212186_Near_Real-Time_Peer-to
 % Extended version available as INRIA tech report RR-7362 https://hal.inria.fr/inria-00508436/
 @inproceedings{Martin2010xml,
 author = {Martin, St{\'e}phane and Urso, Pascal and Weiss, St{\'e}phane},
-title = {{Scalable XML Collaborative Editing with Undo}},
+title = {Scalable {XML} Collaborative Editing with Undo},
 booktitle = {On the Move to Meaningful Internet Systems (OTM)},
 year = {2010},
 pages = {507--514},
-publisher = {Springer},
+publisher = {Springer LNCS volume 6426},
 month = oct,
 doi = {10.1007/978-3-642-16934-2_37},
-url = {https://arxiv.org/pdf/1010.3615.pdf}
+eprint = {1010.3615}
 }
 
 @techreport{AhmedNacer2012filesystem,
 author = {Ahmed-Nacer, Mehdi and Martin, St{\'e}phane and Urso, Pascal},
-title = {{File system on CRDT}},
+title = {File system on {CRDT}},
 institution = {INRIA},
 year = {2012},
-number = {RR-8027},
 month = jul,
+number = {RR-8027},
 publisher = {INRIA},
+type = {Research Report},
+eprint = {1207.5990},
 url = {https://hal.inria.fr/hal-00720681/}
 }
 
@@ -420,109 +412,115 @@ number = {10},
 pages = {2733--2746},
 month = apr,
 doi = {10.1109/TPDS.2017.2697382},
-url = {http://arxiv.org/abs/1608.03960}
+eprint = {1608.03960}
 }
 
 @inproceedings{Tao2015filesystems,
 author = {Tao, Vinh and Shapiro, Marc and Rancurel, Vianney},
 title = {Merging semantics for conflict updates in geo-distributed file systems},
-booktitle = {8th ACM International Systems and Storage Conference (SYSTOR)},
+booktitle = {8th ACM International Systems and Storage Conference},
+series = {SYSTOR 2015},
 year = {2015},
-publisher = {ACM Press},
+publisher = {ACM},
 month = may,
+articleno = {10},
 doi = {10.1145/2757667.2757683},
-url = {https://pages.lip6.fr/Marc.Shapiro/papers/geodistr-FS-Systor-2015.pdf}
+pdf = {https://pages.lip6.fr/Marc.Shapiro/papers/geodistr-FS-Systor-2015.pdf}
 }
 
 @inproceedings{Najafzadeh2018filesystem,
 author = {Najafzadeh, Mahsa and Shapiro, Marc and Eugster, Patrick},
 title = {Co-Design and Verification of an Available File System},
-booktitle = {19th International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI)},
+booktitle = {19th International Conference on Verification, Model Checking, and Abstract Interpretation},
+series = {VMCAI 2018},
 year = {2018},
 pages = {358--381},
-publisher = {Springer International Publishing},
+publisher = {Springer LNCS volume 10747},
 month = jan,
 doi = {10.1007/978-3-319-73721-8_17},
-url = {https://pages.lip6.fr/Marc.Shapiro/papers/VMCAI-2018-filesys.pdf}
+pdf = {https://pages.lip6.fr/Marc.Shapiro/papers/VMCAI-2018-filesys.pdf}
 }
 
 
 
 % PaPEC 2014
-% https://dblp.uni-trier.de/db/conf/eurosys/papec2014.html
-% https://dl.acm.org/doi/proceedings/10.1145/2596631
-% There is a paper "Making Operation-based CRDTs Operation-based" by Baquero et al. but it's
-% just a 2-page extended abstract; the longer version (with the same title) is at DAIS 2014.
-
-@string{papec14 = "First Workshop on Principles and Practice of Eventual Consistency (PaPEC)"}
 
 @inproceedings{Brown2014Riak,
- author = {Brown, Russell and Cribbs, Sean and Meiklejohn, Christopher and Elliott, Sam},
- title = {{Riak DT Map: A Composable, Convergent Replicated Dictionary}},
- booktitle = {Proceedings of the First Workshop on Principles and Practice of Eventual Consistency},
- series = {PaPEC '14},
- year = {2014},
- isbn = {978-1-4503-2716-9},
- location = {Amsterdam, The Netherlands},
- pages = {1:1--1:1},
- articleno = {1},
- numpages = {1},
- url = {http://doi.acm.org/10.1145/2596631.2596633},
- doi = {10.1145/2596631.2596633},
- acmid = {2596633},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {QuickCheck, commutative operations, data replication, dynamo, erlang, eventual consistency, property-based testing, riak}
+author = {Brown, Russell and Cribbs, Sean and Meiklejohn, Christopher and Elliott, Sam},
+title = {{Riak DT Map}: A Composable, Convergent Replicated Dictionary},
+booktitle = {1st Workshop on Principles and Practice of Eventual Consistency},
+series = {PaPEC 2014},
+year = {2014},
+articleno = {1},
+publisher = {ACM},
+doi = {10.1145/2596631.2596633},
+pdf = {https://pages.lip6.fr/syncfree/attachments/article/46/WP3-report.pdf#page=31}
 } 
 
 @inproceedings{Almeida2014decomposition,
-  author = 	 {Paulo S{\'e}rgio Almeida and Ali Shoker and Carlos Baquero}, 
-  title = 	 {Efficient State-based {CRDT}s by Decomposition (Work in progress report)},
-  booktitle = 	 papec14,
-  year = 	 2014,
-  address = 	 amsterdam,
-  publisher =    acm
+author = {Almeida, Paulo S{\'e}rgio and Shoker, Ali and Baquero, Carlos}, 
+title = {Efficient State-based {CRDT}s by Decomposition (Work in progress report)},
+booktitle = {1st Workshop on Principles and Practice of Eventual Consistency},
+series = {PaPEC 2014},
+publisher = {ACM},
+articleno = {3},
+doi = {10.1145/2596631.2596634},
+pdf = {https://core.ac.uk/download/pdf/154274611.pdf}
 }
 
 @inproceedings{AhmedNacer2014merging,
 author = {Ahmed-Nacer, Mehdi and Urso, Pascal and Balegas, Valter and Pergui{\c c}a, Nuno},
-title = {{Merging OT and CRDT algorithms}},
+title = {Merging {OT} and {CRDT} algorithms},
 booktitle = {1st Workshop on Principles and Practice of Eventual Consistency},
+series = {PaPEC 2014},
 year = {2014},
-publisher = {ACM Press},
 month = apr,
+articleno = {9},
+publisher = {ACM},
 doi = {10.1145/2596631.2596636},
-url = {https://hal.inria.fr/file/index/docid/957167/filename/main.pdf}
+pdf = {https://hal.inria.fr/file/index/docid/957167/filename/main.pdf}
 }
 
 @inproceedings{Meiklejohn2014composability,
- author = {Meiklejohn, Christopher},
- title = {On the Composability of the Riak DT Map: Expanding from Embedded to Multi-key Structures},
- booktitle = {Proceedings of the First Workshop on Principles and Practice of Eventual Consistency},
- series = {PaPEC '14},
- year = {2014},
- isbn = {978-1-4503-2716-9},
- location = {Amsterdam, The Netherlands},
- pages = {13:1--13:2},
- articleno = {13},
- numpages = {2},
- url = {http://doi.acm.org/10.1145/2596631.2596635},
- doi = {10.1145/2596631.2596635},
- acmid = {2596635},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {commutative operations, data replication, dynamo, erlang, eventual consistency, riak}
+author = {Meiklejohn, Christopher},
+title = {On the Composability of the {Riak DT Map}: Expanding from Embedded to Multi-key Structures},
+booktitle = {1st Workshop on Principles and Practice of Eventual Consistency},
+series = {PaPEC 2014},
+year = {2014},
+articleno = {13},
+publisher = {ACM},
+doi = {10.1145/2596631.2596635},
+pdf = {https://pages.lip6.fr/syncfree/attachments/article/46/WP3-report.pdf#page=34}
 } 
 
 @inproceedings{Grishchenko2014oplogs,
 author = {Grishchenko, Victor},
-title = {{Citrea and Swarm: Partially ordered op logs in the browser}},
+title = {{Citrea} and {Swarm}: Partially ordered op logs in the browser},
 booktitle = {1st Workshop on Principles and Practice of Eventual Consistency},
+series = {PaPEC 2014},
 year = {2014},
-publisher = {ACM Press},
 month = apr,
+articleno = {8},
+publisher = {ACM},
 doi = {10.1145/2596631.2596641},
 url = {http://www.ds.ewi.tudelft.nl/~victor/polo.pdf}
+}
+
+% PaPoC 2015
+% https://dblp.uni-trier.de/db/conf/eurosys/papoc2015.html
+% https://dl.acm.org/doi/proceedings/10.1145/2745947
+
+@string{papoc15 = "First Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
+
+@inproceedings{Holt2015claret,
+author = {Brandon Holt and Irene Zhang and Dan Ports and Mark
+Oskin and Luis Ceze}, 
+title = {Claret: Using Data Types for Highly Concurrent
+Distributed Transactions},
+booktitle = papoc,
+year = 2015,
+address = {Bordeaux, France},
+publisher = acm
 }
 
 % Associated master's thesis: https://www.dropbox.com/s/t0cyzfvmah9cldw/Master%20Thesis%20-%20Santiago%20Casti%C3%B1eira.pdf
@@ -535,21 +533,20 @@ publisher = {ACM Press},
 doi = {10.1145/2745947.2745952}
 }
 
-% PaPoC 2015
-% https://dblp.uni-trier.de/db/conf/eurosys/papoc2015.html
-% https://dl.acm.org/doi/proceedings/10.1145/2745947
-
-@string{papoc15 = "First Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
-
-@inproceedings{Holt2015claret,
-  author = 	 {Brandon Holt and Irene Zhang and Dan Ports and Mark
-                  Oskin and Luis Ceze}, 
-  title = 	 {Claret: Using Data Types for Highly Concurrent
-                  Distributed Transactions},
-  booktitle = 	 papoc,
-  year = 	 2015,
-  address = 	 {Bordeaux, France},
-  publisher =    acm
+@inproceedings{Navalho2015computations,
+author = {Navalho, David and Duarte, S\'{e}rgio and Pregui\c{c}a, Nuno},
+title = {A Study of CRDTs That Do Computations},
+year = {2015},
+isbn = {9781450335379},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2745947.2745948},
+doi = {10.1145/2745947.2745948},
+booktitle = {Proceedings of the First Workshop on Principles and Practice of Consistency for Distributed Data},
+articleno = {Article 1},
+numpages = {4},
+location = {Bordeaux, France},
+series = {PaPoC ’15}
 }
 
 % PaPoC 2016
@@ -558,22 +555,22 @@ doi = {10.1145/2745947.2745952}
 @string{papoc16 = "2nd Workshop on the Principles and Practice of Consistency for Distributed Data (PaPoC)"}
 
 @inproceedings{Zawirski2016register,
- author = {Zawirski, Marek and Baquero, Carlos and Bieniusa, Annette and Pregui\c{c}a, Nuno and Shapiro, Marc},
- title = {{Eventually Consistent Register Revisited}},
- booktitle = {Proceedings of the 2Nd Workshop on the Principles and Practice of Consistency for Distributed Data},
- series = {PaPoC '16},
- year = {2016},
- isbn = {978-1-4503-4296-4},
- location = {London, United Kingdom},
- pages = {9:1--9:3},
- articleno = {9},
- numpages = {3},
- url = {http://doi.acm.org/10.1145/2911151.2911157},
- doi = {10.1145/2911151.2911157},
- acmid = {2911157},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {CRDTs, eventual consistency, multi-value-register}
+author = {Zawirski, Marek and Baquero, Carlos and Bieniusa, Annette and Pregui\c{c}a, Nuno and Shapiro, Marc},
+title = {{Eventually Consistent Register Revisited}},
+booktitle = {Proceedings of the 2Nd Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC '16},
+year = {2016},
+isbn = {978-1-4503-4296-4},
+location = {London, United Kingdom},
+pages = {9:1--9:3},
+articleno = {9},
+numpages = {3},
+url = {http://doi.acm.org/10.1145/2911151.2911157},
+doi = {10.1145/2911151.2911157},
+acmid = {2911157},
+publisher = {ACM},
+address = {New York, NY, USA},
+keywords = {CRDTs, eventual consistency, multi-value-register}
 } 
 
 @inproceedings{Baquero2016embedded,
@@ -636,22 +633,22 @@ url = {https://martin.kleppmann.com/papers/interleaving-papoc19.pdf}
 % Systems that use CRDTs
 
 @inproceedings{Preguica2014Swiftcloud,
-  author    = {Nuno Pregui{\c{c}}a and
-               Marek Zawirski and
-               Annette Bieniusa and
-               S{\'{e}}rgio Duarte and
-               Valter Balegas and
-               Carlos Baquero and
-               Marc Shapiro},
-  title     = {{SwiftCloud: Fault-Tolerant Geo-Replication Integrated all the Way
-               to the Client Machine}},
-  booktitle = {33rd {IEEE} International Symposium on Reliable Distributed Systems
-               Workshops, {SRDS} Workshops 2014, Nara, Japan, October 6-9, 2014},
-  pages     = {30--33},
-  year      = {2014},
-  publisher = {IEEE Computer Society},
-  url       = {https://ieeexplore.ieee.org/document/7000132},
-  url       = {http://arxiv.org/abs/1310.3107}
+author = {Nuno Pregui{\c{c}}a and
+Marek Zawirski and
+Annette Bieniusa and
+S{\'{e}}rgio Duarte and
+Valter Balegas and
+Carlos Baquero and
+Marc Shapiro},
+title = {{SwiftCloud: Fault-Tolerant Geo-Replication Integrated all the Way
+to the Client Machine}},
+booktitle = {33rd {IEEE} International Symposium on Reliable Distributed Systems
+Workshops, {SRDS} Workshops 2014, Nara, Japan, October 6-9, 2014},
+pages = {30--33},
+year = {2014},
+publisher = {IEEE Computer Society},
+url = {https://ieeexplore.ieee.org/document/7000132},
+url = {http://arxiv.org/abs/1310.3107}
 }
 
 % Swiftcloud
@@ -667,39 +664,39 @@ url = {https://dial.uclouvain.be/pr/boreal/object/boreal%3A214300/datastream/PDF
 }
 
 @inproceedings{Sovran2011Walter,
- author = {Sovran, Yair and Power, Russell and Aguilera, Marcos K. and Li, Jinyang},
- title = {{Transactional Storage for Geo-replicated Systems}},
- booktitle = {Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles},
- series = {SOSP '11},
- year = {2011},
- isbn = {978-1-4503-0977-6},
- location = {Cascais, Portugal},
- pages = {385--400},
- numpages = {16},
- url = {http://doi.acm.org/10.1145/2043556.2043592},
- doi = {10.1145/2043556.2043592},
- acmid = {2043592},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {asynchronous replication, distributed storage, geo-distributed systems, key-value store, parallel snapshot isolation, transactions}
+author = {Sovran, Yair and Power, Russell and Aguilera, Marcos K. and Li, Jinyang},
+title = {{Transactional Storage for Geo-replicated Systems}},
+booktitle = {Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles},
+series = {SOSP '11},
+year = {2011},
+isbn = {978-1-4503-0977-6},
+location = {Cascais, Portugal},
+pages = {385--400},
+numpages = {16},
+url = {http://doi.acm.org/10.1145/2043556.2043592},
+doi = {10.1145/2043556.2043592},
+acmid = {2043592},
+publisher = {ACM},
+address = {New York, NY, USA},
+keywords = {asynchronous replication, distributed storage, geo-distributed systems, key-value store, parallel snapshot isolation, transactions}
 } 
 
 @inproceedings{Meiklejohn2015Lasp,
- author = {Meiklejohn, Christopher and Van Roy, Peter},
- title = {Lasp: A Language for Distributed, Coordination-free Programming},
- booktitle = {Proceedings of the 17th International Symposium on Principles and Practice of Declarative Programming},
- series = {PPDP '15},
- year = {2015},
- isbn = {978-1-4503-3516-4},
- location = {Siena, Italy},
- pages = {184--195},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/2790449.2790525},
- doi = {10.1145/2790449.2790525},
- acmid = {2790525},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {Erlang, commutative operations, eventual consistency}
+author = {Meiklejohn, Christopher and Van Roy, Peter},
+title = {Lasp: A Language for Distributed, Coordination-free Programming},
+booktitle = {Proceedings of the 17th International Symposium on Principles and Practice of Declarative Programming},
+series = {PPDP '15},
+year = {2015},
+isbn = {978-1-4503-3516-4},
+location = {Siena, Italy},
+pages = {184--195},
+numpages = {12},
+url = {http://doi.acm.org/10.1145/2790449.2790525},
+doi = {10.1145/2790449.2790525},
+acmid = {2790525},
+publisher = {ACM},
+address = {New York, NY, USA},
+keywords = {Erlang, commutative operations, eventual consistency}
 } 
 
 @inproceedings{Akkoorath2016Cure, 
@@ -717,17 +714,17 @@ month={June}
 }
 
 @inproceedings{Jungnickel2017imap,
-  author =	 {Jungnickel, Tim and Oldenburg, Lennart},
-  title =	 {Pluto: The {CRDT}-Driven {IMAP} Server},
-  booktitle =	 {Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)},
-  year =	 2017,
-  series =	 {PaPoC'17},
-  pages =	 {1:1--1:5},
-  address =	 {Belgrade, Serbia},
-  publisher =	 {ACM},
-  Keywords =	 {CRDT, Cloud Deployments, Consistency Control, IMAP},
-  doi =		 {10.1145/3064889.3064891},
-  url =		 {http://doi.acm.org/10.1145/3064889.3064891}
+author = {Jungnickel, Tim and Oldenburg, Lennart},
+title = {Pluto: The {CRDT}-Driven {IMAP} Server},
+booktitle = {Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)},
+year = 2017,
+series = {PaPoC'17},
+pages = {1:1--1:5},
+address = {Belgrade, Serbia},
+publisher = {ACM},
+Keywords = {CRDT, Cloud Deployments, Consistency Control, IMAP},
+doi = {10.1145/3064889.3064891},
+url = {http://doi.acm.org/10.1145/3064889.3064891}
 }
 
 @inproceedings{Chandramouli2018Faster,
@@ -756,80 +753,97 @@ doi = {10.1007/978-3-319-66805-5_5}
 % Other datatypes
 
 @article{Almeida2013counters,
-  author    = {Paulo S{\'{e}}rgio Almeida and
-               Carlos Baquero},
-  title     = {{Scalable Eventually Consistent Counters over Unreliable Networks}},
-  journal   = {CoRR},
-  volume    = {abs/1307.3207},
-  year      = {2013},
-  url       = {http://arxiv.org/abs/1307.3207},
-  archivePrefix = {arXiv},
-  eprint    = {1307.3207},
-  timestamp = {Wed, 07 Jun 2017 14:40:38 +0200},
-  biburl    = {http://dblp.org/rec/bib/journals/corr/AlmeidaB13},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
+author = {Paulo S{\'{e}}rgio Almeida and
+Carlos Baquero},
+title = {{Scalable Eventually Consistent Counters over Unreliable Networks}},
+journal = {CoRR},
+volume = {abs/1307.3207},
+year = {2013},
+url = {http://arxiv.org/abs/1307.3207},
+archivePrefix = {arXiv},
+eprint = {1307.3207},
+timestamp = {Wed, 07 Jun 2017 14:40:38 +0200},
+biburl = {http://dblp.org/rec/bib/journals/corr/AlmeidaB13},
+bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 
 @mastersthesis{Enes2017sync,
-  author    = {Vitor Enes},
-  title     = {{Efficient Synchronization of State-based CRDTs}},
-  school    = {Universidade do Minho},
-  year      = {2017},
-  url       = {https://vitorenes.org/page/other/msc-thesis.pdf}
+author = {Vitor Enes},
+title = {{Efficient Synchronization of State-based CRDTs}},
+school = {Universidade do Minho},
+year = {2017},
+url = {https://vitorenes.org/page/other/msc-thesis.pdf}
 }
 
 % bounded counter crdt
 @inproceedings{Balegas2015invariants,
-  author    = {Valter Balegas and
-               Diogo Serra and
-               S{\'{e}}rgio Duarte and
-               Carla Ferreira and
-               Marc Shapiro and
-               Rodrigo Rodrigues and
-               Nuno M. Pregui{\c{c}}a},
-  title     = {{Extending Eventually Consistent Cloud Databases for Enforcing Numeric
-               Invariants}},
-  booktitle = {34th {IEEE} Symposium on Reliable Distributed Systems, {SRDS} 2015,
-               Montreal, QC, Canada, September 28 - October 1, 2015},
-  pages     = {31--36},
-  year      = {2015},
-  publisher = {IEEE Computer Society},
-  url       = {https://ieeexplore.ieee.org/document/7371565},
-  doi       = {10.1109/SRDS.2015.32}
+author = {Valter Balegas and
+Diogo Serra and
+S{\'{e}}rgio Duarte and
+Carla Ferreira and
+Marc Shapiro and
+Rodrigo Rodrigues and
+Nuno M. Pregui{\c{c}}a},
+title = {{Extending Eventually Consistent Cloud Databases for Enforcing Numeric
+Invariants}},
+booktitle = {34th {IEEE} Symposium on Reliable Distributed Systems, {SRDS} 2015,
+Montreal, QC, Canada, September 28 - October 1, 2015},
+pages = {31--36},
+year = {2015},
+publisher = {IEEE Computer Society},
+url = {https://ieeexplore.ieee.org/document/7371565},
+doi = {10.1109/SRDS.2015.32}
+}
+
+@inproceedings{Navalho2013stream,
+author = {Navalho, David and Duarte, S\'{e}rgio and Pregui\c{c}a, Nuno and Shapiro, Marc},
+title = {Incremental Stream Processing Using Computational Conflict-Free Replicated Data Types},
+year = {2013},
+isbn = {9781450320757},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2460756.2460762},
+doi = {10.1145/2460756.2460762},
+booktitle = {Proceedings of the 3rd International Workshop on Cloud Data and Platforms},
+pages = {31–36},
+numpages = {6},
+keywords = {real time, stream processing, incremental computation, distributed processing},
+location = {Prague, Czech Republic},
+series = {CloudDP ’13}
 }
 
 @inproceedings{Bieniusa2012sets,
- author = {Bieniusa, Annette and Zawirski, Marek and Pregui\c{c}a, Nuno and Shapiro, Marc and Baquero, Carlos and Balegas, Valter and Duarte, S{\'e}rgio},
- title = {Brief announcement: semantics of eventually consistent replicated sets},
- booktitle = {Proceedings of the 26th international conference on Distributed Computing},
- series = {DISC'12},
- year = {2012},
- isbn = {978-3-642-33650-8},
- location = {Salvador, Brazil},
- pages = {441--442},
- numpages = {2},
- url = {https://pages.lip6.fr/Marc.Shapiro/papers/semantics-sets-BA-DISC-2012.pdf},
- doi = {10.1007/978-3-642-33651-5_48},
- acmid = {2427932},
- publisher = {Springer-Verlag},
- address = {Berlin, Heidelberg}
+author = {Bieniusa, Annette and Zawirski, Marek and Pregui\c{c}a, Nuno and Shapiro, Marc and Baquero, Carlos and Balegas, Valter and Duarte, S{\'e}rgio},
+title = {Brief announcement: semantics of eventually consistent replicated sets},
+booktitle = {Proceedings of the 26th international conference on Distributed Computing},
+series = {DISC'12},
+year = {2012},
+isbn = {978-3-642-33650-8},
+location = {Salvador, Brazil},
+pages = {441--442},
+numpages = {2},
+url = {https://pages.lip6.fr/Marc.Shapiro/papers/semantics-sets-BA-DISC-2012.pdf},
+doi = {10.1007/978-3-642-33651-5_48},
+acmid = {2427932},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg}
 }
 
 @techreport{Bieniusa2012optimized,
-    hal_id = {hal-00738680},
-    url = {http://hal.inria.fr/hal-00738680},
-    title = {{An optimized conflict-free replicated set}},
-    author = {Bieniusa, Annette and Zawirski, Marek and Pregui{\c c}a, Nuno and Shapiro, Marc and Baquero, Carlos and Balegas, Valter and Duarte, S{\'e}rgio},
-    keywords = {Data replication; optimistic replication; commutative operations},
-    language = {Anglais},
-    affiliation = {REGAL - INRIA Rocquencourt , Laboratoire d'Informatique de Paris 6 - LIP6 , Centro de Investiga{\c c}{\\~a}o em Inform{\'a}tica e Tecnologias da Informa{\c c}{\\~a}o - CITI , Universidade do Minho Departamento de Inform{\'a}tica Distributed Systems Group - Universidade do Minho Departamento de Inform{\'a}tica},
-    pages = {12},
-    type = {Rapport de recherche},
-    institution = {INRIA},
-    number = {RR-8083},
-    year = {2012},
-    month = Oct,
-    pdf = {http://hal.inria.fr/hal-00738680/PDF/RR-8083.pdf}
+hal_id = {hal-00738680},
+url = {http://hal.inria.fr/hal-00738680},
+title = {{An optimized conflict-free replicated set}},
+author = {Bieniusa, Annette and Zawirski, Marek and Pregui{\c c}a, Nuno and Shapiro, Marc and Baquero, Carlos and Balegas, Valter and Duarte, S{\'e}rgio},
+keywords = {Data replication; optimistic replication; commutative operations},
+language = {Anglais},
+affiliation = {REGAL - INRIA Rocquencourt , Laboratoire d'Informatique de Paris 6 - LIP6 , Centro de Investiga{\c c}{\\~a}o em Inform{\'a}tica e Tecnologias da Informa{\c c}{\\~a}o - CITI , Universidade do Minho Departamento de Inform{\'a}tica Distributed Systems Group - Universidade do Minho Departamento de Inform{\'a}tica},
+pages = {12},
+type = {Rapport de recherche},
+institution = {INRIA},
+number = {RR-8083},
+year = {2012},
+month = Oct,
+pdf = {http://hal.inria.fr/hal-00738680/PDF/RR-8083.pdf}
 }
 
 @inproceedings{Nicolaescu2015Yjs,
@@ -887,21 +901,21 @@ url = {https://arxiv.org/abs/1707.01747}
 }
 
 @inproceedings{Burckhardt2014specification,
- author = {Burckhardt, Sebastian and Gotsman, Alexey and Yang, Hongseok and Zawirski, Marek},
- title = {{Replicated Data Types: Specification, Verification, Optimality}},
- booktitle = {Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
- series = {POPL '14},
- year = {2014},
- isbn = {978-1-4503-2544-8},
- location = {San Diego, California, USA},
- pages = {271--284},
- numpages = {14},
- url = {http://doi.acm.org/10.1145/2535838.2535848},
- doi = {10.1145/2535838.2535848},
- acmid = {2535848},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {eventual consistency, replication, weak memory}
+author = {Burckhardt, Sebastian and Gotsman, Alexey and Yang, Hongseok and Zawirski, Marek},
+title = {{Replicated Data Types: Specification, Verification, Optimality}},
+booktitle = {Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+series = {POPL '14},
+year = {2014},
+isbn = {978-1-4503-2544-8},
+location = {San Diego, California, USA},
+pages = {271--284},
+numpages = {14},
+url = {http://doi.acm.org/10.1145/2535838.2535848},
+doi = {10.1145/2535838.2535848},
+acmid = {2535848},
+publisher = {ACM},
+address = {New York, NY, USA},
+keywords = {eventual consistency, replication, weak memory}
 } 
 
 @article{Kleppmann2018OpSets,
@@ -915,52 +929,52 @@ url = {https://arxiv.org/abs/1805.04263}
 }
 
 @inproceedings{Gotsman2016CISE,
- author = {Gotsman, Alexey and Yang, Hongseok and Ferreira, Carla and Najafzadeh, Mahsa and Shapiro, Marc},
- title = {{'Cause I'm Strong Enough: Reasoning About Consistency Choices in Distributed Systems}},
- booktitle = {Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
- series = {POPL '16},
- year = {2016},
- isbn = {978-1-4503-3549-2},
- location = {St. Petersburg, FL, USA},
- pages = {371--384},
- numpages = {14},
- url = {http://software.imdea.org/~gotsman/papers/logic-popl16.pdf},
- doi = {10.1145/2837614.2837625},
- acmid = {2837625},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {Replication, causal consistency, integrity invariants}
+author = {Gotsman, Alexey and Yang, Hongseok and Ferreira, Carla and Najafzadeh, Mahsa and Shapiro, Marc},
+title = {{'Cause I'm Strong Enough: Reasoning About Consistency Choices in Distributed Systems}},
+booktitle = {Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+series = {POPL '16},
+year = {2016},
+isbn = {978-1-4503-3549-2},
+location = {St. Petersburg, FL, USA},
+pages = {371--384},
+numpages = {14},
+url = {http://software.imdea.org/~gotsman/papers/logic-popl16.pdf},
+doi = {10.1145/2837614.2837625},
+acmid = {2837625},
+publisher = {ACM},
+address = {New York, NY, USA},
+keywords = {Replication, causal consistency, integrity invariants}
 } 
 
 @inproceedings{Attiya2016text,
- author = {Attiya, Hagit and Burckhardt, Sebastian and Gotsman, Alexey and Morrison, Adam and Yang, Hongseok and Zawirski, Marek},
- title = {{Specification and Complexity of Collaborative Text Editing}},
- booktitle = {Proceedings of the 2016 ACM Symposium on Principles of Distributed Computing},
- series = {PODC '16},
- year = {2016},
- isbn = {978-1-4503-3964-3},
- location = {Chicago, Illinois, USA},
- pages = {259--268},
- numpages = {10},
- url = {http://doi.acm.org/10.1145/2933057.2933090},
- doi = {10.1145/2933057.2933090},
- acmid = {2933090},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {collaborative text editing, eventual consistency}
+author = {Attiya, Hagit and Burckhardt, Sebastian and Gotsman, Alexey and Morrison, Adam and Yang, Hongseok and Zawirski, Marek},
+title = {{Specification and Complexity of Collaborative Text Editing}},
+booktitle = {Proceedings of the 2016 ACM Symposium on Principles of Distributed Computing},
+series = {PODC '16},
+year = {2016},
+isbn = {978-1-4503-3964-3},
+location = {Chicago, Illinois, USA},
+pages = {259--268},
+numpages = {10},
+url = {http://doi.acm.org/10.1145/2933057.2933090},
+doi = {10.1145/2933057.2933090},
+acmid = {2933090},
+publisher = {ACM},
+address = {New York, NY, USA},
+keywords = {collaborative text editing, eventual consistency}
 } 
 
 % safety analysis
 @inproceedings{Li2014Sieve,
-    author = {Cheng Li and Joao Leit{\~a}o and Allen Clement and Nuno Pregui{\c c}a and Rodrigo Rodrigues and Viktor Vafeiadis},
-    title = {{Automating the Choice of Consistency Levels in Replicated Systems}},
-    booktitle = {2014 USENIX Annual Technical Conference (USENIX ATC 14)},
-    year = {2014},
-    isbn = {978-1-931971-10-2},
-    address = {Philadelphia, PA},
-    pages = {281--292},
-    url = {https://www.usenix.org/conference/atc14/technical-sessions/presentation/li_cheng_2},
-    publisher = {USENIX Association}
+author = {Cheng Li and Joao Leit{\~a}o and Allen Clement and Nuno Pregui{\c c}a and Rodrigo Rodrigues and Viktor Vafeiadis},
+title = {{Automating the Choice of Consistency Levels in Replicated Systems}},
+booktitle = {2014 USENIX Annual Technical Conference (USENIX ATC 14)},
+year = {2014},
+isbn = {978-1-931971-10-2},
+address = {Philadelphia, PA},
+pages = {281--292},
+url = {https://www.usenix.org/conference/atc14/technical-sessions/presentation/li_cheng_2},
+publisher = {USENIX Association}
 }
 
 
@@ -989,16 +1003,16 @@ url = {http://research.microsoft.com/pubs/163842/final-with-color.pdf}
 }
 
 @inproceedings{Burckhardt2012transactions,
-  author    = {Sebastian Burckhardt and
-               Daan Leijen and
-               Manuel F{\"a}hndrich and
-               Mooly Sagiv},
-  title     = {Eventually Consistent Transactions},
-  booktitle = {21st European Symposium on Programming (ESOP)},
-  year      = {2012},
-  pages     = {67-86},
-  ee        = {http://dx.doi.org/10.1007/978-3-642-28869-2_4},
-  bibsource = {DBLP, http://dblp.uni-trier.de}
+author = {Sebastian Burckhardt and
+Daan Leijen and
+Manuel F{\"a}hndrich and
+Mooly Sagiv},
+title = {Eventually Consistent Transactions},
+booktitle = {21st European Symposium on Programming (ESOP)},
+year = {2012},
+pages = {67-86},
+ee = {http://dx.doi.org/10.1007/978-3-642-28869-2_4},
+bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 
 @TechReport{Burckhardt2013eventual,
