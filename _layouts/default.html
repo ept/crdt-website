@@ -6,11 +6,11 @@
     {% include header.html %}
     <div class="container-fluid td-outer">
       <div class="td-main">
-        <div class="row flex-xl-nowrap">
-          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+        <div class="row flex-lg-nowrap">
+          <div class="col-12 col-md-3 col-lg-2 td-sidebar d-print-none">
           {% include sidebar.html %}
           </div>
-          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          <div class="d-none d-lg-block col-lg-2 td-toc d-print-none">
               <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
                   {% include editable.html %}
               </div>
@@ -20,7 +20,7 @@
               </ul></li>
               </ul></nav>
           </div>
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          <main class="col-12 col-md-9 col-lg-8 pl-md-5" role="main">
             <div class="td-content">
               {{ content }}
               {% if section.links %}<div class="section-index">
