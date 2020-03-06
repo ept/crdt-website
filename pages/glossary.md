@@ -82,3 +82,10 @@ Strong Eventual Consistency (SEC):
   that has not failed will also eventually process it). See
   [Conflict-Free Replicated Data Types](https://pages.lip6.fr/Marek.Zawirski/papers/RR-7687.pdf)
   by Marc Shapiro, Nuno Preguiça, Carlos Baquero, and Marek Zawirski.
+
+Tombstone:
+: A special object used in some CRDTs to indicate that a value is absent (e.g.
+  because it has been deleted). Tombstones may increase the memory consumption
+  of a CRDT, as they continue to exist even if the corresponding data has been
+  deleted at the application level. There are algorithms for garbage-collecting
+  tombstones and freeing their memory.
