@@ -30,7 +30,11 @@ collaborative applications and replicated storage systems:
   is a collection of JavaScript CRDTs for text, arrays, maps, XML, etc. Yjs has
   bindings to several JavaScript text editors, and support for several network
   communication layers including [WebSocket](http://github.com/yjs/y-websocket)
-  and [WebRTC](http://github.com/yjs/y-webrtc).
+  and [WebRTC](http://github.com/yjs/y-webrtc). More information in this series of blog posts:
+  [part 1](https://www.tag1consulting.com/blog/yjs-deep-dive-part-1),
+  [part 2](https://www.tag1consulting.com/blog/yjs-deep-dive-part-2),
+  [part 3](https://www.tag1consulting.com/blog/yjs-deep-dive-part-3),
+  [part 4](https://www.tag1consulting.com/blog/yjs-deep-dive-part-4).
 
 * [Legion](https://legion.di.fct.unl.pt/)
   ([GitHub](https://github.com/albertlinde/Legion),
