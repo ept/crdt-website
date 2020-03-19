@@ -146,12 +146,11 @@ title = {{$\Delta$-CRDTs}: Making {$\delta$-CRDTs} Delta-based},
 booktitle = {2nd Workshop on the Principles and Practice of Consistency for Distributed Data},
 series = {PaPoC 2016},
 year = {2016},
-pages = {12:1--12:4},
 articleno = {12},
 publisher = {ACM},
 doi = {10.1145/2911151.2911163},
 pdf = {https://novasys.di.fct.unl.pt/~alinde/publications/a12-van_der_linde.pdf}
-} 
+}
 
 % https://blog.acolyer.org/2016/04/25/delta-state-replicated-data-types/
 @article{Almeida2018delta,
@@ -165,6 +164,30 @@ eprint = {1603.01529},
 doi = {10.1016/j.jpdc.2017.08.003}
 }
 
+@inproceedings{Yu2019undo,
+author = {Yu, Weihai and Elvinger, Victorien and Ignat, Claudia-Lavinia},
+title = {A Generic Undo Support for State-Based {CRDTs}},
+booktitle = {23rd International Conference on Principles of Distributed Systems},
+series = {OPODIS 2019},
+year = {2019},
+month = nov,
+publisher = {Dagstuhl LIPIcs},
+articleno = {14},
+doi = {10.4230/LIPIcs.OPODIS.2019.14},
+pdf = {https://drops.dagstuhl.de/opus/volltexte/2020/11800/pdf/LIPIcs-OPODIS-2019-14.pdf}
+}
+
+@inproceedings{Enes2019synchronization,
+author = {Enes, Vitor and Almeida, Paulo S{\'e}rgio and Baquero, Carlos and Leit\~{a}o, Jo\~{a}o},
+title = {Efficient Synchronization of State-Based {CRDTs}},
+booktitle = {35th IEEE International Conference on Data Engineering},
+series = {ICDE 2019},
+year = {2019},
+month = apr,
+pages = {148--159},
+doi = {10.1109/ICDE.2019.00022},
+eprint = {1803.02750}
+}
 
 % Text editing CRDTs
 
@@ -232,7 +255,7 @@ pages = {404--412},
 publisher = {IEEE},
 doi = {10.1109/ICDCS.2009.75},
 pdf = {https://hal.inria.fr/inria-00432368/document}
-} 
+}
 
 % Logoot-Undo
 @article{Weiss2010LogootUndo,
@@ -248,7 +271,7 @@ pages = {1162--1174},
 publisher = {IEEE},
 doi = {10.1109/TPDS.2009.173},
 pdf = {https://www.researchgate.net/profile/Pascal_Urso/publication/233882440_Logoot-Undo_Distributed_Collaborative_Editing_System/links/0fcfd50c84f5194937000000.pdf}
-} 
+}
 
 % RGA
 @article{Roh2011RGA,
@@ -264,7 +287,7 @@ pages = {354--368},
 publisher = {Elsevier},
 doi = {10.1016/j.jpdc.2010.12.006},
 pdf = {http://csl.snu.ac.kr/papers/jpdc11.pdf}
-} 
+}
 
 % LSEQ
 @inproceedings{Nedelec2013LSEQ,
@@ -455,7 +478,7 @@ articleno = {1},
 publisher = {ACM},
 doi = {10.1145/2596631.2596633},
 pdf = {https://pages.lip6.fr/syncfree/attachments/article/46/WP3-report.pdf#page=31}
-} 
+}
 
 @inproceedings{Almeida2014decomposition,
 author = {Almeida, Paulo S{\'e}rgio and Shoker, Ali and Baquero, Carlos}, 
@@ -491,7 +514,7 @@ articleno = {13},
 publisher = {ACM},
 doi = {10.1145/2596631.2596635},
 pdf = {https://pages.lip6.fr/syncfree/attachments/article/46/WP3-report.pdf#page=34}
-} 
+}
 
 @inproceedings{Grishchenko2014oplogs,
 author = {Grishchenko, Victor},
@@ -510,364 +533,449 @@ url = {http://www.ds.ewi.tudelft.nl/~victor/polo.pdf}
 % https://dblp.uni-trier.de/db/conf/eurosys/papoc2015.html
 % https://dl.acm.org/doi/proceedings/10.1145/2745947
 
-@string{papoc15 = "First Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
+@inproceedings{Navalho2015computations,
+author = {Navalho, David and Duarte, S\'{e}rgio and Pregui\c{c}a, Nuno},
+title = {A Study of {CRDTs} That Do Computations},
+booktitle = {1st Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2015},
+year = {2015},
+month = apr,
+articleno = {1},
+publisher = {ACM},
+doi = {10.1145/2745947.2745948},
+pdf = {http://asc.di.fct.unl.pt/~nmp/pubs/papoc-2015-1.pdf}
+}
 
 @inproceedings{Holt2015claret,
-author = {Brandon Holt and Irene Zhang and Dan Ports and Mark
-Oskin and Luis Ceze}, 
-title = {Claret: Using Data Types for Highly Concurrent
-Distributed Transactions},
-booktitle = papoc,
-year = 2015,
-address = {Bordeaux, France},
-publisher = acm
+author = {Holt, Brandon and Zhang, Irene and Ports, Dan and Oskin, Mark and Ceze, Luis},
+title = {{Claret}: Using Data Types for Highly Concurrent Distributed Transactions},
+booktitle = {1st Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2015},
+year = {2015},
+month = apr,
+articleno = {4},
+publisher = {ACM},
+doi = {10.1145/2745947.2745951},
+pdf = {http://irenezhang.net/papers/claret-papoc15.pdf}
 }
 
 % Associated master's thesis: https://www.dropbox.com/s/t0cyzfvmah9cldw/Master%20Thesis%20-%20Santiago%20Casti%C3%B1eira.pdf
 @inproceedings{Castineira2015offline,
 author = {Casti{\~n}eira, Santiago J and Bieniusa, Annette},
 title = {Collaborative offline web applications using conflict-free replicated data types},
-booktitle = {1st Workshop on Principles and Practice of Eventual Consistency},
+booktitle = {1st Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2015},
 year = {2015},
-publisher = {ACM Press},
+month = apr,
+articleno = {5},
+publisher = {ACM},
 doi = {10.1145/2745947.2745952}
 }
 
-@inproceedings{Navalho2015computations,
-author = {Navalho, David and Duarte, S\'{e}rgio and Pregui\c{c}a, Nuno},
-title = {A Study of CRDTs That Do Computations},
+@inproceedings{10.1145/2745947.2745954,
+author = {Meiklejohn, Christopher and Van Roy, Peter},
+title = {Lasp: A Language for Distributed, Eventually Consistent Computations with CRDTs},
+booktitle = {1st Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2015},
 year = {2015},
-isbn = {9781450335379},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/2745947.2745948},
-doi = {10.1145/2745947.2745948},
-booktitle = {Proceedings of the First Workshop on Principles and Practice of Consistency for Distributed Data},
-articleno = {Article 1},
-numpages = {4},
-location = {Bordeaux, France},
-series = {PaPoC ’15}
+month = apr,
+articleno = {7},
+publisher = {ACM},
+doi = {10.1145/2745947.2745954},
+url = {https://www.info.ucl.ac.be/~pvr/papoc-2015-lasp-abstract.pdf}
 }
+
 
 % PaPoC 2016
 % https://dblp.uni-trier.de/db/conf/eurosys/papoc2016.html
 % https://dl.acm.org/doi/proceedings/10.1145/2911151
-@string{papoc16 = "2nd Workshop on the Principles and Practice of Consistency for Distributed Data (PaPoC)"}
+
+@inproceedings{10.1145/2911151.2911156,
+author = {Brown, Russell and Lakhani, Zeeshan and Place, Paul},
+title = {Big(Ger) Sets: Decomposed Delta CRDT Sets in Riak},
+booktitle = {2nd Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2016},
+year = {2016},
+month = apr,
+articleno = {5},
+publisher = {ACM},
+doi = {10.1145/2911151.2911156},
+eprint = {1605.06424}
+}
 
 @inproceedings{Zawirski2016register,
 author = {Zawirski, Marek and Baquero, Carlos and Bieniusa, Annette and Pregui\c{c}a, Nuno and Shapiro, Marc},
-title = {{Eventually Consistent Register Revisited}},
-booktitle = {Proceedings of the 2Nd Workshop on the Principles and Practice of Consistency for Distributed Data},
-series = {PaPoC '16},
+title = {Eventually Consistent Register Revisited},
+booktitle = {2nd Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2016},
 year = {2016},
-isbn = {978-1-4503-4296-4},
-location = {London, United Kingdom},
-pages = {9:1--9:3},
+month = apr,
 articleno = {9},
-numpages = {3},
-url = {http://doi.acm.org/10.1145/2911151.2911157},
-doi = {10.1145/2911151.2911157},
-acmid = {2911157},
 publisher = {ACM},
-address = {New York, NY, USA},
-keywords = {CRDTs, eventual consistency, multi-value-register}
-} 
+doi = {10.1145/2911151.2911157},
+url = {https://core.ac.uk/download/pdf/154274593.pdf},
+eprint = {1511.05010}
+}
 
 @inproceedings{Baquero2016embedded,
 author = {Baquero, Carlos and Almeida, Paulo S{\'e}rgio and Lerche, Carl},
-title = {{The problem with embedded CRDT counters and a solution}},
+title = {The problem with embedded {CRDT} counters and a solution},
 booktitle = {2nd Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2016},
 year = {2016},
-publisher = {ACM Press},
 month = apr,
+articleno = {10},
+publisher = {ACM},
 doi = {10.1145/2911151.2911159},
 url = {http://haslab.uminho.pt/cbm/files/abstractcounterpapocfinal.pdf}
+}
+
+% Replikativ
+@inproceedings{Weilbach2016cdvcs,
+author = {Weilbach, Christian and K\"{u}hne, Konrad and Bieniusa, Annette},
+title = {Decoupling Conflict Resolution with {CDVCS}},
+booktitle = {2nd Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2016},
+year = {2016},
+month = apr,
+articleno = {11},
+publisher = {ACM},
+doi = {10.1145/2911151.2911154},
+}
+
+@inproceedings{Akkoorath2016objects,
+author = {Akkoorath, Deepthi Devaki and Bieniusa, Annette},
+title = {Highly-Scalable Concurrent Objects},
+booktitle = {2nd Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2016},
+year = {2016},
+month = apr,
+articleno = {13},
+publisher = {ACM},
+doi = {10.1145/2911151.2911158},
+pdf = {https://softech.cs.uni-kl.de/homepage/publications/Akkoorath.Bieniusa2016.pdf}
 }
 
 
 % PaPoC 2017
 % https://dblp.uni-trier.de/db/conf/eurosys/papoc2017.html
 % https://dl.acm.org/doi/proceedings/10.1145/3064889
-@string{papoc17 = "3rd International Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
 
-@inproceedings{Zeller2017Repliss, 
-author = {Zeller, Peter}, 
-title = {{Testing Properties of Weakly Consistent Programs with Repliss}}, 
-booktitle = {Proceedings of the 3rd International Workshop on Principles and Practice of Consistency for Distributed Data}, 
-series = {PaPoC'17}, 
-year = {2017}, 
-isbn = {978-1-4503-4933-8}, 
-location = {Belgrade, Serbia}, 
-pages = {3:1--3:5}, 
-articleno = {3}, 
-numpages = {5}, 
-url = {https://dl.acm.org/authorize?N37605}, 
-doi = {10.1145/3064889.3064893}, 
-acmid = {3064893}, 
-publisher = {ACM}, 
-address = {New York, NY, USA}, 
-keywords = {Property-based Testing, Weak Consistency}
+@inproceedings{Younes2017resettable,
+author = {Younes, Georges and Almeida, Paulo S\'{e}rgio and Baquero, Carlos},
+title = {Compact Resettable Counters through Causal Stability},
+booktitle = {3rd International Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2017},
+year = {2017},
+month = apr,
+publisher = {ACM},
+articleno = {2},
+doi = {10.1145/3064889.3064892},
+pdf = {https://haslab.uminho.pt/cbm/files/a3-younes.pdf}
 }
+
+@inproceedings{Zeller2017Repliss,
+author = {Zeller, Peter},
+title = {Testing Properties of Weakly Consistent Programs with {Repliss}},
+booktitle = {3rd International Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2017},
+year = {2017},
+month = apr,
+publisher = {ACM},
+articleno = {3},
+doi = {10.1145/3064889.3064893},
+pdf = {https://dl.acm.org/authorize?N37605}
+}
+
+@inproceedings{Enes2017borrowing,
+author = {Enes, Vitor and Baquero, Carlos and Almeida, Paulo S\'{e}rgio and Leit\~{a}o, Jo\~{a}o},
+title = {Borrowing an Identity for a Distributed Counter: Work in Progress Report},
+booktitle = {3rd International Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2017},
+year = {2017},
+month = apr,
+publisher = {ACM},
+doi = {10.1145/3064889.3064894},
+pdf = {https://haslab.uminho.pt/sites/default/files/cbm/files/a5-enes.pdf}
+}
+
 
 % PaPoC 2018
 % https://dblp.uni-trier.de/db/conf/eurosys/papoc2018.html
 % https://dl.acm.org/doi/proceedings/10.1145/3194261
-@string{papoc18 = "5th Workshop on the Principles and Practice of Consistency for Distributed Data (PaPoC)"}
+
+@inproceedings{Shapiro2018referential,
+author = {Shapiro, Marc and Bieniusa, Annette and Zeller, Peter and Petri, Gustavo},
+title = {Ensuring Referential Integrity under Causal Consistency},
+booktitle = {5th Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2018},
+year = {2018},
+month = apr,
+publisher = {ACM},
+articleno = {1},
+doi = {10.1145/3194261.3194262},
+pdf = {https://pages.lip6.fr/Marc.Shapiro/papers/causal-refs-papoc-2018-04.pdf}
+}
+
+@inproceedings{Bauwens2018constraining,
+author = {Bauwens, Jim and Myter, Florian and Boix, Elisa Gonzalez},
+title = {Constraining the Eventual in Eventual Consistency},
+booktitle = {5th Workshop on the Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2018},
+year = {2018},
+month = apr,
+publisher = {ACM},
+articleno = {2},
+doi = {10.1145/3194261.3194263},
+pdf = {http://myter.be/papers/papoc18.pdf}
+}
+
 
 % PaPoC 2019
 % https://dl.acm.org/doi/proceedings/10.1145/3301419
-@string{papoc19 = "6th Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)"}
+
+@inproceedings{Leijnse2019higherorder,
+author = {Leijnse, Adriaan and Almeida, Paulo S\'{e}rgio and Baquero, Carlos},
+title = {Higher-Order Patterns in Replicated Data Types},
+booktitle = {6th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2019},
+year = {2019},
+month = mar,
+publisher = {ACM},
+articleno = {5},
+doi = {10.1145/3301419.3323971},
+pdf = {https://repositorio.inesctec.pt/bitstream/123456789/10536/1/P-00Q-WJM.pdf}
+}
 
 @inproceedings{Kleppmann2019interleaving,
-author = {Kleppmann, Martin and Gomes, Victor B F and Mulligan, Dominic P and Beresford, Alastair R},
-title = {Interleaving anomalies in collaborative text editors},
-booktitle = {6th Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)},
+author = {Kleppmann, Martin and Gomes, Victor B. F. and Mulligan, Dominic P. and Beresford, Alastair R.},
+title = {Interleaving Anomalies in Collaborative Text Editors},
+booktitle = {6th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2019},
 year = {2019},
-publisher = {ACM Press},
 month = mar,
+publisher = {ACM},
+articleno = {6},
 doi = {10.1145/3301419.3323972},
-url = {https://martin.kleppmann.com/papers/interleaving-papoc19.pdf}
+pdf = {https://martin.kleppmann.com/papers/interleaving-papoc19.pdf}
+}
+
+@inproceedings{Mealha2019cloudEdge,
+author = {Mealha, David and Pregui\c{c}a, Nuno and Gomes, Maria Cecilia and Leit\~{a}o, Jo\~{a}o},
+title = {Data Replication on the Cloud/Edge},
+booktitle = {6th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2019},
+year = {2019},
+month = mar,
+publisher = {ACM},
+articleno = {7},
+doi = {10.1145/3301419.3323973}
+}
+
+@inproceedings{10.1145/3301419.3323974,
+author = {De Porre, Kevin and Myter, Florian and De Troyer, Christophe and Scholliers, Christophe and De Meuter, Wolfgang and Boix, Elisa Gonzalez},
+title = {A Generic Replicated Data Type for Strong Eventual Consistency},
+booktitle = {6th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2019},
+year = {2019},
+month = mar,
+publisher = {ACM},
+articleno = {8},
+doi = {10.1145/3301419.3323974},
+pdf = {http://soft.vub.ac.be/Publications/2019/vub-soft-tr-19-08.pdf}
 }
 
 
 % Systems that use CRDTs
 
-@inproceedings{Preguica2014Swiftcloud,
-author = {Nuno Pregui{\c{c}}a and
-Marek Zawirski and
-Annette Bieniusa and
-S{\'{e}}rgio Duarte and
-Valter Balegas and
-Carlos Baquero and
-Marc Shapiro},
-title = {{SwiftCloud: Fault-Tolerant Geo-Replication Integrated all the Way
-to the Client Machine}},
-booktitle = {33rd {IEEE} International Symposium on Reliable Distributed Systems
-Workshops, {SRDS} Workshops 2014, Nara, Japan, October 6-9, 2014},
+@inproceedings{Preguica2014SwiftCloud,
+author = {Pregui\c{c}a, Nuno and Zawirski, Marek and Bieniusa, Annette and Duarte, S\'{e}rgio and Balegas, Valter and Baquero, Carlos and Shapiro, Marc},
+title = {{SwiftCloud}: Fault-Tolerant Geo-Replication Integrated all the Way to the Client Machine},
+booktitle = {33rd IEEE International Symposium on Reliable Distributed Systems Workshops},
+series = {SRDS Workshops 2014},
 pages = {30--33},
 year = {2014},
-publisher = {IEEE Computer Society},
-url = {https://ieeexplore.ieee.org/document/7000132},
-url = {http://arxiv.org/abs/1310.3107}
+month = oct,
+publisher = {IEEE},
+doi = {10.1109/SRDSW.2014.33},
+eprint = {1310.3107}
 }
 
-% Swiftcloud
+% SwiftCloud
 @inproceedings{Briquemont2015partial,
 author = {Iwan Briquemont and Manuel Bravo and Zhongmiao Li and Peter Van Roy},
 title = {Conflict-free Partially Replicated Data Types},
-booktitle = {Proceedings of the 7th IEEE International Conference on Cloud Computing Technology and Science (CloudCom 2015)},
+booktitle = {7th IEEE International Conference on Cloud Computing Technology and Science},
+series = {CloudCom 2015},
 year = {2015},
-month = {Nov},
+month = nov,
 publisher = {IEEE},
 doi = {10.1109/CloudCom.2015.81},
 url = {https://dial.uclouvain.be/pr/boreal/object/boreal%3A214300/datastream/PDF_01/view}
 }
 
-@inproceedings{Sovran2011Walter,
-author = {Sovran, Yair and Power, Russell and Aguilera, Marcos K. and Li, Jinyang},
-title = {{Transactional Storage for Geo-replicated Systems}},
-booktitle = {Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles},
-series = {SOSP '11},
-year = {2011},
-isbn = {978-1-4503-0977-6},
-location = {Cascais, Portugal},
-pages = {385--400},
-numpages = {16},
-url = {http://doi.acm.org/10.1145/2043556.2043592},
-doi = {10.1145/2043556.2043592},
-acmid = {2043592},
-publisher = {ACM},
-address = {New York, NY, USA},
-keywords = {asynchronous replication, distributed storage, geo-distributed systems, key-value store, parallel snapshot isolation, transactions}
-} 
-
 @inproceedings{Meiklejohn2015Lasp,
 author = {Meiklejohn, Christopher and Van Roy, Peter},
-title = {Lasp: A Language for Distributed, Coordination-free Programming},
-booktitle = {Proceedings of the 17th International Symposium on Principles and Practice of Declarative Programming},
-series = {PPDP '15},
+title = {{Lasp}: A Language for Distributed, Coordination-free Programming},
+booktitle = {17th International Symposium on Principles and Practice of Declarative Programming},
+series = {PPDP 2015},
 year = {2015},
-isbn = {978-1-4503-3516-4},
-location = {Siena, Italy},
-pages = {184--195},
-numpages = {12},
-url = {http://doi.acm.org/10.1145/2790449.2790525},
-doi = {10.1145/2790449.2790525},
-acmid = {2790525},
+month = jul,
 publisher = {ACM},
-address = {New York, NY, USA},
-keywords = {Erlang, commutative operations, eventual consistency}
-} 
+pages = {184--195},
+doi = {10.1145/2790449.2790525},
+pdf = {https://www.info.ucl.ac.be/~pvr/ppdp-2015-cr.pdf}
+}
 
-@inproceedings{Akkoorath2016Cure, 
-author={D. D. Akkoorath and A. Z. Tomsic and M. Bravo and Z. Li and T. Crain and A. Bieniusa and N. Pregui{\c c}a and M. Shapiro}, 
-booktitle={Proceedings of the 2016 IEEE 36th International Conference on Distributed Computing Systems (ICDCS)}, 
-title={{Cure: Strong Semantics Meets High Availability and Low Latency}}, 
-year={2016}, 
-volume={}, 
-number={}, 
-pages={405-414}, 
-keywords={application program interfaces;cloud computing;CAP theorem;Cure;NoSQL databases;NoSQL-style AP databases;atomicity;causal consistency;classical CP databases;cloud-scale applications;developer friendly API;high-level data types;latency;multikey updates;parallelism;strong semantics;Clocks;Convergence;Databases;Programming;Protocols;Semantics;Servers}, 
-doi={10.1109/ICDCS.2016.98}, 
-ISSN={1063-6927}, 
-month={June}
+@inproceedings{Akkoorath2016Cure,
+author = {Akkoorath, Deepthi Devaki and Tomsic, Alejandro Z. and Bravo, Manuel and Li, Zhongmiao and Crain, Tyler and Bieniusa, Annette and Pregui{\c c}a, Nuno and Shapiro, Marc},
+title = {{Cure}: Strong Semantics Meets High Availability and Low Latency},
+booktitle = {36th IEEE International Conference on Distributed Computing Systems},
+series = {ICDCS 2016},
+year = {2016},
+month = jun,
+publisher = {IEEE},
+pages = {405--414},
+doi = {10.1109/ICDCS.2016.98},
+pdf = {https://pages.lip6.fr/Marc.Shapiro/papers/Cure-final-ICDCS16.pdf}
 }
 
 @inproceedings{Jungnickel2017imap,
 author = {Jungnickel, Tim and Oldenburg, Lennart},
-title = {Pluto: The {CRDT}-Driven {IMAP} Server},
-booktitle = {Workshop on Principles and Practice of Consistency for Distributed Data (PaPoC)},
+title = {{Pluto}: The {CRDT}-Driven {IMAP} Server},
+booktitle = {3rd International Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2017},
 year = 2017,
-series = {PaPoC'17},
-pages = {1:1--1:5},
-address = {Belgrade, Serbia},
+month = apr,
 publisher = {ACM},
-Keywords = {CRDT, Cloud Deployments, Consistency Control, IMAP},
+articleno = {1},
 doi = {10.1145/3064889.3064891},
-url = {http://doi.acm.org/10.1145/3064889.3064891}
+pdf = {http://www.redaktion.tu-berlin.de/fileadmin/a34331500/paper/papoc17-jungnickel.pdf}
 }
 
 @inproceedings{Chandramouli2018Faster,
 author = {Chandramouli, Badrish and Prasaad, Guna and Kossmann, Donald and Levandoski, Justin and Hunter, James and Barnett, Mike},
-title = {{FASTER: A Concurrent Key-Value Store with In-Place Updates}},
-booktitle = {2018 International Conference on Management of Data (SIGMOD)},
+title = {{FASTER}: A Concurrent Key-Value Store with In-Place Updates},
+booktitle = {International Conference on Management of Data},
+series = {SIGMOD 2018},
 year = {2018},
-month = {June},
+month = jun,
 publisher = {ACM},
-url = {https://www.microsoft.com/en-us/research/publication/faster-concurrent-key-value-store-place-updates/},
-doi = {10.1145/3183713.3196898}
+pages = {275--290},
+doi = {10.1145/3183713.3196898},
+pdf = {https://www.microsoft.com/en-us/research/uploads/prod/2018/03/faster-sigmod18.pdf}
 }
 
 @inproceedings{Yu2017disturbance,
 author = {Yu, Weihai and Oster, G{\'e}rald and Ignat, Claudia-Lavinia},
-title = {{Handling Disturbance and Awareness of~Concurrent Updates in a Collaborative Editor}},
-booktitle = {14th International Conference on Cooperative Design, Visualization, and Engineering (CDVE)},
+title = {Handling Disturbance and Awareness of Concurrent Updates in a Collaborative Editor},
+booktitle = {14th International Conference on Cooperative Design, Visualization, and Engineering},
+series = {CDVE 2017},
 year = {2017},
-pages = {39--47},
-publisher = {Springer International Publishing},
 month = sep,
-doi = {10.1007/978-3-319-66805-5_5}
+publisher = {Springer LNCS volume 10451},
+pages = {39--47},
+doi = {10.1007/978-3-319-66805-5_5},
+pdf = {https://hal.inria.fr/hal-01652656/document}
 }
 
 
 % Other datatypes
 
 @article{Almeida2013counters,
-author = {Paulo S{\'{e}}rgio Almeida and
-Carlos Baquero},
-title = {{Scalable Eventually Consistent Counters over Unreliable Networks}},
-journal = {CoRR},
-volume = {abs/1307.3207},
+author = {Almeida, Paulo S\'{e}rgio and Baquero, Carlos},
+title = {Scalable Eventually Consistent Counters over Unreliable Networks},
 year = {2013},
-url = {http://arxiv.org/abs/1307.3207},
-archivePrefix = {arXiv},
+month = jul,
 eprint = {1307.3207},
-timestamp = {Wed, 07 Jun 2017 14:40:38 +0200},
-biburl = {http://dblp.org/rec/bib/journals/corr/AlmeidaB13},
-bibsource = {dblp computer science bibliography, http://dblp.org}
+url = {https://arxiv.org/abs/1307.3207}
 }
 
 @mastersthesis{Enes2017sync,
-author = {Vitor Enes},
-title = {{Efficient Synchronization of State-based CRDTs}},
+author = {Enes, Vitor},
+title = {Efficient Synchronization of State-based {CRDTs}},
 school = {Universidade do Minho},
 year = {2017},
+month = nov,
 url = {https://vitorenes.org/page/other/msc-thesis.pdf}
 }
 
 % bounded counter crdt
 @inproceedings{Balegas2015invariants,
-author = {Valter Balegas and
-Diogo Serra and
-S{\'{e}}rgio Duarte and
-Carla Ferreira and
-Marc Shapiro and
-Rodrigo Rodrigues and
-Nuno M. Pregui{\c{c}}a},
-title = {{Extending Eventually Consistent Cloud Databases for Enforcing Numeric
-Invariants}},
-booktitle = {34th {IEEE} Symposium on Reliable Distributed Systems, {SRDS} 2015,
-Montreal, QC, Canada, September 28 - October 1, 2015},
-pages = {31--36},
+author = {Balegas, Valter and Serra, Diogo and Duarte, S\'{e}rgio and Ferreira, Carla and Shapiro, Marc and Rodrigues, Rodrigo and Pregui\c{c}a, Nuno},
+title = {Extending Eventually Consistent Cloud Databases for Enforcing Numeric Invariants},
+booktitle = {34th IEEE Symposium on Reliable Distributed Systems},
+series = {SRDS 2015},
 year = {2015},
-publisher = {IEEE Computer Society},
-url = {https://ieeexplore.ieee.org/document/7371565},
-doi = {10.1109/SRDS.2015.32}
+month = sep,
+publisher = {IEEE},
+pages = {31--36},
+doi = {10.1109/SRDS.2015.32},
+eprint = {1503.09052}
 }
 
 @inproceedings{Navalho2013stream,
 author = {Navalho, David and Duarte, S\'{e}rgio and Pregui\c{c}a, Nuno and Shapiro, Marc},
 title = {Incremental Stream Processing Using Computational Conflict-Free Replicated Data Types},
+booktitle = {3rd International Workshop on Cloud Data and Platforms},
+series = {CloudDP 2013},
 year = {2013},
+month = apr,
 isbn = {9781450320757},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/2460756.2460762},
+publisher = {ACM},
+pages = {31--36},
 doi = {10.1145/2460756.2460762},
-booktitle = {Proceedings of the 3rd International Workshop on Cloud Data and Platforms},
-pages = {31–36},
-numpages = {6},
-keywords = {real time, stream processing, incremental computation, distributed processing},
-location = {Prague, Czech Republic},
-series = {CloudDP ’13}
+pdf = {https://pages.lip6.fr/Marc.Shapiro/papers/computational-CRDTs-CloudDP-2013.pdf}
 }
 
 @inproceedings{Bieniusa2012sets,
 author = {Bieniusa, Annette and Zawirski, Marek and Pregui\c{c}a, Nuno and Shapiro, Marc and Baquero, Carlos and Balegas, Valter and Duarte, S{\'e}rgio},
-title = {Brief announcement: semantics of eventually consistent replicated sets},
-booktitle = {Proceedings of the 26th international conference on Distributed Computing},
-series = {DISC'12},
+title = {Brief Announcement: Semantics of Eventually Consistent Replicated Sets},
+booktitle = {26th International Symposium on Distributed Computing},
+series = {DISC 2012},
 year = {2012},
-isbn = {978-3-642-33650-8},
-location = {Salvador, Brazil},
+month = oct,
+publisher = {Springer LNCS volume 7611},
 pages = {441--442},
-numpages = {2},
-url = {https://pages.lip6.fr/Marc.Shapiro/papers/semantics-sets-BA-DISC-2012.pdf},
 doi = {10.1007/978-3-642-33651-5_48},
-acmid = {2427932},
-publisher = {Springer-Verlag},
-address = {Berlin, Heidelberg}
+url = {https://pages.lip6.fr/Marc.Shapiro/papers/semantics-sets-BA-DISC-2012.pdf}
 }
 
 @techreport{Bieniusa2012optimized,
-hal_id = {hal-00738680},
-url = {http://hal.inria.fr/hal-00738680},
-title = {{An optimized conflict-free replicated set}},
 author = {Bieniusa, Annette and Zawirski, Marek and Pregui{\c c}a, Nuno and Shapiro, Marc and Baquero, Carlos and Balegas, Valter and Duarte, S{\'e}rgio},
-keywords = {Data replication; optimistic replication; commutative operations},
-language = {Anglais},
-affiliation = {REGAL - INRIA Rocquencourt , Laboratoire d'Informatique de Paris 6 - LIP6 , Centro de Investiga{\c c}{\\~a}o em Inform{\'a}tica e Tecnologias da Informa{\c c}{\\~a}o - CITI , Universidade do Minho Departamento de Inform{\'a}tica Distributed Systems Group - Universidade do Minho Departamento de Inform{\'a}tica},
-pages = {12},
-type = {Rapport de recherche},
+title = {An Optimized Conflict-free Replicated Set},
+type = {Research Report},
 institution = {INRIA},
 number = {RR-8083},
 year = {2012},
-month = Oct,
+month = oct,
+eprint = {1210.3368},
 pdf = {http://hal.inria.fr/hal-00738680/PDF/RR-8083.pdf}
 }
 
 @inproceedings{Nicolaescu2015Yjs,
 author = {Nicolaescu, Petru and Jahns, Kevin and Derntl, Michael and Klamma, Ralf},
-title = {{Yjs: A Framework for Near Real-Time P2P Shared Editing on Arbitrary Data Types}},
-booktitle = {15th International Conference on Web Engineering (ICWE)},
+title = {{Yjs}: A Framework for Near Real-Time {P2P} Shared Editing on Arbitrary Data Types},
+booktitle = {15th International Conference on Web Engineering},
+series = {ICWE 2015},
 year = {2015},
-publisher = {Springer International Publishing},
 month = jun,
+publisher = {Springer LNCS volume 9114},
+pages = {675--678},
 doi = {10.1007/978-3-319-19890-3_55},
 url = {http://dbis.rwth-aachen.de/~derntl/papers/preprints/icwe2015-preprint.pdf}
 }
 
 @article{Lv2018CAD,
 author = {Lv, Xiao and He, Fazhi and Cheng, Yuan and Wu, Yiqi},
-title = {{A novel CRDT-based synchronization method for real-time collaborative CAD systems}},
+title = {A novel {CRDT}-based synchronization method for real-time collaborative {CAD} systems},
 journal = {Advanced Engineering Informatics},
 year = {2018},
+month = aug,
 volume = {38},
 pages = {381--391},
-month = aug,
 publisher = {Elsevier},
-doi = {10.1016/j.aei.2018.08.008},
-url = {https://linkinghub.elsevier.com/retrieve/pii/S147403461730486X}
+doi = {10.1016/j.aei.2018.08.008}
 }
 
 
@@ -875,15 +983,14 @@ url = {https://linkinghub.elsevier.com/retrieve/pii/S147403461730486X}
 
 @incollection{Zeller2014verification,
 author = {Zeller, Peter and Bieniusa, Annette and Poetzsch-Heffter, Arnd},
-title = {{Formal Specification and Verification of CRDTs}},
-booktitle = {FORTE 2014: Formal Techniques for Distributed Objects, Components, and Systems},
+title = {Formal Specification and Verification of {CRDTs}},
+booktitle = {34th IFIP International Conference on Formal Techniques for Distributed Objects, Components and Systems},
+series = {FORTE 2014},
 year = {2014},
+month = jun,
 pages = {33--48},
-publisher = {Springer Berlin Heidelberg},
-address = {Berlin, Heidelberg},
-annote = {Proves correctness of several state-based CRDTs using Isabelle},
+publisher = {Springer LNCS volume 8461},
 doi = {10.1007/978-3-662-43613-4_3},
-isbn = {978-3-662-43612-7},
 url = {https://softech.cs.uni-kl.de/homepage/publications/Zeller.Bieniusa.Poetzsch-Heffter.Forte2014.pdf}
 }
 
@@ -897,136 +1004,117 @@ number = {OOPSLA},
 month = oct,
 publisher = {ACM},
 doi = {10.1145/3133933},
-url = {https://arxiv.org/abs/1707.01747}
+eprint = {1707.01747}
 }
 
 @inproceedings{Burckhardt2014specification,
 author = {Burckhardt, Sebastian and Gotsman, Alexey and Yang, Hongseok and Zawirski, Marek},
-title = {{Replicated Data Types: Specification, Verification, Optimality}},
-booktitle = {Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
-series = {POPL '14},
+title = {Replicated Data Types: Specification, Verification, Optimality},
+booktitle = {41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+series = {POPL 2014},
 year = {2014},
-isbn = {978-1-4503-2544-8},
-location = {San Diego, California, USA},
-pages = {271--284},
-numpages = {14},
-url = {http://doi.acm.org/10.1145/2535838.2535848},
-doi = {10.1145/2535838.2535848},
-acmid = {2535848},
+month = jan,
 publisher = {ACM},
-address = {New York, NY, USA},
-keywords = {eventual consistency, replication, weak memory}
-} 
+pages = {271--284},
+doi = {10.1145/2535838.2535848},
+pdf = {http://software.imdea.org/~gotsman/papers/distrmm-popl14-ext.pdf}
+}
 
 @article{Kleppmann2018OpSets,
 author = {Kleppmann, Martin and Gomes, Victor B F and Mulligan, Dominic P and Beresford, Alastair R},
-title = {{OpSets: Sequential Specifications for Replicated Datatypes (Extended Version)}},
-journal = {arXiv},
-volume = {1805.04263},
+title = {{OpSets}: Sequential Specifications for Replicated Datatypes (Extended Version)},
 year = {2018},
 month = may,
+eprint = {1805.04263},
 url = {https://arxiv.org/abs/1805.04263}
 }
 
 @inproceedings{Gotsman2016CISE,
 author = {Gotsman, Alexey and Yang, Hongseok and Ferreira, Carla and Najafzadeh, Mahsa and Shapiro, Marc},
-title = {{'Cause I'm Strong Enough: Reasoning About Consistency Choices in Distributed Systems}},
-booktitle = {Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
-series = {POPL '16},
+title = {{'Cause I'm Strong Enough}: Reasoning About Consistency Choices in Distributed Systems},
+booktitle = {43rd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+series = {POPL 2016},
 year = {2016},
-isbn = {978-1-4503-3549-2},
-location = {St. Petersburg, FL, USA},
+month = jan,
+publisher = {ACM},
 pages = {371--384},
 numpages = {14},
-url = {http://software.imdea.org/~gotsman/papers/logic-popl16.pdf},
 doi = {10.1145/2837614.2837625},
-acmid = {2837625},
-publisher = {ACM},
-address = {New York, NY, USA},
-keywords = {Replication, causal consistency, integrity invariants}
-} 
+pdf = {http://software.imdea.org/~gotsman/papers/logic-popl16.pdf}
+}
 
 @inproceedings{Attiya2016text,
 author = {Attiya, Hagit and Burckhardt, Sebastian and Gotsman, Alexey and Morrison, Adam and Yang, Hongseok and Zawirski, Marek},
-title = {{Specification and Complexity of Collaborative Text Editing}},
-booktitle = {Proceedings of the 2016 ACM Symposium on Principles of Distributed Computing},
-series = {PODC '16},
+title = {Specification and Complexity of Collaborative Text Editing},
+booktitle = {ACM Symposium on Principles of Distributed Computing},
+series = {PODC 2016},
 year = {2016},
-isbn = {978-1-4503-3964-3},
-location = {Chicago, Illinois, USA},
-pages = {259--268},
-numpages = {10},
-url = {http://doi.acm.org/10.1145/2933057.2933090},
-doi = {10.1145/2933057.2933090},
-acmid = {2933090},
+month = jul,
 publisher = {ACM},
-address = {New York, NY, USA},
-keywords = {collaborative text editing, eventual consistency}
-} 
+pages = {259--268},
+doi = {10.1145/2933057.2933090},
+pdf = {http://www.cs.ox.ac.uk/people/hongseok.yang/paper/podc16-full.pdf}
+}
 
 % safety analysis
 @inproceedings{Li2014Sieve,
-author = {Cheng Li and Joao Leit{\~a}o and Allen Clement and Nuno Pregui{\c c}a and Rodrigo Rodrigues and Viktor Vafeiadis},
-title = {{Automating the Choice of Consistency Levels in Replicated Systems}},
-booktitle = {2014 USENIX Annual Technical Conference (USENIX ATC 14)},
+author = {Li, Cheng and Leit\~{a}o, Jo\~{a}o and Clement, Allen and Pregui{\c c}a, Nuno and Rodrigues, Rodrigo and Vafeiadis, Viktor},
+title = {Automating the Choice of Consistency Levels in Replicated Systems},
+booktitle = {USENIX Annual Technical Conference},
+series = {ATC 2014},
 year = {2014},
-isbn = {978-1-931971-10-2},
-address = {Philadelphia, PA},
+month = jun,
+publisher = {USENIX},
 pages = {281--292},
-url = {https://www.usenix.org/conference/atc14/technical-sessions/presentation/li_cheng_2},
-publisher = {USENIX Association}
+url = {https://www.usenix.org/conference/atc14/technical-sessions/presentation/li_cheng_2}
 }
 
 
 % Close relatives to CRDTs
 
-@techreport{Conway2012lattices,
-author = {Conway, Neil and Marczak, William R and Alvaro, Peter and Hellerstein, Joseph M and Maier, David},
-title = {{Logic and Lattices for Distributed Programming}},
+@inproceedings{Conway2012lattices,
+author = {Conway, Neil and Marczak, William R. and Alvaro, Peter and Hellerstein, Joseph M. and Maier, David},
+title = {Logic and Lattices for Distributed Programming},
+booktitle = {3rd ACM Symposium on Cloud Computing},
+series = {SoCC 2012},
 year = {2012},
-number = {UCB/EECS-2012-167},
-month = jun,
-institution = {Electrical Engineering and Computer Sciences, University of California at Berkeley},
-url = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-167.html}
+month = oct,
+publisher = {ACM},
+articleno = {1},
+pages = {1--14},
+doi = {10.1145/2391229.2391230},
+pdf = {https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-167.pdf}
 }
 
-@inproceedings{Burckhardt2012cloudtypes,
+@inproceedings{Burckhardt2012CloudTypes,
 author = {Burckhardt, Sebastian and F{\"a}hndrich, Manuel and Leijen, Daan and Wood, Benjamin P},
-title = {{Cloud Types for Eventual Consistency}},
-booktitle = {26th European Conference on Object-Oriented Programming (ECOOP)},
+title = {Cloud Types for Eventual Consistency},
+booktitle = {26th European Conference on Object-Oriented Programming},
+series = {ECOOP 2012},
 year = {2012},
-pages = {283--307},
-publisher = {Springer},
 month = jun,
+pages = {283--307},
+publisher = {Springer LNCS volume 7313},
 doi = {10.1007/978-3-642-31057-7_14},
-url = {http://research.microsoft.com/pubs/163842/final-with-color.pdf}
+url = {https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/final-with-color.pdf}
 }
 
 @inproceedings{Burckhardt2012transactions,
-author = {Sebastian Burckhardt and
-Daan Leijen and
-Manuel F{\"a}hndrich and
-Mooly Sagiv},
+author = {Burckhardt, Sebastian and Leijen, Daan and F{\"a}hndrich, Manuel and Sagiv, Mooly},
 title = {Eventually Consistent Transactions},
-booktitle = {21st European Symposium on Programming (ESOP)},
+booktitle = {21st European Symposium on Programming},
+series = {ESOP 2012},
 year = {2012},
-pages = {67-86},
-ee = {http://dx.doi.org/10.1007/978-3-642-28869-2_4},
-bibsource = {DBLP, http://dblp.uni-trier.de}
-}
-
-@TechReport{Burckhardt2013eventual,
-author = {Burckhardt, Sebastian and Gotsman, Alexey and Yang, Hongseok Yang},
-title = {{Understanding Eventual Consistency}},
-institution = {Microsoft Research},
-year = {2013},
-number = {MSR-TR-2013-39},
-url = {https://www.microsoft.com/en-us/research/publication/understanding-eventual-consistency/}
+month = mar,
+publisher = {Springer LNCS volume 7211},
+pages = {67--86},
+doi = {10.1007/978-3-642-28869-2_4},
+pdf = {https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ecr-esop2012.pdf}
 }
 
 @article{Kaki2019mergeable,
 author = {Kaki, Gowtham and Priya, Swarn and Sivaramakrishnan, KC and Jagannathan, Suresh},
-title = {{Mergeable Replicated Data Types}},
+title = {Mergeable Replicated Data Types},
 journal = {Proceedings of the ACM on Programming Languages (PACMPL)},
 year = {2019},
 volume = {3},
@@ -1039,9 +1127,10 @@ url = {https://gowthamk.github.io/docs/mrdt.pdf}
 
 @inproceedings{Kuper2014LVars,
 author = {Kuper, Lindsey and Newton, Ryan R},
-title = {{Joining Forces: Toward a Unified Account of LVars and Convergent Replicated Data Types}},
+title = {Joining Forces: Toward a Unified Account of {LVars} and Convergent Replicated Data Types},
 booktitle = {5th Workshop on Determinism and Correctness in Parallel Programming},
+series = {WoDet 2014},
 year = {2014},
 month = mar,
-url = {http://www.cs.indiana.edu/~lkuper/papers/joining-wodet14.pdf}
+url = {http://wodet.cs.washington.edu/wp-content/uploads/2014/02/wodet2014-final1.pdf}
 }
