@@ -42,6 +42,10 @@ collaborative applications and replicated storage systems:
   provides a JavaScript implementation of counter, set, map, and list CRDTs, and
   a WebRTC-based networking layer.
 
+* [Yorkie](https://yorkie.dev/) ([GitHub](https://github.com/yorkie-team/yorkie))
+  is a framework for building collaborative applications, using MongoDB
+  for data storage.
+
 * The [Akka actor framework](https://akka.io/) includes implementations of
   [several CRDTs](https://doc.akka.io/docs/akka/2.6.3/typed/distributed-data.html#replicated-data-types).
 
