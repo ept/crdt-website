@@ -9,6 +9,81 @@ title: CRDT Papers
      bibtex2html --dl --nodoc --title "CRDT Papers" papers.bib  -->
 
 <h1>CRDT Papers</h1>
+<p>This page contains a comprehensive list of research publications on CRDTs.
+The data is available <a href="papers_bib.html">in BibTeX format</a>.
+If you have anything to add or correct, please
+<a href="https://github.com/ept/crdt-website/edit/master/papers.bib">edit the file on GitHub</a>
+and send us a pull request.</p>
+
+<p><strong>Select checkboxes to filter papers by topic:</strong></p>
+<form id="papers-filter">
+    <input type="checkbox" id="introduction" name="introduction">
+    <label for="introduction">Introductions to CRDTs</label><br>
+
+    <input type="checkbox" id="systems" name="systems">
+    <label for="systems">Systems and apps using CRDTs</label><br>
+
+    <input type="checkbox" id="operation-based" name="operation-based">
+    <label for="operation-based">Operation-based CRDTs</label><br>
+
+    <input type="checkbox" id="state-based" name="state-based">
+    <label for="state-based">State-based and Delta CRDTs</label><br>
+
+    <input type="checkbox" id="counters" name="counters">
+    <label for="counters">Counter CRDTs</label><br>
+
+    <input type="checkbox" id="text-editing" name="text-editing">
+    <label for="text-editing">Text editing/sequence CRDTs</label><br>
+
+    <input type="checkbox" id="undo" name="undo">
+    <label for="undo">Undoing operations</label><br>
+
+    <input type="checkbox" id="trees" name="trees">
+    <label for="trees">CRDTs for trees</label><br>
+
+    <input type="checkbox" id="computation" name="computation">
+    <label for="computation">Computation/programming</label><br>
+
+    <input type="checkbox" id="composition" name="composition">
+    <label for="composition">Composing CRDTs</label><br>
+
+    <input type="checkbox" id="verification" name="verification">
+    <label for="verification">Specification and verification</label><br>
+
+    <input type="checkbox" id="crdt-related" name="crdt-related">
+    <label for="crdt-related">Close relatives of CRDTs</label><br>
+</form>
+
+<script>
+const checkboxes = document.querySelectorAll('form#papers-filter input[type="checkbox"]')
+
+for (let checkbox of checkboxes) {
+    checkbox.addEventListener('change', () => {
+        let selected = []
+        for (let cb of checkboxes) {
+            if (cb.checked) selected.push(cb.name)
+        }
+
+        const regex = new RegExp(selected.join('|'))
+
+        for (let element of document.querySelectorAll('div.td-content > dl > dd')) {
+            let keywords = element.querySelector('blockquote')
+            let previous = element
+            do {
+                previous = previous.previousSibling
+            } while (previous.nodeType !== Node.ELEMENT_NODE || previous.tagName !== 'DT')
+
+            if (selected.length === 0 || (keywords && regex.test(keywords.innerText))) {
+                previous.className = 'selected'
+            } else {
+                previous.className = 'unselected'
+            }
+        }
+    })
+}
+</script>
+
+<h2>Paper List</h2>
 <dl>
 
 <dt>
@@ -23,6 +98,9 @@ Marc Shapiro, Nuno Pregui&ccedil;a, Carlos Baquero, and Marek Zawirski.
 [&nbsp;<a href="papers_bib.html#Shapiro2011CRDTs">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-642-24550-3_29">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/Marek.Zawirski/papers/RR-7687.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: introduction
+</font></blockquote>
 
 </dd>
 
@@ -37,6 +115,9 @@ Marc Shapiro, Nuno Pregui&ccedil;a, Carlos Baquero, and Marek Zawirski.
  Research Report 7506, INRIA, January 2011.
 [&nbsp;<a href="papers_bib.html#Shapiro2011comprehensive">bib</a>&nbsp;| 
 <a href="http://hal.inria.fr/inria-00555588/">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: introduction
+</font></blockquote>
 
 </dd>
 
@@ -51,6 +132,9 @@ Mihai Letia, Nuno Pregui&ccedil;a, and Marc Shapiro.
 [&nbsp;<a href="papers_bib.html#Letia2010consistency">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/1773912.1773921">DOI</a>&nbsp;| 
 <a href="http://asc.di.fct.unl.pt/~nmp/pubs/osr-2010.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: introduction
+</font></blockquote>
 
 </dd>
 
@@ -66,6 +150,9 @@ Sebastian Burckhardt.
 [&nbsp;<a href="papers_bib.html#Burckhardt2014principles">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1561/2500000011">DOI</a>&nbsp;| 
 <a href="https://www.nowpublishers.com/article/Download/PGL-011">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: introduction
+</font></blockquote>
 
 </dd>
 
@@ -80,6 +167,9 @@ Nuno Pregui&ccedil;a, Carlos Baquero, and Marc Shapiro.
 [&nbsp;<a href="papers_bib.html#Preguica2018encyclopedia">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-319-63962-8_185-1">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1805.06358">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: introduction
+</font></blockquote>
 
 </dd>
 
@@ -94,6 +184,9 @@ Nuno Pregui&ccedil;a.
 [&nbsp;<a href="papers_bib.html#Preguica2018crdts">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1806.10254">arXiv</a>&nbsp;| 
 <a href="https://arxiv.org/abs/1806.10254">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: introduction
+</font></blockquote>
 
 </dd>
 
@@ -111,6 +204,9 @@ Carlos Baquero, Paulo&nbsp;S&eacute;rgio Almeida, and Ali Shoker.
 [&nbsp;<a href="papers_bib.html#Baquero2014opbased">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-662-43352-2_11">DOI</a>&nbsp;| 
 <a href="http://gsd.di.uminho.pt/members/cbm/ps/crdtOpsMiddleware.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: operation-based
+</font></blockquote>
 
 </dd>
 
@@ -125,6 +221,9 @@ Carlos Baquero, Paulo&nbsp;S&eacute;rgio Almeida, and Ali Shoker.
 [&nbsp;<a href="papers_bib.html#Baquero2017pure">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1710.04469">arXiv</a>&nbsp;| 
 <a href="https://arxiv.org/abs/1710.04469">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: operation-based
+</font></blockquote>
 
 </dd>
 
@@ -138,6 +237,9 @@ Carlos Baquero, Paulo&nbsp;S&eacute;rgio Almeida, Alcino Cunha, and Carla Ferrei
  Technical report, HASLab, INESC TEC, May 2015.
 [&nbsp;<a href="papers_bib.html#Baquero2015composition">bib</a>&nbsp;| 
 <a href="http://haslab.uminho.pt/cbm/files/crdtcompositionreport.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: state-based
+</font></blockquote>
 
 </dd>
 
@@ -153,6 +255,9 @@ Paulo&nbsp;S&eacute;rgio Almeida, Ali Shoker, and Carlos Baquero.
 [&nbsp;<a href="papers_bib.html#Almeida2015delta">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-319-26850-7_5">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1410.2803">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: state-based
+</font></blockquote>
 
 </dd>
 
@@ -168,6 +273,9 @@ Albert van&nbsp;der Linde, Jo&atilde;o Leit&atilde;o, and Nuno Pregui&ccedil;a.
 [&nbsp;<a href="papers_bib.html#vanderLinde06delta">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2911151.2911163">DOI</a>&nbsp;| 
 <a href="https://novasys.di.fct.unl.pt/~alinde/publications/a12-van_der_linde.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: state-based
+</font></blockquote>
 
 </dd>
 
@@ -183,21 +291,27 @@ Paulo&nbsp;S&eacute;rgio Almeida, Ali Shoker, and Carlos Baquero.
 [&nbsp;<a href="papers_bib.html#Almeida2018delta">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1016/j.jpdc.2017.08.003">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1603.01529">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: state-based
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Yu2020undo">13</a>]
+[<a name="Yu2019undo">13</a>]
 </dt>
 <dd>
 Weihai Yu, Victorien Elvinger, and Claudia-Lavinia Ignat.
  A generic undo support for state-based CRDTs.
  In <em>23rd International Conference on Principles of Distributed
-  Systems ()</em>, OPODIS 2019. Dagstuhl LIPIcs, November 2019.
-[&nbsp;<a href="papers_bib.html#Yu2020undo">bib</a>&nbsp;| 
+  Systems</em>, OPODIS 2019. Dagstuhl LIPIcs, November 2019.
+[&nbsp;<a href="papers_bib.html#Yu2019undo">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.4230/LIPIcs.OPODIS.2019.14">DOI</a>&nbsp;| 
 <a href="https://drops.dagstuhl.de/opus/volltexte/2020/11800/pdf/LIPIcs-OPODIS-2019-14.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: state-based, undo
+</font></blockquote>
 
 </dd>
 
@@ -213,6 +327,9 @@ Vitor Enes, Paulo&nbsp;S&eacute;rgio Almeida, Carlos Baquero, and Jo&atilde;o Le
 [&nbsp;<a href="papers_bib.html#Enes2019synchronization">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/ICDE.2019.00022">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1803.02750">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: state-based
+</font></blockquote>
 
 </dd>
 
@@ -228,6 +345,9 @@ G&eacute;rald Oster, Pascal Urso, Pascal Molli, and Abdessamad Imine.
 [&nbsp;<a href="papers_bib.html#Oster2006WOOT">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/1180875.1180916">DOI</a>&nbsp;| 
 <a href="https://hal.inria.fr/file/index/docid/108523/filename/OsterCSCW06.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, WOOT
+</font></blockquote>
 
 </dd>
 
@@ -244,6 +364,9 @@ St&eacute;phane Weiss, Pascal Urso, and Pascal Molli.
 [&nbsp;<a href="papers_bib.html#Weiss2007Wooki">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-540-76993-4_42">DOI</a>&nbsp;| 
 <a href="http://pagesperso.lina.univ-nantes.fr/~molli-p/pmwiki/uploads/Main/weiss07.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, WOOT
+</font></blockquote>
 
 </dd>
 
@@ -257,6 +380,9 @@ G&eacute;rald Oster, Pascal Urso, Pascal Molli, and Abdessamad Imine.
  Research Report RR-5580, INRIA, May 2005.
 [&nbsp;<a href="papers_bib.html#Oster2005WOOT">bib</a>&nbsp;| 
 <a href="https://hal.inria.fr/inria-00071240/document">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, WOOT
+</font></blockquote>
 
 </dd>
 
@@ -272,6 +398,9 @@ Nuno Pregui&ccedil;a, Joan&nbsp;Manuel Marques, Marc Shapiro, and Mihai Letia.
 [&nbsp;<a href="papers_bib.html#Preguica2009Treedoc">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/ICDCS.2009.20">DOI</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/ICDCS.2009.20">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, Treedoc
+</font></blockquote>
 
 </dd>
 
@@ -288,6 +417,9 @@ Stephane Weiss, Pascal Urso, and Pascal Molli.
 [&nbsp;<a href="papers_bib.html#Weiss2009Logoot">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/ICDCS.2009.75">DOI</a>&nbsp;| 
 <a href="https://hal.inria.fr/inria-00432368/document">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, Logoot
+</font></blockquote>
 
 </dd>
 
@@ -304,6 +436,9 @@ Stephane Weiss, Pascal Urso, and Pascal Molli.
 [&nbsp;<a href="papers_bib.html#Weiss2010LogootUndo">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/TPDS.2009.173">DOI</a>&nbsp;| 
 <a href="https://www.researchgate.net/profile/Pascal_Urso/publication/233882440_Logoot-Undo_Distributed_Collaborative_Editing_System/links/0fcfd50c84f5194937000000.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, Logoot, undo
+</font></blockquote>
 
 </dd>
 
@@ -320,6 +455,9 @@ Hyun-Gul Roh, Myeongjae Jeon, Jin-Soo Kim, and Joonwon Lee.
 [&nbsp;<a href="papers_bib.html#Roh2011RGA">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1016/j.jpdc.2010.12.006">DOI</a>&nbsp;| 
 <a href="http://csl.snu.ac.kr/papers/jpdc11.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, RGA
+</font></blockquote>
 
 </dd>
 
@@ -336,6 +474,9 @@ Brice N&eacute;delec, Pascal Molli, Achour Mostefaoui, and Emmanuel Desmontils.
 [&nbsp;<a href="papers_bib.html#Nedelec2013LSEQ">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2494266.2494278">DOI</a>&nbsp;| 
 <a href="https://hal.archives-ouvertes.fr/file/index/docid/921633/filename/fp025-nedelec.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, LSEQ
+</font></blockquote>
 
 </dd>
 
@@ -351,6 +492,9 @@ Brice N&eacute;delec, Pascal Molli, and Achour Mostefaoui.
 [&nbsp;<a href="papers_bib.html#Nedelec2016CRATE">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2872518.2890539">DOI</a>&nbsp;| 
 <a href="https://hal.archives-ouvertes.fr/hal-01303333">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, LSEQ
+</font></blockquote>
 
 </dd>
 
@@ -367,6 +511,9 @@ Mehdi Ahmed-Nacer, Claudia-Lavinia Ignat, G&eacute;rald Oster, Hyun-Gul Roh, and
 [&nbsp;<a href="papers_bib.html#AhmedNacer2011evaluating">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2034691.2034717">DOI</a>&nbsp;| 
 <a href="https://hal.inria.fr/docs/00/62/95/03/PDF/doce63-ahmednacer.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing
+</font></blockquote>
 
 </dd>
 
@@ -382,6 +529,9 @@ Lo&iuml;ck Briot, Pascal Urso, and Marc Shapiro.
 [&nbsp;<a href="papers_bib.html#Briot2016group">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2957276.2957300">DOI</a>&nbsp;| 
 <a href="https://hal.inria.fr/hal-01343941/document">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, RGASplit
+</font></blockquote>
 
 </dd>
 
@@ -398,6 +548,9 @@ Weihai Yu, Luc Andr&eacute;, and Claudia-Lavinia Ignat.
 [&nbsp;<a href="papers_bib.html#Yu2015undo">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-319-19129-4_16">DOI</a>&nbsp;| 
 <a href="https://members.loria.fr/CIgnat/files/pdf/YuDAIS15.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, undo
+</font></blockquote>
 
 </dd>
 
@@ -413,6 +566,9 @@ Xiao Lv, Fazhi He, Weiwei Cai, and Yuan Cheng.
   Cooperative Work in Design</em>, CSCWD 2016, pages 45--50. IEEE, September 2016.
 [&nbsp;<a href="papers_bib.html#Lv2016stringbased">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/CSCWD.2016.7565961">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing
+</font></blockquote>
 
 </dd>
 
@@ -429,6 +585,9 @@ Mehdi Ahmed-Nacer, Pascal Urso, Valter Balegas, and Nuno Pregui&ccedil;a.
 [&nbsp;<a href="papers_bib.html#AhmedNacer2013concurrency">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.4108/icst.collaboratecom.2013.254113">DOI</a>&nbsp;| 
 <a href="http://asc.di.fct.unl.pt/~nmp/pubs/collaboratecom-2013.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing
+</font></blockquote>
 
 </dd>
 
@@ -444,6 +603,9 @@ Petru Nicolaescu, Kevin Jahns, Michael Derntl, and Ralf Klamma.
 [&nbsp;<a href="papers_bib.html#Nicolaescu2016YATA">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2957276.2957310">DOI</a>&nbsp;| 
 <a href="https://www.researchgate.net/publication/310212186_Near_Real-Time_Peer-to-Peer_Shared_Editing_on_Extensible_Data_Types">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, Yjs
+</font></blockquote>
 
 </dd>
 
@@ -459,6 +621,9 @@ St&eacute;phane Martin, Pascal Urso, and St&eacute;phane Weiss.
 [&nbsp;<a href="papers_bib.html#Martin2010xml">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-642-16934-2_37">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1010.3615">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: trees, undo
+</font></blockquote>
 
 </dd>
 
@@ -473,6 +638,9 @@ Mehdi Ahmed-Nacer, St&eacute;phane Martin, and Pascal Urso.
 [&nbsp;<a href="papers_bib.html#AhmedNacer2012filesystem">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1207.5990">arXiv</a>&nbsp;| 
 <a href="https://hal.inria.fr/hal-00720681/">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: trees
+</font></blockquote>
 
 </dd>
 
@@ -488,6 +656,9 @@ Martin Kleppmann and Alastair&nbsp;R Beresford.
 [&nbsp;<a href="papers_bib.html#Kleppmann2017json">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/TPDS.2017.2697382">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1608.03960">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: trees
+</font></blockquote>
 
 </dd>
 
@@ -504,6 +675,9 @@ Vinh Tao, Marc Shapiro, and Vianney Rancurel.
 [&nbsp;<a href="papers_bib.html#Tao2015filesystems">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2757667.2757683">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/Marc.Shapiro/papers/geodistr-FS-Systor-2015.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: trees
+</font></blockquote>
 
 </dd>
 
@@ -520,6 +694,9 @@ Mahsa Najafzadeh, Marc Shapiro, and Patrick Eugster.
 [&nbsp;<a href="papers_bib.html#Najafzadeh2018filesystem">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-319-73721-8_17">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/Marc.Shapiro/papers/VMCAI-2018-filesys.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: trees
+</font></blockquote>
 
 </dd>
 
@@ -535,6 +712,9 @@ Russell Brown, Sean Cribbs, Christopher Meiklejohn, and Sam Elliott.
 [&nbsp;<a href="papers_bib.html#Brown2014Riak">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2596631.2596633">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/syncfree/attachments/article/46/WP3-report.pdf#page=31">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems, composition
+</font></blockquote>
 
 </dd>
 
@@ -551,6 +731,9 @@ Paulo&nbsp;S&eacute;rgio Almeida, Ali Shoker, and Carlos Baquero.
 [&nbsp;<a href="papers_bib.html#Almeida2014decomposition">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2596631.2596634">DOI</a>&nbsp;| 
 <a href="https://core.ac.uk/download/pdf/154274611.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: composition
+</font></blockquote>
 
 </dd>
 
@@ -566,6 +749,9 @@ Mehdi Ahmed-Nacer, Pascal Urso, Valter Balegas, and Nuno Pergui&ccedil;a.
 [&nbsp;<a href="papers_bib.html#AhmedNacer2014merging">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2596631.2596636">DOI</a>&nbsp;| 
 <a href="https://hal.inria.fr/file/index/docid/957167/filename/main.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing
+</font></blockquote>
 
 </dd>
 
@@ -582,6 +768,9 @@ Christopher Meiklejohn.
 [&nbsp;<a href="papers_bib.html#Meiklejohn2014composability">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2596631.2596635">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/syncfree/attachments/article/46/WP3-report.pdf#page=34">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: composition
+</font></blockquote>
 
 </dd>
 
@@ -597,6 +786,9 @@ Victor Grishchenko.
 [&nbsp;<a href="papers_bib.html#Grishchenko2014oplogs">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2596631.2596641">DOI</a>&nbsp;| 
 <a href="http://www.ds.ewi.tudelft.nl/~victor/polo.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, operation-based
+</font></blockquote>
 
 </dd>
 
@@ -612,6 +804,9 @@ David Navalho, S&eacute;rgio Duarte, and Nuno Pregui&ccedil;a.
 [&nbsp;<a href="papers_bib.html#Navalho2015computations">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2745947.2745948">DOI</a>&nbsp;| 
 <a href="http://asc.di.fct.unl.pt/~nmp/pubs/papoc-2015-1.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: computation
+</font></blockquote>
 
 </dd>
 
@@ -628,6 +823,9 @@ Brandon Holt, Irene Zhang, Dan Ports, Mark Oskin, and Luis Ceze.
 [&nbsp;<a href="papers_bib.html#Holt2015claret">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2745947.2745951">DOI</a>&nbsp;| 
 <a href="http://irenezhang.net/papers/claret-papoc15.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: transactions, systems
+</font></blockquote>
 
 </dd>
 
@@ -643,6 +841,9 @@ Santiago&nbsp;J Casti&ntilde;eira and Annette Bieniusa.
   Distributed Data</em>, PaPoC 2015. ACM, April 2015.
 [&nbsp;<a href="papers_bib.html#Castineira2015offline">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2745947.2745952">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems
+</font></blockquote>
 
 </dd>
 
@@ -659,6 +860,9 @@ Christopher Meiklejohn and Peter Van&nbsp;Roy.
 [&nbsp;<a href="papers_bib.html#10.1145/2745947.2745954">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2745947.2745954">DOI</a>&nbsp;| 
 <a href="https://www.info.ucl.ac.be/~pvr/papoc-2015-lasp-abstract.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: computation
+</font></blockquote>
 
 </dd>
 
@@ -674,6 +878,9 @@ Russell Brown, Zeeshan Lakhani, and Paul Place.
 [&nbsp;<a href="papers_bib.html#10.1145/2911151.2911156">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2911151.2911156">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1605.06424">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems, composition
+</font></blockquote>
 
 </dd>
 
@@ -691,6 +898,9 @@ Marek Zawirski, Carlos Baquero, Annette Bieniusa, Nuno Pregui&ccedil;a, and Marc
 <a href="http://dx.doi.org/10.1145/2911151.2911157">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1511.05010">arXiv</a>&nbsp;| 
 <a href="https://core.ac.uk/download/pdf/154274593.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: state-based
+</font></blockquote>
 
 </dd>
 
@@ -706,6 +916,9 @@ Carlos Baquero, Paulo&nbsp;S&eacute;rgio Almeida, and Carl Lerche.
 [&nbsp;<a href="papers_bib.html#Baquero2016embedded">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2911151.2911159">DOI</a>&nbsp;| 
 <a href="http://haslab.uminho.pt/cbm/files/abstractcounterpapocfinal.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: composition, counters
+</font></blockquote>
 
 </dd>
 
@@ -720,6 +933,9 @@ Christian Weilbach, Konrad K&uuml;hne, and Annette Bieniusa.
   for Distributed Data</em>, PaPoC 2016. ACM, April 2016.
 [&nbsp;<a href="papers_bib.html#Weilbach2016cdvcs">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2911151.2911154">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems, Replikativ
+</font></blockquote>
 
 </dd>
 
@@ -735,6 +951,9 @@ Deepthi&nbsp;Devaki Akkoorath and Annette Bieniusa.
 [&nbsp;<a href="papers_bib.html#Akkoorath2016objects">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2911151.2911158">DOI</a>&nbsp;| 
 <a href="https://softech.cs.uni-kl.de/homepage/publications/Akkoorath.Bieniusa2016.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: shared-memory concurrency
+</font></blockquote>
 
 </dd>
 
@@ -750,6 +969,9 @@ Georges Younes, Paulo&nbsp;S&eacute;rgio Almeida, and Carlos Baquero.
 [&nbsp;<a href="papers_bib.html#Younes2017resettable">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3064889.3064892">DOI</a>&nbsp;| 
 <a href="https://haslab.uminho.pt/cbm/files/a3-younes.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: counters
+</font></blockquote>
 
 </dd>
 
@@ -765,6 +987,9 @@ Peter Zeller.
 [&nbsp;<a href="papers_bib.html#Zeller2017Repliss">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3064889.3064893">DOI</a>&nbsp;| 
 <a href="https://dl.acm.org/authorize?N37605">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: testing, verification
+</font></blockquote>
 
 </dd>
 
@@ -781,6 +1006,9 @@ Vitor Enes, Carlos Baquero, Paulo&nbsp;S&eacute;rgio Almeida, and Jo&atilde;o Le
 [&nbsp;<a href="papers_bib.html#Enes2017borrowing">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3064889.3064894">DOI</a>&nbsp;| 
 <a href="https://haslab.uminho.pt/sites/default/files/cbm/files/a5-enes.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: counters
+</font></blockquote>
 
 </dd>
 
@@ -796,6 +1024,9 @@ Marc Shapiro, Annette Bieniusa, Peter Zeller, and Gustavo Petri.
 [&nbsp;<a href="papers_bib.html#Shapiro2018referential">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3194261.3194262">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/Marc.Shapiro/papers/causal-refs-papoc-2018-04.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: causal-consistency
+</font></blockquote>
 
 </dd>
 
@@ -811,6 +1042,9 @@ Jim Bauwens, Florian Myter, and Elisa&nbsp;Gonzalez Boix.
 [&nbsp;<a href="papers_bib.html#Bauwens2018constraining">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3194261.3194263">DOI</a>&nbsp;| 
 <a href="http://myter.be/papers/papoc18.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: counters
+</font></blockquote>
 
 </dd>
 
@@ -826,6 +1060,9 @@ Adriaan Leijnse, Paulo&nbsp;S&eacute;rgio Almeida, and Carlos Baquero.
 [&nbsp;<a href="papers_bib.html#Leijnse2019higherorder">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3301419.3323971">DOI</a>&nbsp;| 
 <a href="https://repositorio.inesctec.pt/bitstream/123456789/10536/1/P-00Q-WJM.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: composition
+</font></blockquote>
 
 </dd>
 
@@ -842,6 +1079,9 @@ Martin Kleppmann, Victor B.&nbsp;F. Gomes, Dominic&nbsp;P. Mulligan, and Alastai
 [&nbsp;<a href="papers_bib.html#Kleppmann2019interleaving">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3301419.3323972">DOI</a>&nbsp;| 
 <a href="https://martin.kleppmann.com/papers/interleaving-papoc19.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing
+</font></blockquote>
 
 </dd>
 
@@ -856,12 +1096,15 @@ David Mealha, Nuno Pregui&ccedil;a, Maria&nbsp;Cecilia Gomes, and Jo&atilde;o Le
   Distributed Data</em>, PaPoC 2019. ACM, March 2019.
 [&nbsp;<a href="papers_bib.html#Mealha2019cloudEdge">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3301419.3323973">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="10.1145/3301419.3323974">57</a>]
+[<a name="DePorre2019generic">57</a>]
 </dt>
 <dd>
 Kevin De&nbsp;Porre, Florian Myter, Christophe De&nbsp;Troyer, Christophe Scholliers,
@@ -869,9 +1112,12 @@ Kevin De&nbsp;Porre, Florian Myter, Christophe De&nbsp;Troyer, Christophe Scholl
  A generic replicated data type for strong eventual consistency.
  In <em>6th Workshop on Principles and Practice of Consistency for
   Distributed Data</em>, PaPoC 2019. ACM, March 2019.
-[&nbsp;<a href="papers_bib.html#10.1145/3301419.3323974">bib</a>&nbsp;| 
+[&nbsp;<a href="papers_bib.html#DePorre2019generic">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3301419.3323974">DOI</a>&nbsp;| 
 <a href="http://soft.vub.ac.be/Publications/2019/vub-soft-tr-19-08.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, operation-based
+</font></blockquote>
 
 </dd>
 
@@ -889,6 +1135,9 @@ Nuno Pregui&ccedil;a, Marek Zawirski, Annette Bieniusa, S&eacute;rgio Duarte, Va
 [&nbsp;<a href="papers_bib.html#Preguica2014SwiftCloud">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/SRDSW.2014.33">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1310.3107">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems, SwiftCloud
+</font></blockquote>
 
 </dd>
 
@@ -904,6 +1153,9 @@ Iwan Briquemont, Manuel Bravo, Zhongmiao Li, and Peter&nbsp;Van Roy.
 [&nbsp;<a href="papers_bib.html#Briquemont2015partial">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/CloudCom.2015.81">DOI</a>&nbsp;| 
 <a href="https://dial.uclouvain.be/pr/boreal/object/boreal%3A214300/datastream/PDF_01/view">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems, SwiftCloud
+</font></blockquote>
 
 </dd>
 
@@ -919,6 +1171,9 @@ Christopher Meiklejohn and Peter Van&nbsp;Roy.
 [&nbsp;<a href="papers_bib.html#Meiklejohn2015Lasp">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2790449.2790525">DOI</a>&nbsp;| 
 <a href="https://www.info.ucl.ac.be/~pvr/ppdp-2015-cr.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: computation, systems
+</font></blockquote>
 
 </dd>
 
@@ -935,6 +1190,9 @@ Deepthi&nbsp;Devaki Akkoorath, Alejandro&nbsp;Z. Tomsic, Manuel Bravo, Zhongmiao
 [&nbsp;<a href="papers_bib.html#Akkoorath2016Cure">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/ICDCS.2016.98">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/Marc.Shapiro/papers/Cure-final-ICDCS16.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems
+</font></blockquote>
 
 </dd>
 
@@ -950,6 +1208,9 @@ Tim Jungnickel and Lennart Oldenburg.
 [&nbsp;<a href="papers_bib.html#Jungnickel2017imap">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3064889.3064891">DOI</a>&nbsp;| 
 <a href="http://www.redaktion.tu-berlin.de/fileadmin/a34331500/paper/papoc17-jungnickel.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems
+</font></blockquote>
 
 </dd>
 
@@ -966,6 +1227,9 @@ Badrish Chandramouli, Guna Prasaad, Donald Kossmann, Justin Levandoski, James
 [&nbsp;<a href="papers_bib.html#Chandramouli2018Faster">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3183713.3196898">DOI</a>&nbsp;| 
 <a href="https://www.microsoft.com/en-us/research/uploads/prod/2018/03/faster-sigmod18.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems
+</font></blockquote>
 
 </dd>
 
@@ -983,12 +1247,34 @@ Weihai Yu, G&eacute;rald Oster, and Claudia-Lavinia Ignat.
 [&nbsp;<a href="papers_bib.html#Yu2017disturbance">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-319-66805-5_5">DOI</a>&nbsp;| 
 <a href="https://hal.inria.fr/hal-01652656/document">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems, usability
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Almeida2013counters">65</a>]
+[<a name="Kleppmann2019localfirst">65</a>]
+</dt>
+<dd>
+Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, and Mark McGranaghan.
+ Local-first software: You own your data, in spite of the cloud.
+ In <em>ACM SIGPLAN International Symposium on New Ideas, New
+  Paradigms, and Reflections on Programming and Software</em>, Onward! 2019, pages
+  154--178. ACM, October 2019.
+[&nbsp;<a href="papers_bib.html#Kleppmann2019localfirst">bib</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1145/3359591.3359737">DOI</a>&nbsp;| 
+<a href="https://martin.kleppmann.com/papers/local-first.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems, usability
+</font></blockquote>
+
+</dd>
+
+
+<dt>
+[<a name="Almeida2013counters">66</a>]
 </dt>
 <dd>
 Paulo&nbsp;S&eacute;rgio Almeida and Carlos Baquero.
@@ -997,12 +1283,15 @@ Paulo&nbsp;S&eacute;rgio Almeida and Carlos Baquero.
 [&nbsp;<a href="papers_bib.html#Almeida2013counters">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1307.3207">arXiv</a>&nbsp;| 
 <a href="https://arxiv.org/abs/1307.3207">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: counters
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Enes2017sync">66</a>]
+[<a name="Enes2017sync">67</a>]
 </dt>
 <dd>
 Vitor Enes.
@@ -1010,12 +1299,15 @@ Vitor Enes.
  Master's thesis, Universidade do Minho, November 2017.
 [&nbsp;<a href="papers_bib.html#Enes2017sync">bib</a>&nbsp;| 
 <a href="https://vitorenes.org/page/other/msc-thesis.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: state-based
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Balegas2015invariants">67</a>]
+[<a name="Balegas2015invariants">68</a>]
 </dt>
 <dd>
 Valter Balegas, Diogo Serra, S&eacute;rgio Duarte, Carla Ferreira, Marc Shapiro,
@@ -1027,12 +1319,15 @@ Valter Balegas, Diogo Serra, S&eacute;rgio Duarte, Carla Ferreira, Marc Shapiro,
 [&nbsp;<a href="papers_bib.html#Balegas2015invariants">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1109/SRDS.2015.32">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1503.09052">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: counters
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Navalho2013stream">68</a>]
+[<a name="Navalho2013stream">69</a>]
 </dt>
 <dd>
 David Navalho, S&eacute;rgio Duarte, Nuno Pregui&ccedil;a, and Marc Shapiro.
@@ -1043,12 +1338,15 @@ David Navalho, S&eacute;rgio Duarte, Nuno Pregui&ccedil;a, and Marc Shapiro.
 [&nbsp;<a href="papers_bib.html#Navalho2013stream">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2460756.2460762">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/Marc.Shapiro/papers/computational-CRDTs-CloudDP-2013.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: computation
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Bieniusa2012sets">69</a>]
+[<a name="Bieniusa2012sets">70</a>]
 </dt>
 <dd>
 Annette Bieniusa, Marek Zawirski, Nuno Pregui&ccedil;a, Marc Shapiro, Carlos
@@ -1060,12 +1358,15 @@ Annette Bieniusa, Marek Zawirski, Nuno Pregui&ccedil;a, Marc Shapiro, Carlos
 [&nbsp;<a href="papers_bib.html#Bieniusa2012sets">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-642-33651-5_48">DOI</a>&nbsp;| 
 <a href="https://pages.lip6.fr/Marc.Shapiro/papers/semantics-sets-BA-DISC-2012.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: set-crdt, specification
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Bieniusa2012optimized">70</a>]
+[<a name="Bieniusa2012optimized">71</a>]
 </dt>
 <dd>
 Annette Bieniusa, Marek Zawirski, Nuno Pregui&ccedil;a, Marc Shapiro, Carlos
@@ -1075,12 +1376,15 @@ Annette Bieniusa, Marek Zawirski, Nuno Pregui&ccedil;a, Marc Shapiro, Carlos
 [&nbsp;<a href="papers_bib.html#Bieniusa2012optimized">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1210.3368">arXiv</a>&nbsp;| 
 <a href="http://hal.inria.fr/hal-00738680/PDF/RR-8083.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: set-crdt
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Nicolaescu2015Yjs">71</a>]
+[<a name="Nicolaescu2015Yjs">72</a>]
 </dt>
 <dd>
 Petru Nicolaescu, Kevin Jahns, Michael Derntl, and Ralf Klamma.
@@ -1091,12 +1395,15 @@ Petru Nicolaescu, Kevin Jahns, Michael Derntl, and Ralf Klamma.
 [&nbsp;<a href="papers_bib.html#Nicolaescu2015Yjs">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-319-19890-3_55">DOI</a>&nbsp;| 
 <a href="http://dbis.rwth-aachen.de/~derntl/papers/preprints/icwe2015-preprint.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems, Yjs
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Lv2018CAD">72</a>]
+[<a name="Lv2018CAD">73</a>]
 </dt>
 <dd>
 Xiao Lv, Fazhi He, Yuan Cheng, and Yiqi Wu.
@@ -1105,12 +1412,15 @@ Xiao Lv, Fazhi He, Yuan Cheng, and Yiqi Wu.
  <em>Advanced Engineering Informatics</em>, 38:381--391, August 2018.
 [&nbsp;<a href="papers_bib.html#Lv2018CAD">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1016/j.aei.2018.08.008">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: systems
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Zeller2014verification">73</a>]
+[<a name="Zeller2014verification">74</a>]
 </dt>
 <dd>
 Peter Zeller, Annette Bieniusa, and Arnd Poetzsch-Heffter.
@@ -1121,12 +1431,15 @@ Peter Zeller, Annette Bieniusa, and Arnd Poetzsch-Heffter.
 [&nbsp;<a href="papers_bib.html#Zeller2014verification">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-662-43613-4_3">DOI</a>&nbsp;| 
 <a href="https://softech.cs.uni-kl.de/homepage/publications/Zeller.Bieniusa.Poetzsch-Heffter.Forte2014.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: specification, verification
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Gomes2017verifying">74</a>]
+[<a name="Gomes2017verifying">75</a>]
 </dt>
 <dd>
 Victor B&nbsp;F Gomes, Martin Kleppmann, Dominic&nbsp;P Mulligan, and Alastair&nbsp;R
@@ -1137,12 +1450,15 @@ Victor B&nbsp;F Gomes, Martin Kleppmann, Dominic&nbsp;P Mulligan, and Alastair&n
 [&nbsp;<a href="papers_bib.html#Gomes2017verifying">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3133933">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1707.01747">arXiv</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: specification, verification
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Burckhardt2014specification">75</a>]
+[<a name="Burckhardt2014specification">76</a>]
 </dt>
 <dd>
 Sebastian Burckhardt, Alexey Gotsman, Hongseok Yang, and Marek Zawirski.
@@ -1152,12 +1468,15 @@ Sebastian Burckhardt, Alexey Gotsman, Hongseok Yang, and Marek Zawirski.
 [&nbsp;<a href="papers_bib.html#Burckhardt2014specification">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2535838.2535848">DOI</a>&nbsp;| 
 <a href="http://software.imdea.org/~gotsman/papers/distrmm-popl14-ext.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: specification, verification
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Kleppmann2018OpSets">76</a>]
+[<a name="Kleppmann2018OpSets">77</a>]
 </dt>
 <dd>
 Martin Kleppmann, Victor B&nbsp;F Gomes, Dominic&nbsp;P Mulligan, and Alastair&nbsp;R
@@ -1168,12 +1487,15 @@ Martin Kleppmann, Victor B&nbsp;F Gomes, Dominic&nbsp;P Mulligan, and Alastair&n
 [&nbsp;<a href="papers_bib.html#Kleppmann2018OpSets">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1805.04263">arXiv</a>&nbsp;| 
 <a href="https://arxiv.org/abs/1805.04263">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: specification, verification
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Gotsman2016CISE">77</a>]
+[<a name="Gotsman2016CISE">78</a>]
 </dt>
 <dd>
 Alexey Gotsman, Hongseok Yang, Carla Ferreira, Mahsa Najafzadeh, and Marc
@@ -1185,12 +1507,15 @@ Alexey Gotsman, Hongseok Yang, Carla Ferreira, Mahsa Najafzadeh, and Marc
 [&nbsp;<a href="papers_bib.html#Gotsman2016CISE">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2837614.2837625">DOI</a>&nbsp;| 
 <a href="http://software.imdea.org/~gotsman/papers/logic-popl16.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: specification, verification
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Attiya2016text">78</a>]
+[<a name="Attiya2016text">79</a>]
 </dt>
 <dd>
 Hagit Attiya, Sebastian Burckhardt, Alexey Gotsman, Adam Morrison, Hongseok
@@ -1201,12 +1526,15 @@ Hagit Attiya, Sebastian Burckhardt, Alexey Gotsman, Adam Morrison, Hongseok
 [&nbsp;<a href="papers_bib.html#Attiya2016text">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2933057.2933090">DOI</a>&nbsp;| 
 <a href="http://www.cs.ox.ac.uk/people/hongseok.yang/paper/podc16-full.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: text-editing, specification, verification
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Li2014Sieve">79</a>]
+[<a name="Li2014Sieve">80</a>]
 </dt>
 <dd>
 Cheng Li, Jo&atilde;o Leit&atilde;o, Allen Clement, Nuno Pregui&ccedil;a, Rodrigo
@@ -1216,12 +1544,52 @@ Cheng Li, Jo&atilde;o Leit&atilde;o, Allen Clement, Nuno Pregui&ccedil;a, Rodrig
   281--292. USENIX, June 2014.
 [&nbsp;<a href="papers_bib.html#Li2014Sieve">bib</a>&nbsp;| 
 <a href="https://www.usenix.org/conference/atc14/technical-sessions/presentation/li_cheng_2">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: verification
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Conway2012lattices">80</a>]
+[<a name="Kollmann2019Snapdoc">81</a>]
+</dt>
+<dd>
+Stephan&nbsp;A Kollmann, Martin Kleppmann, and Alastair&nbsp;R Beresford.
+ Snapdoc: Authenticated snapshots with history privacy in
+  peer-to-peer collaborative editing.
+ <em>Proceedings on Privacy Enhancing Technologies (PoPETS)</em>,
+  2019(3):210--232, July 2019.
+[&nbsp;<a href="papers_bib.html#Kollmann2019Snapdoc">bib</a>&nbsp;| 
+<a href="http://dx.doi.org/10.2478/popets-2019-0044">DOI</a>&nbsp;| 
+<a href="https://www.petsymposium.org/2019/files/papers/issue3/popets-2019-0044.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: security
+</font></blockquote>
+
+</dd>
+
+
+<dt>
+[<a name="Truong2012authenticating">82</a>]
+</dt>
+<dd>
+Hien Thi&nbsp;Thu Truong, Claudia-Lavinia Ignat, and Pascal Molli.
+ Authenticating operation-based history in collaborative systems.
+ In <em>17th ACM International Conference on Supporting Group Work</em>,
+  GROUP 2012, pages 131--140. ACM, October 2012.
+[&nbsp;<a href="papers_bib.html#Truong2012authenticating">bib</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1145/2389176.2389197">DOI</a>&nbsp;| 
+<a href="https://hal.inria.fr/hal-00761045/document">http</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: security
+</font></blockquote>
+
+</dd>
+
+
+<dt>
+[<a name="Conway2012lattices">83</a>]
 </dt>
 <dd>
 Neil Conway, William&nbsp;R. Marczak, Peter Alvaro, Joseph&nbsp;M. Hellerstein, and David
@@ -1232,12 +1600,15 @@ Neil Conway, William&nbsp;R. Marczak, Peter Alvaro, Joseph&nbsp;M. Hellerstein, 
 [&nbsp;<a href="papers_bib.html#Conway2012lattices">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/2391229.2391230">DOI</a>&nbsp;| 
 <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-167.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: crdt-related
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Burckhardt2012CloudTypes">81</a>]
+[<a name="Burckhardt2012CloudTypes">84</a>]
 </dt>
 <dd>
 Sebastian Burckhardt, Manuel F&auml;hndrich, Daan Leijen, and Benjamin&nbsp;P Wood.
@@ -1247,12 +1618,15 @@ Sebastian Burckhardt, Manuel F&auml;hndrich, Daan Leijen, and Benjamin&nbsp;P Wo
 [&nbsp;<a href="papers_bib.html#Burckhardt2012CloudTypes">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-642-31057-7_14">DOI</a>&nbsp;| 
 <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/final-with-color.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: crdt-related
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Burckhardt2012transactions">82</a>]
+[<a name="Burckhardt2012transactions">85</a>]
 </dt>
 <dd>
 Sebastian Burckhardt, Daan Leijen, Manuel F&auml;hndrich, and Mooly Sagiv.
@@ -1262,12 +1636,15 @@ Sebastian Burckhardt, Daan Leijen, Manuel F&auml;hndrich, and Mooly Sagiv.
 [&nbsp;<a href="papers_bib.html#Burckhardt2012transactions">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1007/978-3-642-28869-2_4">DOI</a>&nbsp;| 
 <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/ecr-esop2012.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: crdt-related, transactions
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Kaki2019mergeable">83</a>]
+[<a name="Kaki2019mergeable">86</a>]
 </dt>
 <dd>
 Gowtham Kaki, Swarn Priya, KC&nbsp;Sivaramakrishnan, and Suresh Jagannathan.
@@ -1277,12 +1654,15 @@ Gowtham Kaki, Swarn Priya, KC&nbsp;Sivaramakrishnan, and Suresh Jagannathan.
 [&nbsp;<a href="papers_bib.html#Kaki2019mergeable">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3360580">DOI</a>&nbsp;| 
 <a href="https://gowthamk.github.io/docs/mrdt.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: crdt-related
+</font></blockquote>
 
 </dd>
 
 
 <dt>
-[<a name="Kuper2014LVars">84</a>]
+[<a name="Kuper2014LVars">87</a>]
 </dt>
 <dd>
 Lindsey Kuper and Ryan&nbsp;R Newton.
@@ -1292,7 +1672,10 @@ Lindsey Kuper and Ryan&nbsp;R Newton.
   Programming</em>, WoDet 2014, March 2014.
 [&nbsp;<a href="papers_bib.html#Kuper2014LVars">bib</a>&nbsp;| 
 <a href="http://wodet.cs.washington.edu/wp-content/uploads/2014/02/wodet2014-final1.pdf">.pdf</a>&nbsp;]
+<blockquote><font size="-1">
+Keywords: crdt-related, shared-memory concurrency
+</font></blockquote>
 
 </dd>
-</dl><hr><p><em>This file was generated by
-<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.99.</em></p>
+</dl>
+

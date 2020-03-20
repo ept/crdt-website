@@ -18594,3 +18594,13 @@ footer {
         visibility: hidden
     }
 }
+
+div.td-content > dl > dt.selected,
+div.td-content > dl > dt.selected + dd {
+    display: block
+}
+
+div.td-content > dl > dt.unselected,
+div.td-content > dl > dt.unselected + dd {
+    display: none
+}

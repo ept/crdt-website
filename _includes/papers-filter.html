@@ -1,0 +1,75 @@
+<p>This page contains a comprehensive list of research publications on CRDTs.
+The data is available <a href="papers_bib.html">in BibTeX format</a>.
+If you have anything to add or correct, please
+<a href="https://github.com/ept/crdt-website/edit/master/papers.bib">edit the file on GitHub</a>
+and send us a pull request.</p>
+
+<p><strong>Select checkboxes to filter papers by topic:</strong></p>
+<form id="papers-filter">
+    <input type="checkbox" id="introduction" name="introduction">
+    <label for="introduction">Introductions to CRDTs</label><br>
+
+    <input type="checkbox" id="systems" name="systems">
+    <label for="systems">Systems and apps using CRDTs</label><br>
+
+    <input type="checkbox" id="operation-based" name="operation-based">
+    <label for="operation-based">Operation-based CRDTs</label><br>
+
+    <input type="checkbox" id="state-based" name="state-based">
+    <label for="state-based">State-based and Delta CRDTs</label><br>
+
+    <input type="checkbox" id="counters" name="counters">
+    <label for="counters">Counter CRDTs</label><br>
+
+    <input type="checkbox" id="text-editing" name="text-editing">
+    <label for="text-editing">Text editing/sequence CRDTs</label><br>
+
+    <input type="checkbox" id="undo" name="undo">
+    <label for="undo">Undoing operations</label><br>
+
+    <input type="checkbox" id="trees" name="trees">
+    <label for="trees">CRDTs for trees</label><br>
+
+    <input type="checkbox" id="computation" name="computation">
+    <label for="computation">Computation/programming</label><br>
+
+    <input type="checkbox" id="composition" name="composition">
+    <label for="composition">Composing CRDTs</label><br>
+
+    <input type="checkbox" id="verification" name="verification">
+    <label for="verification">Specification and verification</label><br>
+
+    <input type="checkbox" id="crdt-related" name="crdt-related">
+    <label for="crdt-related">Close relatives of CRDTs</label><br>
+</form>
+
+<script>
+const checkboxes = document.querySelectorAll('form#papers-filter input[type="checkbox"]')
+
+for (let checkbox of checkboxes) {
+    checkbox.addEventListener('change', () => {
+        let selected = []
+        for (let cb of checkboxes) {
+            if (cb.checked) selected.push(cb.name)
+        }
+
+        const regex = new RegExp(selected.join('|'))
+
+        for (let element of document.querySelectorAll('div.td-content > dl > dd')) {
+            let keywords = element.querySelector('blockquote')
+            let previous = element
+            do {
+                previous = previous.previousSibling
+            } while (previous.nodeType !== Node.ELEMENT_NODE || previous.tagName !== 'DT')
+
+            if (selected.length === 0 || (keywords && regex.test(keywords.innerText))) {
+                previous.className = 'selected'
+            } else {
+                previous.className = 'unselected'
+            }
+        }
+    })
+}
+</script>
+
+<h2>Paper List</h2>
