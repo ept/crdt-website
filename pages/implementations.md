@@ -20,6 +20,7 @@ collaborative applications and replicated storage systems:
 
 * [GUN](https://gun.eco/) ([GitHub](https://github.com/amark/gun))
   is a graph CRDT implemented in JavaScript, using WebRTC networking.
+  It includes public-key-based user authentication and encryption.
 
 * [Replicated Object Notation](http://replicated.cc/) (RON) is a data format for
   encoding CRDT operations, implemented in
