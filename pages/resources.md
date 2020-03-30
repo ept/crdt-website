@@ -18,6 +18,8 @@ permalink: /resources
 
 * The [Wikipedia article on CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type).
 
+* [Awesome CRDT](https://github.com/alangibson/awesome-crdt): another collection of CRDT resources
+
 
 ## Blog posts
 
