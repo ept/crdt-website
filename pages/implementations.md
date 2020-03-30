@@ -18,6 +18,9 @@ collaborative applications and replicated storage systems:
   [Hypermerge](https://github.com/automerge/hypermerge) (which uses [Dat](https://docs.datproject.org/)) or
   [plain TCP connections](https://github.com/automerge/automerge-net).
 
+* [GUN](https://gun.eco/) ([GitHub](https://github.com/amark/gun))
+  is a graph CRDT implemented in JavaScript, using WebRTC networking.
+
 * [Replicated Object Notation](http://replicated.cc/) (RON) is a data format for
   encoding CRDT operations, implemented in
   [several languages](http://replicated.cc/impl/).
