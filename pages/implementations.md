@@ -28,17 +28,13 @@ collaborative applications and replicated storage systems:
   It supports register, list, text, set, and counter datatypes.
   [SwarmDB](https://github.com/gritzko/swarm) is a RON-based database, implemented in JavaScript.
 
-* [Yjs](http://y-js.org/) ([GitHub](https://github.com/yjs/yjs),
-  [paper 1](http://dbis.rwth-aachen.de/~derntl/papers/preprints/icwe2015-preprint.pdf),
+* [Yjs](https://github.com/yjs/yjs)
+  ([paper 1](http://dbis.rwth-aachen.de/~derntl/papers/preprints/icwe2015-preprint.pdf),
   [paper 2](https://www.researchgate.net/publication/310212186_Near_Real-Time_Peer-to-Peer_Shared_Editing_on_Extensible_Data_Types))
-  is a collection of JavaScript CRDTs for text, arrays, maps, XML, etc. Yjs has
-  bindings to several JavaScript text editors, and support for several network
-  communication layers including [WebSocket](http://github.com/yjs/y-websocket)
-  and [WebRTC](http://github.com/yjs/y-webrtc). More information in this series of blog posts:
-  [part 1](https://www.tag1consulting.com/blog/yjs-deep-dive-part-1),
-  [part 2](https://www.tag1consulting.com/blog/yjs-deep-dive-part-2),
-  [part 3](https://www.tag1consulting.com/blog/yjs-deep-dive-part-3),
-  [part 4](https://www.tag1consulting.com/blog/yjs-deep-dive-part-4).
+  is a modular framework for building collaborative applications on the web.
+  It includes several common CRDTs and modules that integrate them with different editors,
+  communication protocols, and databases. More information in
+  [this series of blog posts about Yjs](https://tag1consulting.com/yjs).
 
 * [Legion](https://legion.di.fct.unl.pt/)
   ([GitHub](https://github.com/albertlinde/Legion),
@@ -61,7 +57,6 @@ collaborative applications and replicated storage systems:
 
 * Carlos Baquero's [C++ implementation](https://github.com/CBaquero/delta-enabled-crdts)
   of state-based CRDTs with delta mutations.
-
 
 ## Distributed databases
 
@@ -195,3 +190,13 @@ using the [Automerge](https://github.com/automerge/automerge) CRDT library:
 
 * [Archbee](https://archbee.io/) is a documentation tool and knowledge base for
   engineering teams.
+
+## Yjs users
+
+[Yjs](https://github.com/yjs/yjs) is used by several apps that are run in production:
+
+* [Room.sh](https://room.sh/) is a meeting application with integrated collaborative drawing, editing, and coding tools.
+
+* [Pluxbox - Radiomanager](https://pluxbox.com/) is a web-based app to collaboratively organize radio broadcasts.
+
+* [Cattaz](http://cattaz.io/) is a wiki that can run custom applications in the wiki pages.
