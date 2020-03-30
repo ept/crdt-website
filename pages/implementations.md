@@ -176,7 +176,7 @@ Several other applications and systems also use CRDTs internally:
 
 * [Mapeo](https://mapeo.world), a toolset mapping and monitoring human and environmental rights abuses [uses CRDTs](https://www.digital-democracy.org/blog/localfirst/) for syncronizing edits to maps. 
 
-* [Cobox](https://cobox.cloud), a collaborative data hosting platform [uses CRDTs](https://develop.cobox.cloud/core_technologies.html#kappa-core) to syncronize edits to files on disk
+* [Cobox](https://cobox.cloud), a collaborative data hosting platform [uses CRDTs](https://develop.cobox.cloud/core_technologies.html#kappa-core) to syncronize edits to files on disk.
 
 
 ## Automerge users
