@@ -90,6 +90,8 @@ Several distributed databases also have built-in support for CRDTs:
   to enable multi-master replication between geographically distributed
   datacenters.
 
+* [Ditto](https://www.ditto.live) uses CRDTs for data sync between mobile devices.
+
 * [OrbitDB](https://github.com/orbitdb/orbit-db) is a peer-to-peer database
   built on top of [IPFS](https://ipfs.io/) and CRDTs.
 
@@ -169,8 +171,6 @@ Several other applications and systems also use CRDTs internally:
   [League of Legends](http://highscalability.com/blog/2014/10/13/how-league-of-legends-scaled-chat-to-70-million-players-it-t.html), and
   [PayPal](https://www.infoq.com/presentations/crdt-production/)
   have all reported using CRDTs internally.
-
-* [Ditto](https://www.ditto.live) applies CRDTs for collaborative real-time editing.
 
 
 ## Automerge users
