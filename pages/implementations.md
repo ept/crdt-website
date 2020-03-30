@@ -21,6 +21,8 @@ collaborative applications and replicated storage systems:
 * [GUN](https://gun.eco/) ([GitHub](https://github.com/amark/gun))
   is a graph CRDT implemented in JavaScript, using WebRTC networking.
   It includes public-key-based user authentication and encryption.
+  
+* [kappa-db](https://github.com/kappa-db/) is a JavaScript library for building your own CRDTs over append-only log architectures, with a reference implementation for [Dat](https://docs.datproject.org/)'s Hypercore data structure. Sort of a 'build-your-own' Automerge library.
 
 * [Replicated Object Notation](http://replicated.cc/) (RON) is a data format for
   encoding CRDT operations, implemented in
@@ -171,6 +173,10 @@ Several other applications and systems also use CRDTs internally:
   [League of Legends](http://highscalability.com/blog/2014/10/13/how-league-of-legends-scaled-chat-to-70-million-players-it-t.html), and
   [PayPal](https://www.infoq.com/presentations/crdt-production/)
   have all reported using CRDTs internally.
+
+* [Mapeo](https://mapeo.world), a toolset mapping and monitoring human and environmental rights abuses [uses CRDTs](https://www.digital-democracy.org/blog/localfirst/) for syncronizing edits to maps. 
+
+* [Cobox](https://cobox.cloud), a collaborative data hosting platform [uses CRDTs](https://develop.cobox.cloud/core_technologies.html#kappa-core) to syncronize edits to files on disk
 
 
 ## Automerge users
