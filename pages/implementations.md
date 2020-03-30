@@ -58,6 +58,12 @@ collaborative applications and replicated storage systems:
 * Carlos Baquero's [C++ implementation](https://github.com/CBaquero/delta-enabled-crdts)
   of state-based CRDTs with delta mutations.
 
+
+## Benchmarks
+
+* [crdt-benchmarks](https://github.com/dmonad/crdt-benchmarks) compares document size and performance of Yjs and Automerge.
+
+
 ## Distributed databases
 
 Several distributed databases also have built-in support for CRDTs:
