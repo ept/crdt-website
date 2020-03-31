@@ -58,6 +58,9 @@ collaborative applications and replicated storage systems:
 * Carlos Baquero's [C++ implementation](https://github.com/CBaquero/delta-enabled-crdts)
   of state-based CRDTs with delta mutations.
 
+* [Logux](https://logux.io/) ([GitHub](https://github.com/logux/core)) is a state sync system built primarily for React/Redux in a client/server architecture, but can be used p2p and/or on its own.
+
+* [Braid-HTTP](https://braid.news/) ([GitHub](https://github.com/braid-work/toomim-braidjs/)) is an effort to augment the HTTP protocol itself to include state synchronization as a primitive. [IETF draft](https://datatracker.ietf.org/doc/html/draft-toomim-httpbis-braid-http).
 
 ## Benchmarks
 
