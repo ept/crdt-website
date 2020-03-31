@@ -43,7 +43,7 @@ collaborative applications and replicated storage systems:
   a WebRTC-based networking layer.
 
 * [Yorkie](https://yorkie.dev/) ([GitHub](https://github.com/yorkie-team/yorkie))
-  is a framework for building collaborative applications, using MongoDB
+  is a synchronization solution for building collaborative applications, using MongoDB
   for data storage.
 
 * The [Akka actor framework](https://akka.io/) includes implementations of
