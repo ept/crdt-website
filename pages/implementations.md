@@ -113,6 +113,9 @@ Several distributed databases also have built-in support for CRDTs:
   [Apollo database](https://dzone.com/articles/facebook-announces-apollo-qcon)
   supports CRDT storage.
 
+* Macrometa
+  [Global Data Network (GDN)](https://www.macrometa.co/)
+  allows conflicting documents and graphs to be merged using operation-based CRDTs and stream-based geo-replication, while providing higher level SQL-like query language interface.
 
 ## Text editors
 
