@@ -60,9 +60,14 @@ collaborative applications and replicated storage systems:
 * Carlos Baquero's [C++ implementation](https://github.com/CBaquero/delta-enabled-crdts)
   of state-based CRDTs with delta mutations.
 
-* [Logux](https://logux.io/) ([GitHub](https://github.com/logux/core)) is a state sync system built primarily for React/Redux in a client/server architecture, but can be used p2p and/or on its own.
 
-* [Braid-HTTP](https://braid.news/) ([GitHub](https://github.com/braid-work/toomim-braidjs/)) is an effort to augment the HTTP protocol itself to include state synchronization as a primitive. [IETF draft](https://datatracker.ietf.org/doc/html/draft-toomim-httpbis-braid-http).
+* [Logux](https://logux.io/) ([GitHub](https://github.com/logux/core)) is
+  a state sync system built primarily for React/Redux in a client/server
+  architecture, but can be used p2p and/or on its own.
+
+* [Braid-HTTP](https://braid.news/) ([GitHub](https://github.com/braid-work/toomim-braidjs/),
+  [IETF draft](https://datatracker.ietf.org/doc/html/draft-toomim-httpbis-braid-http))
+  is an effort to augment the HTTP protocol itself to include state synchronization as a primitive.
 
 ## Benchmarks
 
@@ -115,7 +120,9 @@ Several distributed databases also have built-in support for CRDTs:
 
 * Macrometa
   [Global Data Network (GDN)](https://www.macrometa.co/)
-  allows conflicting documents and graphs to be merged using operation-based CRDTs and stream-based geo-replication, while providing higher level SQL-like query language interface.
+  allows conflicting documents and graphs to be merged using operation-based
+  CRDTs and stream-based geo-replication, while providing higher level SQL-like
+  query language interface.
 
 ## Text editors
 
