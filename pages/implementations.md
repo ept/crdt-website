@@ -60,6 +60,8 @@ collaborative applications and replicated storage systems:
 * Carlos Baquero's [C++ implementation](https://github.com/CBaquero/delta-enabled-crdts)
   of state-based CRDTs with delta mutations.
 
+* [Eventuate](https://github.com/RBMHTechnology/eventuate)
+  is a toolkit for building applications using causally ordered event streams and CRDTs.
 
 * [Logux](https://logux.io/) ([GitHub](https://github.com/logux/core)) is
   a state sync system built primarily for React/Redux in a client/server
