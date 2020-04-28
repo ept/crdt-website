@@ -21,6 +21,119 @@
 
 % Records in this file are sorted in reverse chronological order (newest first)
 
+% 2020
+
+@inproceedings{Kleppmann2020moving,
+author = {Kleppmann, Martin},
+title = {Moving Elements in List {CRDTs}},
+booktitle = {7th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2020},
+year = {2020},
+month = apr,
+publisher = {ACM},
+articleno = {4},
+doi = {10.1145/3380787.3393677},
+pdf = {https://martin.kleppmann.com/papers/list-move-papoc20.pdf},
+keywords = {text-editing}
+}
+
+@inproceedings{Yu2020causalLengths,
+author = {Yu, Weihai and Rostad, Sigbj\o{}rn},
+title = {A Low-Cost Set {CRDT} Based on Causal Lengths},
+booktitle = {7th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2020},
+year = {2020},
+month = apr,
+publisher = {ACM},
+articleno = {5},
+doi = {10.1145/3380787.3393678},
+keywords = {set-crdt}
+}
+
+@inproceedings{Grosch2020AutoCouch,
+author = {Grosch, Pascal and Krafft, Roman and W\"{o}lki, Marcel and Bieniusa, Annette},
+title = {{AutoCouch}: A {JSON} {CRDT} Framework},
+booktitle = {7th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2020},
+year = {2020},
+month = apr,
+publisher = {ACM},
+articleno = {6},
+doi = {10.1145/3380787.3393679},
+keywords = {systems, Automerge, AutoCouch}
+}
+
+@inproceedings{Grishchenko2020Chronofold,
+author = {Grishchenko, Victor and Patrakeev, Mikhail},
+title = {{Chronofold}: A Data Structure for Versioned Text},
+booktitle = {7th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2020},
+year = {2020},
+month = apr,
+publisher = {ACM},
+articleno = {7},
+doi = {10.1145/3380787.3393680},
+eprint = {2002.09511},
+keywords = {text-editing, Chronofold}
+}
+
+@inproceedings{Nicolas2020renaming,
+author = {Nicolas, Matthieu and Oster, G\'{e}rald and Perrin, Olivier},
+title = {Efficient Renaming in Sequence {CRDTs}},
+booktitle = {7th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2020},
+year = {2020},
+month = apr,
+publisher = {ACM},
+articleno = {9},
+doi = {10.1145/3380787.3393682},
+pdf = {https://hal.inria.fr/hal-02526724/document},
+keywords = {text-editing, LogootSplit}
+}
+
+@inproceedings{vanHardenberg2020PushPin,
+author = {van Hardenberg, Peter and Kleppmann, Martin},
+title = {{PushPin}: Towards Production-Quality Peer-to-Peer Collaboration},
+booktitle = {7th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2020},
+year = {2020},
+month = apr,
+publisher = {ACM},
+articleno = {10},
+doi = {10.1145/3380787.3393683},
+pdf = {https://martin.kleppmann.com/papers/pushpin-papoc20.pdf},
+keywords = {systems, usability, PushPin}
+}
+
+@inproceedings{Bauwens2020Flec,
+author = {Bauwens, Jim and Boix, Elisa Gonzalez},
+title = {{Flec}: A Versatile Programming Framework for Eventually Consistent Systems},
+booktitle = {7th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2020},
+year = {2020},
+month = apr,
+publisher = {ACM},
+articleno = {12},
+doi = {10.1145/3380787.3393685},
+keywords = {systems, Flec}
+}
+
+% ACM version is a 2-page summary of arXiv version.
+% TODO: update this when the full version is formally published
+@inproceedings{Weidner2020composing,
+author = {Weidner, Matthew and Miller, Heather and Meiklejohn, Christopher},
+title = {Composing and Decomposing Op-Based {CRDTs} with Semidirect Products},
+booktitle = {7th Workshop on Principles and Practice of Consistency for Distributed Data},
+series = {PaPoC 2020},
+year = {2020},
+month = apr,
+publisher = {ACM},
+articleno = {14},
+doi = {10.1145/3380787.3393687},
+eprint = {2004.04303},
+keywords = {composition}
+}
+
 
 % 2019
 
@@ -428,6 +541,20 @@ pdf = {https://haslab.uminho.pt/sites/default/files/cbm/files/a5-enes.pdf},
 keywords = {counters}
 }
 
+@inproceedings{vanderLinde2017Legion,
+author = {van der Linde, Albert and Fouto, Pedro and Leit{\~a}o, Jo{\~a}o and Pregui{\c c}a, Nuno and Casti{\~n}eira, Santiago and Bieniusa, Annette},
+title = {{Legion}: Enriching Internet Services with Peer-to-Peer Interactions},
+booktitle = {26th International Conference on World Wide Web},
+series = {WWW 2017},
+year = {2017},
+month = apr,
+publisher = {ACM},
+pages = {283--292},
+doi = {10.1145/3038912.3052673},
+pdf = {http://novasys.di.fct.unl.pt/~alinde/publications/fp0964-vanderlinde.pdf},
+keywords = {systems, Legion}
+}
+
 
 % 2016
 
@@ -505,7 +632,7 @@ keywords = {systems}
 
 @inproceedings{Brown2016bigsets,
 author = {Brown, Russell and Lakhani, Zeeshan and Place, Paul},
-title = {Big(Ger) Sets: Decomposed Delta CRDT Sets in Riak},
+title = {Big(Ger) Sets: Decomposed Delta {CRDT} Sets in {Riak}},
 booktitle = {2nd Workshop on the Principles and Practice of Consistency for Distributed Data},
 series = {PaPoC 2016},
 year = {2016},
@@ -514,7 +641,7 @@ articleno = {5},
 publisher = {ACM},
 doi = {10.1145/2911151.2911156},
 eprint = {1605.06424},
-keywords = {systems, composition}
+keywords = {set-crdt, systems, composition}
 }
 
 @inproceedings{Zawirski2016register,
@@ -994,6 +1121,19 @@ url = {https://arxiv.org/abs/1307.3207},
 keywords = {counters}
 }
 
+@inproceedings{LeMerrer2013Bitbox,
+author = {Le Merrer, Erwan and Le Scouarnec, Nicolas and Straub, Gilles},
+title = {{Bitbox}: Eventually Consistent File Sharing},
+booktitle = {1st International Conference on Networked Systems},
+series = {NETYS 2013},
+year = {2013},
+month = may,
+pages = {274–278},
+publisher = {Springer LNCS volume 7853},
+doi = {10.1007/978-3-642-40148-0_23},
+keywords = {systems, Bitbox}
+}
+
 @inproceedings{Navalho2013stream,
 author = {Navalho, David and Duarte, S\'{e}rgio and Pregui\c{c}a, Nuno and Shapiro, Marc},
 title = {Incremental Stream Processing Using Computational Conflict-Free Replicated Data Types},
@@ -1311,21 +1451,4 @@ institution = {INRIA},
 type = {Research Report},
 url = {https://hal.inria.fr/inria-00071240/document},
 keywords = {text-editing, WOOT}
-}
-
-@inproceedings{10.1007/978-3-642-40148-0_23,
-author = {Merrer, Erwan and Scouarnec, Nicolas and Straub, Gilles},
-title = {Bitbox: Eventually Consistent File Sharing},
-year = {2013},
-isbn = {9783642401473},
-publisher = {Springer-Verlag},
-address = {Berlin, Heidelberg},
-url = {https://doi.org/10.1007/978-3-642-40148-0_23},
-doi = {10.1007/978-3-642-40148-0_23},
-booktitle = {Revised Selected Papers of the First International Conference on Networked Systems - Volume 7853},
-pages = {274–278},
-numpages = {5},
-location = {Marrakech, Morocco},
-series = {NETYS 2013},
-keywords = {systems}
 }
