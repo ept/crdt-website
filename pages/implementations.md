@@ -126,6 +126,11 @@ Several distributed databases also have built-in support for CRDTs:
   CRDTs and stream-based geo-replication, while providing higher level SQL-like
   query language interface.
 
+* Circonus IRONdb
+  The [Circonus IRONdb](https://www.circonus.com/solutions/time-series-database/)
+  time-series database has been in production use since 2011 and leverages CRDTs
+  for all internal data types.
+
 ## Text editors
 
 Several text editors use CRDTs:
