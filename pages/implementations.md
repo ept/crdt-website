@@ -227,8 +227,25 @@ using the [Automerge](https://github.com/automerge/automerge) CRDT library:
 
 [Yjs](https://github.com/yjs/yjs) is used by several apps that are run in production:
 
-* [Room.sh](https://room.sh/) is a meeting application with integrated collaborative drawing, editing, and coding tools.
+* [Nimbus Note](https://nimbusweb.me/note.php) is a note-taking app by
+  Nimbus Web.
 
-* [Pluxbox - Radiomanager](https://pluxbox.com/) is a web-based app to collaboratively organize radio broadcasts.
+* [http://coronavirustechhandbook.com/](https://coronavirustechhandbook.com/)
+  is a collaborative document that is edited by thousands of different people to work
+  on a rapid and sophisticated response to the coronavirus outbreak and subsequent
+  impacts.
 
-* [Cattaz](http://cattaz.io/) is a wiki that can run custom applications in the wiki pages.
+* [Relm](http://www.relm.us/) is a collaborative gameworld for teamwork and
+  community.
+
+* [JoeDocs](https://joedocs.com/) is an open collaborative wiki.
+
+* [Room.sh](https://room.sh/) is a meeting application with integrated collaborative
+  drawing, editing, and coding tools.
+
+* [Pluxbox RadioManager](https://pluxbox.com/) is a web-based app to collaboratively
+  organize radio broadcasts.
+
+* [Cattaz](http://cattaz.io/) is a wiki that can run custom applications in the wiki
+  pages.
+
