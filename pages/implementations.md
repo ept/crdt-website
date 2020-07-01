@@ -80,6 +80,8 @@ collaborative applications and replicated storage systems:
 
 Several distributed databases also have built-in support for CRDTs:
 
+* [Concordant](https://www.concordant.io/) is an edge-first database spanning the full cloud-edge spectrum.  It supports a full library of Delta-based CRDTs and provides just-right consistency guarantees and security.
+
 * [AntidoteDB](https://www.antidotedb.eu/) is a geo-replicated database that
   supports highly available transactions, causal consistency, and
   [several CRDTs](https://antidotedb.gitbook.io/documentation/architecture/datatypes).
