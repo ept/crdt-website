@@ -64,6 +64,10 @@ permalink: /resources
 
 ## Conference talk recordings
 
+* Martin Kleppmann:
+  [CRDTs: The Hard Parts](https://www.youtube.com/watch?v=x7drE24geUw)
+  (Hydra distributed computing conference, July 2020)
+
 * James Long:
   [CRDTs for Mortals](https://www.dotconferences.com/2019/12/james-long-crdts-for-mortals)
   (dotJS, December 2019)
