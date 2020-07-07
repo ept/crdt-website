@@ -23,6 +23,11 @@ permalink: /resources
 
 ## Blog posts
 
+* Lars Hupel:
+  [An introduction to Conflict-free Replicated Data Types](https://lars.hupel.info/topics/crdt/01-intro)
+
+  A blog post series focussed on the mathematical foundations of CRDTs, with interactive code examples (July 2020)
+
 * Robert Lord:
   [Notes on Splicing CRDTs for Structured Hypertext](https://lord.io/blog/2019/splicing-crdts/)
   (October 2019)
