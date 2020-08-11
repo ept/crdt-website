@@ -23,6 +23,10 @@ permalink: /resources
 
 ## Blog posts
 
+* Kevin Jahns:
+  [Are CRDTs suitable for shared editing?](https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/)
+  (August 2020)
+
 * Lars Hupel:
   [An introduction to Conflict-free Replicated Data Types](https://lars.hupel.info/topics/crdt/01-intro)
 
