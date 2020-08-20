@@ -70,6 +70,8 @@ collaborative applications and replicated storage systems:
 * [Braid-HTTP](https://braid.news/) ([GitHub](https://github.com/braid-work/toomim-braidjs/),
   [IETF draft](https://datatracker.ietf.org/doc/html/draft-toomim-httpbis-braid-http))
   is an effort to augment the HTTP protocol itself to include state synchronization as a primitive.
+  
+* [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/)) ([Demo](https://hyperhyper.space)) Decouple data from the apps that handle it. A library for creating fully in-browser (webrtc & indexeddb based) interoperable p2p apps. Uses operational CRDTs for mutability.
 
 ## Benchmarks
 
