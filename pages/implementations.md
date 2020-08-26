@@ -137,6 +137,10 @@ Several distributed databases also have built-in support for CRDTs:
   time-series database has been in production use since 2011 and leverages CRDTs
   for all internal data types.
 
+## Distributed file systems
+
+* [Elmerfs](https://github.com/scality/elmerfs): A distributed file system, with a FUSE interface, written in Rust.  It uses CRDTs to avoid structural conflicts.
+
 ## Text editors
 
 Several text editors use CRDTs:
