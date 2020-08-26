@@ -139,7 +139,7 @@ Several distributed databases also have built-in support for CRDTs:
 
 ## Distributed file systems
 
-* [Elmerfs](https://github.com/scality/elmerfs): A distributed file system, with a FUSE interface, written in Rust.  It uses CRDTs to avoid structural conflicts.
+* [Elmerfs](https://github.com/scality/elmerfs): A distributed file system, with a FUSE interface, written in Rust.  It uses CRDTs to avoid structural conflicts.  Built above [AntidoteDB](https://www.antidotedb.eu/).
 
 ## Text editors
 
