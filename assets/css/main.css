@@ -11,12 +11,12 @@ excluded_in_search: true
     padding-right: 1.2rem;
     transition: opacity .25s;
     font-size: 0.8rem;
-    line-height: 1.2;
+    line-height: 1.2px;
     color: white;
     white-space: nowrap;
 }
 [dir=rtl] .gh-source {
-    padding-right: 0;
+    padding-right: 0px;
     padding-left: 1.2rem;
 }
 .gh-source:hover {
@@ -138,7 +138,7 @@ excluded_in_search: true
 }
 
 html {
-    font-family: sans-serif;
+    font-family: sans-serif,arial,algerian;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -168,7 +168,7 @@ body {
     font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.5px;
     color: #222;
     text-align: left;
     background-color: #fff
