@@ -31,7 +31,7 @@ dealing with such data modifications:
 
 Strongly consistent replication:
 : In this model, the replicas coordinate with each other to decide when and how
-  to apply the modifications. This approach enables strong consistency models
+  to apply the local modifications. This approach enables strong consistency models
   such as serializable transactions and linearizability. However, waiting for
   this coordination reduces the performance of these systems; moreover, the CAP
   theorem tells us that it is impossible to make any data changes on a replica
