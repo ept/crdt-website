@@ -73,6 +73,8 @@ collaborative applications and replicated storage systems:
   
 * [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) Decouple data from the apps that handle it. A library for creating fully in-browser (webrtc & indexeddb based) interoperable p2p apps. Uses operational CRDTs for mutability.
 
+* [m-ld](https://m-ld.org/) synchronises decentralised replicas of JSON-LD graph data, with a query API and pluggable networking and persistence.
+
 ## Benchmarks
 
 * [crdt-benchmarks](https://github.com/dmonad/crdt-benchmarks) compares document size and performance of Yjs and Automerge.
