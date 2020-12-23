@@ -75,6 +75,8 @@ collaborative applications and replicated storage systems:
 
 * [m-ld](https://m-ld.org/) synchronises decentralised replicas of JSON-LD graph data, with a query API and pluggable networking and persistence.
 
+* [Fluid Framework](https://fluidframework.com/) is a collection of client libraries for distributing and synchronizing shared state, based on a CRDT-like distributed data structure.
+
 ## Benchmarks
 
 * [crdt-benchmarks](https://github.com/dmonad/crdt-benchmarks) compares document size and performance of Yjs and Automerge.
