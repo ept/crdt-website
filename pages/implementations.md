@@ -147,6 +147,8 @@ Several distributed databases also have built-in support for CRDTs:
 
 Several text editors use CRDTs:
 
+* [crdt.el](https://code.librehq.com/qhong/crdt.el) is a real-time collaborative editing environment for Emacs using Conflict-free Replicated Data Types.
+
 * The [Teletype package](https://teletype.atom.io/) for the
   [Atom text editor](https://atom.io/) uses
   [a CRDT](https://github.com/atom/teletype-crdt) to enable real-time
