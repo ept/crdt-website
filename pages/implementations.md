@@ -263,3 +263,8 @@ using the [Automerge](https://github.com/automerge/automerge) CRDT library:
 * [Cattaz](http://cattaz.io/) is a wiki that can run custom applications in the wiki
   pages.
 
+## Other approaches for automatic conflict resolution
+
+Libraries and applications that implement alternative conflict resolution techniques that are not CRDTs.
+
+* [Fluid Framework](https://fluidframework.com/) is a collection of client libraries for distributing and synchronizing shared state, based on a CRDT-inspired distributed data structure.
