@@ -121,3 +121,7 @@ permalink: /resources
 * Peter Bourgon:
   [Consistency without consensus in production systems](https://www.youtube.com/watch?v=em9zLzM8O7c)
   (Strange Loop 2014)
+
+* Various:
+  [PaPoC 2020 Recorded Talks](https://www.youtube.com/playlist?list=PLHHiNr_VnyWKj64PWjd9iM2OY19s9QGCY)
+  (PaPoC 2020)
