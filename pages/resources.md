@@ -81,6 +81,11 @@ permalink: /resources
   (TNG Big Techday, June 2019)
   ([slides](https://speakerdeck.com/ept/automerge-making-servers-optional-for-real-time-collaboration))
 
+* Антон Чапоргин (Anton Chaporgin):
+  [Редактор текста на CRDT в продакшене](https://2019.codefest.ru/lecture/1501)
+  (CRDT text editor in production), Code Fest, March 2019
+  ([slides](https://speakerdeck.com/codefest/codefest-2019-anton-chaporghin-iandieks-riedaktor-tieksta-na-crdt-v-prodakshienie))
+
 * Pedro Teixeira:
   [CRDTs in IPFS](https://www.youtube.com/watch?v=2VOF-Z-nLnQ)
   (IPFS Lisbon Meetup, January 2018)
