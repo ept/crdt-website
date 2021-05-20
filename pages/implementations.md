@@ -241,6 +241,8 @@ using the [Automerge](https://github.com/automerge/automerge) CRDT library:
 
 [Yjs](https://github.com/yjs/yjs) is used by several apps that are run in production:
 
+* [JupyterLab](https://jupyterlab.readthedocs.io) is a web interface for the computational environment Jupyter.
+
 * [Nimbus Note](https://nimbusweb.me/note.php) is a note-taking app by
   Nimbus Web.
 
