@@ -243,6 +243,8 @@ using the [Automerge](https://github.com/automerge/automerge) CRDT library:
 
 * [JupyterLab](https://jupyterlab.readthedocs.io) is a web interface for the computational environment Jupyter.
 
+* [Serenity Notes](https://www.serenity.re/en/notes) is an end-to-end encrypted collaborative notes app.
+
 * [Nimbus Note](https://nimbusweb.me/note.php) is a note-taking app by
   Nimbus Web.
 
