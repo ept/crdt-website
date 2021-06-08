@@ -80,6 +80,11 @@ permalink: /resources
   [Automerge: Making Servers Optional for Real-Time Collaboration](https://www.youtube.com/watch?v=GXJ0D2tfZCM)
   (TNG Big Techday, June 2019)
   ([slides](https://speakerdeck.com/ept/automerge-making-servers-optional-for-real-time-collaboration))
+  
+* Sun-Li Beatteay:
+  [Guaranteeing Consensus in Distributed Systems with CRDTs](https://www.youtube.com/watch?v=1Bs3Fj9rvks)
+  (Papers We Love NYC, April 2019)
+  ([slides](https://www.slideshare.net/SunLiBeatteay/guaranteeing-consensus-in-distriubuted-systems-with-crdts))
 
 * Антон Чапоргин (Anton Chaporgin):
   [Редактор текста на CRDT в продакшене](https://2019.codefest.ru/lecture/1501)
