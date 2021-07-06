@@ -23,6 +23,21 @@ permalink: /resources
 
 ## Blog posts
 
+* [Bartosz Sypytkowski](https://bartoszsypytkowski.com/): 12-part blog series on CRDTs. Parts
+  [1](https://bartoszsypytkowski.com/the-state-of-a-state-based-crdts/),
+  [2](https://bartoszsypytkowski.com/optimizing-state-based-crdts-1/),
+  [3](https://bartoszsypytkowski.com/optimizing-state-based-crdts-part-2/),
+  [4](https://bartoszsypytkowski.com/state-based-crdts-bounded-counter/),
+  [5](https://bartoszsypytkowski.com/crdt-map/),
+  [6](https://bartoszsypytkowski.com/operation-based-crdts-protocol/),
+  [7](https://bartoszsypytkowski.com/operation-based-crdts-registers-and-sets/),
+  [8](https://bartoszsypytkowski.com/operation-based-crdts-arrays-1/),
+  [9](https://bartoszsypytkowski.com/operation-based-crdts-arrays-2/),
+  [10](https://bartoszsypytkowski.com/operation-based-crdts-json-document/),
+  [11](https://bartoszsypytkowski.com/pure-operation-based-crdts/),
+  [12](https://bartoszsypytkowski.com/crdt-optimizations/)
+  (2017–2021)
+
 * Kevin Jahns:
   [Are CRDTs suitable for shared editing?](https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/)
   (August 2020)
@@ -47,10 +62,6 @@ permalink: /resources
 * Alexei Baboulevitch (Archagon):
   [Data Laced with History: Causal Trees & Operational CRDTs](http://archagon.net/blog/2018/03/24/data-laced-with-history/)
   (March 2018)
-
-* Bartosz Sypytkowski:
-  [An introduction to state-based CRDTs](https://bartoszsypytkowski.com/the-state-of-a-state-based-crdts/)
-  (December 2017)
 
 * Rudi Chen:
   [A simple approach to building a real-time collaborative text editor](http://digitalfreepen.com/2017/10/06/simple-real-time-collaborative-text-editor.html)
