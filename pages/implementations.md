@@ -213,6 +213,8 @@ Several other applications and systems also use CRDTs internally:
 
 * [Cobox](https://cobox.cloud), a collaborative data hosting platform [uses CRDTs](https://develop.cobox.cloud/core_technologies.html#kappa-core) to syncronize edits to files on disk.
 
+* [RetroShare](https://retroshare.cc/), a friend to friend communication platform uses GXS (General eXchange System) which have CRDT properties to implement decentralized forums, blogs, mailing system etc. 
+
 
 ## Automerge users
 
