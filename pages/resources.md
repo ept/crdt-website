@@ -20,6 +20,7 @@ permalink: /resources
 
 * [Awesome CRDT](https://github.com/alangibson/awesome-crdt): another collection of CRDT resources
 
+* [Nikita Voloboev: "Everything I know"](https://wiki.nikitavoloboev.xyz/distributed-systems/crdt)
 
 ## Blog posts
 
@@ -58,6 +59,8 @@ permalink: /resources
 * Christopher Meiklejohn:
   [Applied Monotonicity: A Brief History of CRDTs in Riak](http://christophermeiklejohn.com/erlang/lasp/2019/03/08/monotonicity.html)
   (March 2019)
+
+* Jo Stichbury/Paddy Byers (Ably) [How do CRDTs solve distributed data consistency challenges?](https://ably.com/blog/crdts-distributed-data-consistency-challenges)
 
 * Anton Zagorskii:
   [CRDT: Conflict-free Replicated Data Types](https://medium.com/@amberovsky/crdt-conflict-free-replicated-data-types-b4bfc8459d26)
