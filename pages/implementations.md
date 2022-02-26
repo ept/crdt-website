@@ -77,6 +77,9 @@ collaborative applications and replicated storage systems:
 
 * [SyncedStore](https://syncedstore.org/) Easy-to-use framework for building collaborative apps by making plain javascript objects sync automatically. Builds on top of Yjs, with a focus on easy integration with React / Vue / Svelte.
 
+* [Hazelcast](https://hazelcast.com/) distributed data structures includes implementations of [PN Counter](https://docs.hazelcast.com/imdg/latest/data-structures/pn-counter)
+
+
 ## Benchmarks
 
 * [crdt-benchmarks](https://github.com/dmonad/crdt-benchmarks) compares document size and performance of Yjs and Automerge.
