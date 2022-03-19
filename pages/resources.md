@@ -85,7 +85,10 @@ permalink: /resources
   [Part I: Defanging Order Theory](http://jtfmumm.com/blog/2015/11/17/crdt-primer-1-defanging-order-theory/) and
   [Part II: Convergent CRDTs](http://jtfmumm.com/blog/2015/11/24/crdt-primer-2-convergent-crdts/)
   (November 2015).
-
+  
+* [Matthew Weidner](https://mattweidner.com/):
+  [Designing Data Structures for Collaborative Apps](https://mattweidner.com/2022/02/10/collaborative-data-design.html)
+  (February 2022)
 
 ## Conference talk recordings
 
