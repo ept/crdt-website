@@ -79,6 +79,8 @@ collaborative applications and replicated storage systems:
 
 * [Hazelcast](https://hazelcast.com/) distributed data structures includes implementations of [PN Counter](https://docs.hazelcast.com/imdg/latest/data-structures/pn-counter)
 
+* [Dart CRDT](https://github.com/cachapa/crdt) complete Dart-native implementation of generic CRDTs that can easily be integrated into any Dart or Flutter application.
+
 
 ## Benchmarks
 
@@ -218,7 +220,9 @@ Several other applications and systems also use CRDTs internally:
 
 * [Cobox](https://cobox.cloud), a collaborative data hosting platform [uses CRDTs](https://develop.cobox.cloud/core_technologies.html#kappa-core) to syncronize edits to files on disk.
 
-* [RetroShare](https://retroshare.cc/), a friend to friend communication platform uses GXS (General eXchange System) which have CRDT properties to implement decentralized forums, blogs, mailing system etc. 
+* [RetroShare](https://retroshare.cc/), a friend to friend communication platform uses GXS (General eXchange System) which have CRDT properties to implement decentralized forums, blogs, mailing system etc.
+
+* [StoryArk](https://storyark.eu), an offline-first, privacy-centric social media app where the entire database is one big CRDT, making it trivial to merge real-time changes with the backend.
 
 
 ## Automerge users
