@@ -90,6 +90,10 @@ permalink: /resources
   [Designing Data Structures for Collaborative Apps](https://mattweidner.com/2022/02/10/collaborative-data-design.html)
   (February 2022)
 
+* Geoffrey Litt, Slim Lim, Martin Kleppmann, Peter van Hardenberg:
+  [Peritext: A CRDT for Rich-Text Collaboration](https://www.inkandswitch.com/peritext/)
+  (November 2021)
+
 ## Conference talk recordings
 
 * Martin Kleppmann:
