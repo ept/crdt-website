@@ -28,9 +28,17 @@ permalink: /resources
   [Testing CRDTs in Rust, from Theory to Practice](https://www.ditto.live/blog/testing-crdts-in-rust-from-theory-to-practice)
   (April 2022)
 
+* [Matthew Weidner](https://mattweidner.com/):
+  [Designing Data Structures for Collaborative Apps](https://mattweidner.com/2022/02/10/collaborative-data-design.html)
+  (February 2022)
+
 * Jo Stichbury (Ably):
   [How do CRDTs solve distributed data consistency challenges?](https://ably.com/blog/crdts-distributed-data-consistency-challenges)
   (January 2022)
+
+* Geoffrey Litt, Slim Lim, Martin Kleppmann, Peter van Hardenberg:
+  [Peritext: A CRDT for Rich-Text Collaboration](https://www.inkandswitch.com/peritext/)
+  (November 2021)
 
 * [Bartosz Sypytkowski](https://bartoszsypytkowski.com/): 12-part blog series on CRDTs. Parts
   [1](https://bartoszsypytkowski.com/the-state-of-a-state-based-crdts/),
@@ -93,14 +101,6 @@ permalink: /resources
   [Part I: Defanging Order Theory](http://jtfmumm.com/blog/2015/11/17/crdt-primer-1-defanging-order-theory/) and
   [Part II: Convergent CRDTs](http://jtfmumm.com/blog/2015/11/24/crdt-primer-2-convergent-crdts/)
   (November 2015).
-  
-* [Matthew Weidner](https://mattweidner.com/):
-  [Designing Data Structures for Collaborative Apps](https://mattweidner.com/2022/02/10/collaborative-data-design.html)
-  (February 2022)
-
-* Geoffrey Litt, Slim Lim, Martin Kleppmann, Peter van Hardenberg:
-  [Peritext: A CRDT for Rich-Text Collaboration](https://www.inkandswitch.com/peritext/)
-  (November 2021)
 
 ## Conference talk recordings
 
