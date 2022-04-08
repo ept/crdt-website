@@ -71,8 +71,6 @@ collaborative applications and replicated storage systems:
   [IETF draft](https://datatracker.ietf.org/doc/html/draft-toomim-httpbis-braid-http))
   is an effort to augment the HTTP protocol itself to include state synchronization as a primitive.
   
-* [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) Decouple data from the apps that handle it. A library for creating fully in-browser (webrtc & indexeddb based) interoperable p2p apps. Uses operational CRDTs for mutability.
-
 * [m-ld](https://m-ld.org/) synchronises decentralised replicas of JSON-LD graph data, with a query API and pluggable networking and persistence.
 
 * [SyncedStore](https://syncedstore.org/) Easy-to-use framework for building collaborative apps by making plain javascript objects sync automatically. Builds on top of Yjs, with a focus on easy integration with React / Vue / Svelte.
@@ -80,6 +78,10 @@ collaborative applications and replicated storage systems:
 * [Hazelcast](https://hazelcast.com/) distributed data structures includes implementations of [PN Counter](https://docs.hazelcast.com/imdg/latest/data-structures/pn-counter)
 
 * [Dart CRDT](https://github.com/cachapa/crdt) complete Dart-native implementation of generic CRDTs that can easily be integrated into any Dart or Flutter application.
+
+## Byzantine fault tolerant CRDT libraries
+
+* [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ize operational CRDTs for mutability.
 
 
 ## Benchmarks
