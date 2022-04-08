@@ -24,6 +24,14 @@ permalink: /resources
 
 ## Blog posts
 
+* Russell Brown (Ditto):
+  [Testing CRDTs in Rust, from Theory to Practice](https://www.ditto.live/blog/testing-crdts-in-rust-from-theory-to-practice)
+  (April 2022)
+
+* Jo Stichbury (Ably):
+  [How do CRDTs solve distributed data consistency challenges?](https://ably.com/blog/crdts-distributed-data-consistency-challenges)
+  (January 2022)
+
 * [Bartosz Sypytkowski](https://bartoszsypytkowski.com/): 12-part blog series on CRDTs. Parts
   [1](https://bartoszsypytkowski.com/the-state-of-a-state-based-crdts/),
   [2](https://bartoszsypytkowski.com/optimizing-state-based-crdts-1/),
