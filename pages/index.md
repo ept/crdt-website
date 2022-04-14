@@ -53,6 +53,12 @@ always be merged into a consistent state. This merge is performed automatically
 by the CRDT, without requiring any special conflict resolution code or user
 intervention.
 
+Moreover, an important characteristic of CRDTs is that they support
+**decentralised** operation: they do not assume the use of a single server, so
+they can be used in peer-to-peer networks and other decentralised settings. In
+this regard CRDTs differ from the algorithms used by Google Docs, Trello, and
+Figma, which require all communication between users to flow via a server.
+
 For more details on CRDTs, you can read the article
 "[Conflict-free Replicated Data Types](https://arxiv.org/pdf/1805.06358.pdf)"
 by Nuno Preguiça, Carlos Baquero, and Marc Shapiro (2018), or the older

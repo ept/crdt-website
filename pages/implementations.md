@@ -197,10 +197,6 @@ Several other applications and systems also use CRDTs internally:
   [uses CRDTs](https://jlongster.com/using-crdts-in-the-wild) to allow sync
   across multiple user devices.
 
-* [Figma](https://www.figma.com/), a collaborative graphic design app,
-  [uses CRDTs](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/)
-  (and occasionally a central server to simplify things) as well.
-
 * [Pixelboard](https://www.getpixelboardapp.com/), a collaborative whiteboarding app,
   [uses CRDTs](https://medium.com/bpxl-craft/building-a-peer-to-peer-whiteboarding-app-for-ipad-2a4c7728863e)
   to allow several people to draw at the same time.
@@ -282,7 +278,11 @@ using the [Automerge](https://github.com/automerge/automerge) CRDT library:
 
 ## Other approaches for automatic conflict resolution
 
-Libraries and applications that implement alternative conflict resolution techniques that are not CRDTs.
+Libraries and applications that implement alternative conflict resolution techniques that are not CRDTs, but have some similarities:
+
+- [Figma](https://www.figma.com/), a collaborative graphic design app, uses
+  [an approach inspired by CRDTs](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/)
+  (but it relies on a central server to simplify things).
 
 - [Fluid Framework](https://fluidframework.com/) is a collection of client libraries for distributing and synchronizing shared state, based on a CRDT-inspired distributed data structure.
 
