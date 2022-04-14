@@ -284,4 +284,6 @@ using the [Automerge](https://github.com/automerge/automerge) CRDT library:
 
 Libraries and applications that implement alternative conflict resolution techniques that are not CRDTs.
 
-* [Fluid Framework](https://fluidframework.com/) is a collection of client libraries for distributing and synchronizing shared state, based on a CRDT-inspired distributed data structure.
+- [Fluid Framework](https://fluidframework.com/) is a collection of client libraries for distributing and synchronizing shared state, based on a CRDT-inspired distributed data structure.
+
+- [Replicache](https://replicache.dev/) is a JavaScript library for creating high-performance web user interfaces based on realtime sync. It is designed to integrate easily into common backend server architectures, and is inspired partly by CRDTs.
