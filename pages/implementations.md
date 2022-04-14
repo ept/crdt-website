@@ -81,7 +81,7 @@ collaborative applications and replicated storage systems:
 
 ## Byzantine fault tolerant CRDT libraries
 
-* [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ize operational CRDTs for mutability.
+* [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ized operational CRDTs for mutability.
 
 
 ## Benchmarks
