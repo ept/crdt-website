@@ -6,7 +6,7 @@ permalink: /community
 
 # Community
 
-The [dist-sys slack](https://www.the-paper-trail.org/page/dist-sys-slack/)
+The [dist-sys slack](https://join.slack.com/t/dist-sys/shared_invite/zt-6kt4xd8l-L13ejVQReCTizzS0b_dYOA)
 has a `#crdt` channel that you can join.
 
 We are also planning to set up a mailing list...
