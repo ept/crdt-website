@@ -24,12 +24,12 @@
 % 2022
 
 @article{DePorre2022VeriFx,
-author = {De Porre, Kevin, and Ferreira, Carla and Gonzalez Boix, Elisa},
-title = {VeriFx: Correct Replicated Data Types for the Masses},
+author = {De Porre, Kevin and Ferreira, Carla and Gonzalez Boix, Elisa},
+title = {{VeriFx}: Correct Replicated Data Types for the Masses},
 year = {2022},
 month = jul,
 url = {https://arxiv.org/abs/2207.02502},
-keywords = {distributed systems, eventual consistency, replicated data types, verification}
+keywords = {verification}
 }
 
 @inproceedings{Soundarapandian2022MRDT,
@@ -48,7 +48,7 @@ keywords = {crdt-related, MRDT}
 
 @inproceedings{Houshmand2022RDMA,
 author = {Houshmand, Farzin and Saberlatibari, Javad and Lesani, Mohsen},
-title = {Hamband: RDMA Replicated Data Types},
+title = {Hamband: {RDMA} Replicated Data Types},
 booktitle = {43rd ACM SIGPLAN Conference on Programming Language Design and Implementation},
 series = {PLDI 2022},
 year = {2022},
@@ -70,6 +70,28 @@ pages = {364–378},
 publisher = {ACM},
 doi = {10.1145/3519939.3523724},
 keywords = {crdt-related, MRDT},
+}
+
+@article{Laddad2022lifting,
+author = {Laddad, Shadaj and Power, Conor and Milano, Mae and Cheung, Alvin and Hellerstein, Joseph M.},
+title = {Synthesizing {CRDTs} from Sequential Data Types with Verified Lifting},
+year = {2022},
+month = may,
+eprint = {2205.12425},
+url = {https://arxiv.org/abs/2205.12425},
+keywords = {specification, verification}
+}
+
+@techreport{Kleppmann2022buggy,
+author = {Kleppmann, Martin},
+title = {Assessing the understandability of a distributed algorithm by tweeting buggy pseudocode},
+year = {2022},
+month = may,
+institution = {University of Cambridge, Department of Computer Science and Technology},
+number = {UCAM-CL-TR-969},
+doi = {10.48456/tr-969},
+pdf = {https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-969.pdf},
+keywords = {verification}
 }
 
 @inproceedings{Brocco2022melda,
@@ -168,9 +190,24 @@ doi = {10.1007/978-3-030-91081-5_32},
 keywords = {systems, delta-based, JSON, Solid}
 }
 
+@article{Kleppmann2021move,
+author = {Kleppmann, Martin and Mulligan, Dominic P. and Gomes, Victor B. F. and Beresford, Alastair R.},
+title = {A highly-available move operation for replicated trees},
+journal = {IEEE Transactions on Parallel and Distributed Systems},
+volume = {33},
+issue = {7},
+pages = {1711--1724},
+year = {2021},
+month = oct,
+publisher = {IEEE},
+doi = {10.1109/TPDS.2021.3118603},
+pdf = {https://martin.kleppmann.com/papers/move-op.pdf},
+keywords = {trees, verification}
+}
+
 @article{DePorre2021ecros,
 author = {De Porre, Kevin and Ferreira, Carla and Pregui\c{c}a, Nuno and Gonzalez Boix, Elisa},
-title = {ECROs: Building Global Scale Systems from Sequential Code},
+title = {{ECROs}: Building Global Scale Systems from Sequential Code},
 journal = {Proceedings of the ACM on Programming Languages (PACMPL)},
 volume = {5},
 number = {OOPSLA},
@@ -264,6 +301,20 @@ keywords = {security, Antidote}
 }
 
 % 2020
+
+@article{Liu2020haskell,
+author = {Liu, Yiyun and Parker, James and Redmond, Patrick and Kuper, Lindsey and Hicks, Michael and Vazou, Niki},
+title = {Verifying Replicated Data Types with Typeclass Refinements in {Liquid Haskell}},
+journal = {Proceedings of the ACM on Programming Languages},
+volume = {4},
+number = {OOPSLA},
+articleno = {216},
+year = {2020},
+month = {nov},
+publisher = {ACM},
+doi = {10.1145/3428284},
+keywords = {verification}
+}
 
 @inproceedings{Bauwens2020gc,
 author = {Bauwens, Jim and Gonzalez Boix, Elisa},
@@ -514,6 +565,17 @@ pdf = {http://soft.vub.ac.be/Publications/2019/vub-soft-tr-19-22.pdf},
 keywords = {systems, operation-based, memory management}
 }
 
+@inproceedings{Auvolat2019merkle,
+author = {Auvolat, Alex and Taïani, François},
+title = {{Merkle} Search Trees: Efficient State-Based {CRDTs} in Open Networks},
+booktitle = {38th Symposium on Reliable Distributed Systems},
+series = {SRDS 2019},
+year = {2019},
+pages = {221-230},
+publisher = {IEEE},
+doi = {10.1109/SRDS47363.2019.00032},
+keywords = {state-based, security}
+}
 
 @article{Kollmann2019Snapdoc,
 author = {Kollmann, Stephan A and Kleppmann, Martin and Beresford, Alastair R},
