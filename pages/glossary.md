@@ -67,7 +67,8 @@ Optimistic replication:
   without waiting for communication with other replicas. This means that
   replicas can become temporarily inconsistent, but CRDTs ensure that replicas
   nevertheless converge towards a consistent state (see Strong Eventual
-  Consistency). See [Optimistic Replication](https://core.ac.uk/download/pdf/22879037.pdf)
+  Consistency). See
+  [Optimistic Replication](https://pages.lip6.fr/Marc.Shapiro/papers/Optimistic_Replication_Computing_Surveys_2005-03_cameraready.pdf)
   by Yasushi Saito and Marc Shapiro.
 
 Remove-wins set (RWSet):
