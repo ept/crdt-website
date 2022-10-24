@@ -147,6 +147,10 @@ Several distributed databases also have built-in support for CRDTs:
   The [Circonus IRONdb](https://www.circonus.com/solutions/time-series-database/)
   time-series database has been in production use since 2011 and leverages CRDTs
   for all internal data types.
+  
+* [RxDB](https://rxdb.info/)
+  allows to write, store and replicate CRDTs
+  on NoSQL documents with the [CRDT Plugin](https://rxdb.info/crdt.html).
 
 ## Distributed file systems
 
