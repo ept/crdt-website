@@ -148,8 +148,8 @@ Several distributed databases also have built-in support for CRDTs:
   time-series database has been in production use since 2011 and leverages CRDTs
   for all internal data types.
   
-* RxDB
-  [RxDB](https://rxdb.info/) allows to write, store and replicate CRDTs
+* [RxDB](https://rxdb.info/)
+  allows to write, store and replicate CRDTs
   on NoSQL documents with the [CRDT Plugin](https://rxdb.info/crdt.html).
 
 ## Distributed file systems
