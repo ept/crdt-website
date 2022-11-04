@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<h1>CRDT Papers</h1><a name="Nieto2022modular"></a><pre>
-@inproceedings{<a href="papers.html#Nieto2022modular">Nieto2022modular</a>,
+<h1>CRDT Papers</h1><a name="Litt2022peritext"></a><pre>
+@article{<a href="papers.html#Litt2022peritext">Litt2022peritext</a>,
+  author = {Litt, Geoffrey and Lim, Sarah and Kleppmann, Martin and van Hardenberg, Peter},
+  title = {Peritext: A {CRDT} for Collaborative Rich Text Editing},
+  journal = {Proceedings of the ACM on Human-Computer Interaction},
+  volume = {6},
+  number = {CSCW2},
+  articleno = {531},
+  year = {2022},
+  month = nov,
+  publisher = {ACM},
+  doi = {10.1145/3555644},
+  pdf = {https://www.inkandswitch.com/peritext/static/cscw-publication.pdf},
+  keywords = {text-editing, systems}
+}
+</pre>
+
+<a name="Nieto2022modular"></a><pre>
+@article{<a href="papers.html#Nieto2022modular">Nieto2022modular</a>,
   author = {Nieto, Abel and Gondelman, Léon and Reynaud, Alban and Timany, Amin and Birkedal, Lars},
   title = {Modular Verification of Op-Based {CRDTs} in Separation Logic},
-  publisher = {ACM},
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume = {6},
+  number = {OOPSLA2},
+  articleno = {188},
   year = {2022},
-  month = aug,
-  booktitle = {OOPSLA 2022},
+  month = oct,
+  pages = {1788–1816},
+  publisher = {ACM},
+  doi = {10.1145/3563351},
   url = {https://iris-project.org/pdfs/2022-oopsla-crdts.pdf},
   keywords = {specification, verification}
+}
+</pre>
+
+<a name="Kleppmann2022convergence"></a><pre>
+@article{<a href="papers.html#Kleppmann2022convergence">Kleppmann2022convergence</a>,
+  author = {Kleppmann, Martin and Alvaro, Peter},
+  title = {Research for Practice: Convergence},
+  journal = {Communications of the ACM},
+  volume = {65},
+  issue = {11},
+  pages = {104-106},
+  year = {2022},
+  month = nov,
+  publisher = {ACM},
+  doi = {10.1145/3563901},
+  pdf = {https://martin.kleppmann.com/papers/convergence-cacm.pdf},
+  keywords = {introduction, crdt-related}
 }
 </pre>
 
@@ -19,6 +58,7 @@
   title = {{VeriFx}: Correct Replicated Data Types for the Masses},
   year = {2022},
   month = jul,
+  eprint = {2207.02502},
   url = {https://arxiv.org/abs/2207.02502},
   keywords = {verification}
 }
@@ -36,7 +76,7 @@
   publisher = {ACM},
   eprint = {2203.14518},
   doi = {10.1145/3519939.3523735},
-  keywords = {crdt-related, MRDT}
+  keywords = {crdt-related, MRDT, verification}
 }
 </pre>
 
@@ -66,7 +106,7 @@
   pages = {364–378},
   publisher = {ACM},
   doi = {10.1145/3519939.3523724},
-  keywords = {crdt-related, MRDT}
+  keywords = {crdt-related, MRDT, Quark}
 }
 </pre>
 
@@ -237,6 +277,21 @@
 }
 </pre>
 
+<a name="Brattli2021undo"></a><pre>
+@inproceedings{<a href="papers.html#Brattli2021undo">Brattli2021undo</a>,
+  author = {Brattli, Eric and Yu, Weihai},
+  title = {Supporting Undo and Redo for Replicated Registers in Collaborative Applications},
+  booktitle = {18th International Conference on Cooperative Design, Visualization, and Engineering},
+  series = {CDVE 2021},
+  year = {2021},
+  month = oct,
+  pages = {195-205},
+  publisher = {Springer LNCS volume 12983},
+  doi = {10.1007/978-3-030-88207-5_19},
+  keywords = {undo}
+}
+</pre>
+
 <a name="Jannes2021owebsync"></a><pre>
 @article{<a href="papers.html#Jannes2021owebsync">Jannes2021owebsync</a>,
   author = {Jannes, Kristof and Lagaisse, Bert and Joosen, Wouter},
@@ -251,6 +306,22 @@
   doi = {10.1109/TPDS.2021.3066276},
   pdf = {https://kristofjannes.com/papers/tpds_owebsync.pdf},
   keywords = {state-based, synchronisation protocols, JSON, systems, OWebSync}
+}
+</pre>
+
+<a name="Tomter2021sqlite"></a><pre>
+@inproceedings{<a href="papers.html#Tomter2021sqlite">Tomter2021sqlite</a>,
+  author = {Tomter, Iver Toft and Yu, Weihai},
+  title = {Augmenting {SQLite} for Local-First Software},
+  booktitle = {European Conference on Advances in Databases and Information Systems},
+  series = {ADBIS 2021},
+  year = {2021},
+  month = aug,
+  pages = {247-257},
+  publisher = {Springer},
+  doi = {10.1007/978-3-030-85082-1_22},
+  pdf = {https://munin.uit.no/bitstream/handle/10037/24430/article.pdf},
+  keywords = {systems, relational, SQLite}
 }
 </pre>
 
@@ -311,6 +382,18 @@
   publisher = {ACM},
   doi = {10.1145/3447865.3457963},
   keywords = {schemas, systems, Cambria}
+}
+</pre>
+
+<a name="Nair2021Maram"></a><pre>
+@article{<a href="papers.html#Nair2021Maram">Nair2021Maram</a>,
+  author = {Nair, Sreeja and Meirim, Filipe and Pereira, Mário and Ferreira, Carla and Shapiro, Marc},
+  title = {A coordination-free, convergent, and safe replicated tree},
+  year = {2021},
+  month = mar,
+  eprint = {2103.04828},
+  url = {https://arxiv.org/abs/2103.04828},
+  keywords = {trees, Maram}
 }
 </pre>
 
