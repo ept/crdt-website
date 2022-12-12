@@ -20,7 +20,7 @@ permalink: /resources
 
 * [Awesome CRDT](https://github.com/alangibson/awesome-crdt): another collection of CRDT resources
 
-* [Nikita Voloboev: "Everything I know"](https://wiki.nikitavoloboev.xyz/distributed-systems/crdt)
+* [Nikita Voloboev: "Everything I know"](https://wiki.nikiv.dev/distributed-systems/crdt)
 
 ## Blog posts
 
