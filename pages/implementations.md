@@ -152,6 +152,10 @@ Several distributed databases also have built-in support for CRDTs:
   allows to write, store and replicate CRDTs
   on NoSQL documents with the [CRDT Plugin](https://rxdb.info/crdt.html).
 
+* [ElectricSQL](https://electric-sql.com)
+  Local-first SQL system based on AntidoteDB and
+  [Rich-CRDTs](https://electric-sql.com/blog/2022/05/03/introducing-rich-crdts).
+
 ## Distributed file systems
 
 * [Elmerfs](https://github.com/scality/elmerfs): A distributed file system, with a FUSE interface, written in Rust.  It uses CRDTs to avoid structural conflicts.  Built above [AntidoteDB](https://www.antidotedb.eu/).
