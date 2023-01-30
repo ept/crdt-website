@@ -11,5 +11,5 @@ has a `#crdt` channel that you can join.
 
 We are also planning to set up a mailing list...
 
-In person, the annual [PaPoC workshop](https://papoc-workshop.github.io/2020/)
+In person, the annual [PaPoC workshop](https://papoc-workshop.github.io/2023/)
 is a popular meeting place for CRDT researchers and practitioners.
