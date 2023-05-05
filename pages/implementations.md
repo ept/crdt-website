@@ -86,7 +86,7 @@ collaborative applications and replicated storage systems:
 
 ## CRDT verification languages and tools
 
-* [VeriFx language](http://www.verifx.org) ([GitHub](https://github.com/kevin-dp/verifx)) A functional object-oriented programming language with automated verification capabilities. It has been used to verify a large corpus of CRDT and OT implementations.
+* [VeriFx language](http://www.verifx.org) ([GitHub](https://github.com/kevin-dp/verifx)) A functional object-oriented programming language with automated verification capabilities. It has been used to verify an extensive portfolio of CRDT and OT implementations.
 
 
 ## Benchmarks
