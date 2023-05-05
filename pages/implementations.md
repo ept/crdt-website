@@ -84,6 +84,11 @@ collaborative applications and replicated storage systems:
 * [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ized operational CRDTs for mutability.
 
 
+## CRDT verification languages and tools
+
+* [VeriFx language](http://www.verifx.org) ([GitHub](https://github.com/kevin-dp/verifx)) A functional object-oriented programming language with automated verification capabilities. It has been used to verify a large corpus of CRDT and OT implementations.
+
+
 ## Benchmarks
 
 * [crdt-benchmarks](https://github.com/dmonad/crdt-benchmarks) compares document size and performance of Yjs and Automerge.
