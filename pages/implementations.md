@@ -11,12 +11,11 @@ permalink: /implementations
 There are several open source CRDT libraries that can be used to build
 collaborative applications and replicated storage systems:
 
-* [Automerge](https://github.com/automerge/automerge)
-  ([extended abstract](https://mobiuk.org/abstract/S4-P5-Kleppmann-Automerge.pdf))
-  is a JavaScript CRDT implementation with a JSON data model. Network
-  communication is handled by a separate layer, such as
-  [Hypermerge](https://github.com/automerge/hypermerge) (which uses [Dat](https://docs.datproject.org/)) or
-  [plain TCP connections](https://github.com/automerge/automerge-net).
+* [Automerge](https://automerge.org/) is a CRDT implementation with a JSON data model.
+  It is implemented in Rust, with bindings to JavaScript (via WebAssembly) and
+  [various other languages](https://automerge.org/docs/api/). Network communication
+  and storage are handled by a separate layer, called
+  [automerge-repo](https://github.com/automerge/automerge-repo).
 
 * [GUN](https://gun.eco/) ([GitHub](https://github.com/amark/gun))
   is a graph CRDT implemented in JavaScript, using WebRTC networking.
@@ -84,6 +83,11 @@ collaborative applications and replicated storage systems:
 ## Byzantine fault tolerant CRDT libraries
 
 * [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ized operational CRDTs for mutability.
+
+
+## CRDT verification languages and tools
+
+* [VeriFx language](http://www.verifx.org) ([GitHub](https://github.com/kevin-dp/verifx)) A functional object-oriented programming language with automated verification capabilities. It has been used to verify an extensive portfolio of CRDT and OT implementations.
 
 
 ## Benchmarks
