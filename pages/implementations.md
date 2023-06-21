@@ -78,6 +78,8 @@ collaborative applications and replicated storage systems:
 
 * [Dart CRDT](https://github.com/cachapa/crdt) complete Dart-native implementation of generic CRDTs that can easily be integrated into any Dart or Flutter application.
 
+* [sql_crdt](https://github.com/cachapa/sql_crdt) Dart implementation of Conflict-free Replicated Data Types (CRDTs) using SQL databases (currently Sqlite and Postgres).
+
 ## Byzantine fault tolerant CRDT libraries
 
 * [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ized operational CRDTs for mutability.
@@ -233,6 +235,10 @@ Several other applications and systems also use CRDTs internally:
 * [RetroShare](https://retroshare.cc/), a friend to friend communication platform uses GXS (General eXchange System) which have CRDT properties to implement decentralized forums, blogs, mailing system etc.
 
 * [StoryArk](https://storyark.eu), an offline-first, privacy-centric social media app where the entire database is one big CRDT, making it trivial to merge real-time changes with the backend.
+
+* [Libra](https://libra-app.eu), a weight manager with smooth dynamic charts that uses CRDTs to perform real time sync with all your devices and even share with other users.
+
+* [tudo](https://github.com/cachapa/tudo), an open-source to-do app that makes it easy to share lists without accounts or superfulous configuration.
 
 
 ## Automerge users
