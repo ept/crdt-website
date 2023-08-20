@@ -25,7 +25,7 @@ permalink: /resources
 ## Blog posts
 
 * [Jacky Zhao](https://jzhao.xyz):
-  [Building a BFT JSON CRDT](https://jzhao.xyz/posts/bft-json-crdt/)
+  [Building a BFT JSON CRDT](https://jzhao.xyz/posts/bft-json-crdt)
   (November 2022)
 
 * Russell Brown (Ditto):
