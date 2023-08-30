@@ -26,7 +26,7 @@ permalink: /resources
 
 * [Vadim Dalecky](https://github.com/streamich):
   [Fuzz Testing RGA CRDT](https://jsonjoy.com/blog/fuzz-testing-rga-crdt)
-  (June 2023)
+  (July 2023)
 
 * [Vadim Dalecky](https://github.com/streamich):
   [List CRDT Benchmarks](https://jsonjoy.com/blog/list-crdt-benchmarks)
