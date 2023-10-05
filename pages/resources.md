@@ -24,6 +24,10 @@ permalink: /resources
 
 ## Blog posts
 
+* [Jake Lazaroff](https://jakelazaroff.com):
+  [An Interactive Intro to CRDTs](https://jakelazaroff.com/words/an-interactive-intro-to-crdts/)
+  (October 2023)
+  
 * [Vadim Dalecky](https://github.com/streamich):
   [Fuzz Testing RGA CRDT](https://jsonjoy.com/blog/fuzz-testing-rga-crdt)
   (July 2023)
