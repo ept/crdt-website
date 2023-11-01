@@ -17,18 +17,6 @@ collaborative applications and replicated storage systems:
   and storage are handled by a separate layer, called
   [automerge-repo](https://github.com/automerge/automerge-repo).
 
-* [GUN](https://gun.eco/) ([GitHub](https://github.com/amark/gun))
-  is a graph CRDT implemented in JavaScript, using WebRTC networking.
-  It includes public-key-based user authentication and encryption.
-  
-* [kappa-db](https://github.com/kappa-db/) is a JavaScript library for building your own CRDTs over append-only log architectures, with a reference implementation for [Dat](https://docs.datproject.org/)'s Hypercore data structure. Sort of a 'build-your-own' Automerge library.
-
-* [Replicated Object Notation](http://replicated.cc/) (RON) is a data format for
-  encoding CRDT operations, implemented in
-  [several languages](http://replicated.cc/impl/).
-  It supports register, list, text, set, and counter datatypes.
-  [SwarmDB](https://github.com/gritzko/swarm) is a RON-based database, implemented in JavaScript.
-
 * [Yjs](https://github.com/yjs/yjs)
   ([paper 1](http://dbis.rwth-aachen.de/~derntl/papers/preprints/icwe2015-preprint.pdf),
   [paper 2](https://www.researchgate.net/publication/310212186_Near_Real-Time_Peer-to-Peer_Shared_Editing_on_Extensible_Data_Types))
@@ -36,6 +24,28 @@ collaborative applications and replicated storage systems:
   It includes several common CRDTs and modules that integrate them with different editors,
   communication protocols, and databases. More information in
   [this series of blog posts about Yjs](https://tag1consulting.com/yjs).
+
+* [Collabs](https://collabs.readthedocs.io/en/latest/)
+  is a collection of common CRDTs implemented in TypeScript, with the ability to extend
+  the built-in algorithms with new, custom datatypes.
+
+* [Diamond Types](https://github.com/josephg/diamond-types)
+  is a CRDT for plain text.
+
+* [cola](https://github.com/nomad/cola) ([blog post](https://nomad.foo/blog/cola))
+  is another CRDT for plain text.
+
+* [GUN](https://gun.eco/) ([GitHub](https://github.com/amark/gun))
+  is a graph CRDT implemented in JavaScript, using WebRTC networking.
+  It includes public-key-based user authentication and encryption.
+
+* [kappa-db](https://github.com/kappa-db/) is a JavaScript library for building your own CRDTs over append-only log architectures, with a reference implementation for [Dat](https://docs.datproject.org/)'s Hypercore data structure. Sort of a 'build-your-own' Automerge library.
+
+* [Replicated Object Notation](http://replicated.cc/) (RON) is a data format for
+  encoding CRDT operations, implemented in
+  [several languages](http://replicated.cc/impl/).
+  It supports register, list, text, set, and counter datatypes.
+  [SwarmDB](https://github.com/gritzko/swarm) is a RON-based database, implemented in JavaScript.
 
 * [Legion](https://legion.di.fct.unl.pt/)
   ([GitHub](https://github.com/albertlinde/Legion),
