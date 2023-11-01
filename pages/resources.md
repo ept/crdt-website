@@ -8,6 +8,10 @@ permalink: /resources
 
 ## Introductions to CRDTs
 
+* Matthew Weidner's CRDT Survey
+  ([part 1](https://mattweidner.com/2023/09/26/crdt-survey-1.html),
+  [part 2](https://mattweidner.com/2023/09/26/crdt-survey-2.html)), September 2023.
+
 * Nuno Pregui&ccedil;a:
   [Conflict-free Replicated Data Types: An Overview](https://arxiv.org/abs/1806.10254).
   arXiv:1806.10254, June 2018.
