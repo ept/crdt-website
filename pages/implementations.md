@@ -39,6 +39,8 @@ collaborative applications and replicated storage systems:
   is a graph CRDT implemented in JavaScript, using WebRTC networking.
   It includes public-key-based user authentication and encryption.
 
+* [json-joy](https://github.com/streamich/json-joy/) json-joy implement JSON CRDT specification, which is a JSON-like data structure that supports concurrent editing.
+
 * [kappa-db](https://github.com/kappa-db/) is a JavaScript library for building your own CRDTs over append-only log architectures, with a reference implementation for [Dat](https://docs.datproject.org/)'s Hypercore data structure. Sort of a 'build-your-own' Automerge library.
 
 * [Replicated Object Notation](http://replicated.cc/) (RON) is a data format for
