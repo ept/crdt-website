@@ -74,7 +74,7 @@ collaborative applications and replicated storage systems:
 * [Eventuate](https://github.com/RBMHTechnology/eventuate)
   is a toolkit for building applications using causally ordered event streams and CRDTs.
 
-* [Logux](https://logux.io/) ([GitHub](https://github.com/logux/core)) is
+* [Logux](https://logux.org/) ([GitHub](https://github.com/logux/core)) is
   a state sync system built primarily for React/Redux in a client/server
   architecture, but can be used p2p and/or on its own.
 
