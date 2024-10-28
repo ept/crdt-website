@@ -256,7 +256,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
-    webrick (1.7.0)
+    webrick (1.8.2)
     zeitwerk (2.6.17)
 
 PLATFORMS
