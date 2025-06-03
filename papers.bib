@@ -21,6 +21,26 @@
 
 % Records in this file are sorted in reverse chronological order (newest first)
 
+%2025
+@inproceedings{Borth2025DAGCrdt,
+author = {Borth, Evelyn and Lersch, Philipp and Bieniusa, Annette},
+title = {Directed Acyclic Graph CRDTs},
+year = {2025},
+isbn = {9798400715587},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3721473.3722141},
+doi = {10.1145/3721473.3722141},
+abstract = {Directed Acyclic Graphs (DAGs) are essential for applications like modeling task dependencies. Maintaining DAG integrity in distributed and collaborative systems is challenging, especially in environments prioritizing high availability over strong consistency. These challenges are amplified by unreliable connectivity or offline operations, where clients replicate and independently modify the graph. Ensuring invariants such as cycle freedom and valid edge connections under concurrent updates is crucial.This paper presents a Conflict-Free Replicated Data Type (CRDT) for DAGs that supports node and edge modifications without coordination. We propose mechanisms to detect and resolve invariant violations through compensation operations. Our design is implemented using the Yjs framework, with a proof-of-concept available as open-source software. We further analyze and compare various compensation strategies, providing insights into their trade-offs and practical implications.},
+booktitle = {Proceedings of the 12th Workshop on Principles and Practice of Consistency for Distributed Data},
+pages = {30–37},
+numpages = {8},
+keywords = {graphs, CRDT, eventual consistency, collaborative editing, invariants, conflict resolution},
+location = {World Trade Center, Rotterdam, Netherlands},
+series = {PaPoC '25}
+}
+
+
 % 2024
 
 @inproceedings{Ignat2024Synql,
