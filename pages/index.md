@@ -54,8 +54,8 @@ by the CRDT, without requiring any special conflict resolution code or user
 intervention.
 
 Moreover, an important characteristic of CRDTs is that they support
-**decentralised** operation: they do not assume the use of a single server, so
-they can be used in peer-to-peer networks and other decentralised settings. In
+**decentralized** operation: they do not assume the use of a single server, so
+they can be used in peer-to-peer networks and other decentralized settings. In
 this regard CRDTs differ from the algorithms used by Google Docs, Trello, and
 Figma, which require all communication between users to flow via a server.
 
