@@ -94,6 +94,10 @@ collaborative applications and replicated storage systems:
 
 * [Loro](https://loro.dev) is a CRDTs library based on [Replayable Event Graph](https://loro.dev/docs/advanced/replayable_event_graph), supporting rich text, list, map, and movable tree. It's implemented in Rust with bindings to JavaScript.
 
+* [Eips](https://github.com/taylordotfish/eips) is a list CRDT with worst-case
+  logarithmic-time operations, support for moving elements, and no interleaving
+  issues. Implemented in Rust.
+
 ## Byzantine fault tolerant CRDT libraries
 
 * [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ized operational CRDTs for mutability.
