@@ -28,6 +28,10 @@ permalink: /resources
 
 ## Blog posts
 
+* [Bartłomiej Żyliński](https://github.com/Pask423):
+  [CRDTs Explained: How Conflict-Free Replicated Data Types Work](https://pasksoftware.com/crdts)
+  (July 2025)
+  
 * [Leon Zhao](https://github.com/Leeeon233):
   [Movable tree CRDTs and Loro's implementation](https://www.loro.dev/blog/movable-tree)
   (July 2024)
