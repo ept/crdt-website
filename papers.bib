@@ -23,20 +23,94 @@
 
 % 2025
 
-@article{https://doi.org/10.1002/spe.3430,
+@article{DePorre2025contracts,
 author = {De Porre, Kevin and Ferreira, Carla and Gonzalez Boix, Elisa},
 title = {Concurrency Contracts for Designing Highly Available Replicated Data Types},
 journal = {Software: Practice and Experience},
-volume = {n/a},
-number = {n/a},
-pages = {},
+volume = {55},
+number = {9},
+pages = {1489--1505},
 year = {2025},
-month = may,
-keywords = {distributed systems, eventual consistency, replicated data types},
-doi = {https://doi.org/10.1002/spe.3430}
+month = sep,
+doi = {10.1002/spe.3430},
+pdf = {https://onlinelibrary.wiley.com/share/author/AB9GMXMJCUYDMVZEXUS9?target=10.1002/spe.3430}
+keywords = {verification, computation, invariants, systems}
+}
+
+@inproceedings{Borth2025DAGCrdt,
+author = {Borth, Evelyn and Lersch, Philipp and Bieniusa, Annette},
+title = {Directed Acyclic Graph CRDTs},
+year = {2025},
+isbn = {9798400715587},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3721473.3722141},
+doi = {10.1145/3721473.3722141},
+abstract = {Directed Acyclic Graphs (DAGs) are essential for applications like modeling task dependencies. Maintaining DAG integrity in distributed and collaborative systems is challenging, especially in environments prioritizing high availability over strong consistency. These challenges are amplified by unreliable connectivity or offline operations, where clients replicate and independently modify the graph. Ensuring invariants such as cycle freedom and valid edge connections under concurrent updates is crucial.This paper presents a Conflict-Free Replicated Data Type (CRDT) for DAGs that supports node and edge modifications without coordination. We propose mechanisms to detect and resolve invariant violations through compensation operations. Our design is implemented using the Yjs framework, with a proof-of-concept available as open-source software. We further analyze and compare various compensation strategies, providing insights into their trade-offs and practical implications.},
+booktitle = {Proceedings of the 12th Workshop on Principles and Practice of Consistency for Distributed Data},
+pages = {30–37},
+numpages = {8},
+keywords = {graphs, CRDT, eventual consistency, collaborative editing, invariants, conflict resolution},
+location = {World Trade Center, Rotterdam, Netherlands},
+series = {PaPoC '25}
+}
+
+@inproceedings{Marx2025ProofCarrying,
+author = {Marx, Nick and Jacob, Florian and Hartenstein, Hannes},
+title = {Proof-Carrying CRDTs allow Succinct Non-Interactive Byzantine Update Validation},
+year = {2025},
+month = mar,
+doi = {10.1145/3721473.3722142},
+booktitle = {12th Workshop on Principles and Practice of Consistency for Distributed Data},
+pages = {15-21},
+keywords = {security, counters},
+series = {PaPoC 2025}
+}
+
+@inproceedings{freeTermination,
+  author =	{Power, Conor and Koutris, Paraschos and Hellerstein, Joseph M.},
+  title =	{{The Free Termination Property of Queries over Time}},
+  booktitle =	{28th International Conference on Database Theory (ICDT 2025)},
+  pages =	{32:1--32:22},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  year =	{2025},
+  publisher =	{Schloss Dagstuhl},
+  url =		{https://drops.dagstuhl.de/storage/00lipics/lipics-vol328-icdt2025/LIPIcs.ICDT.2025.32/LIPIcs.ICDT.2025.32.pdf,
+  doi =		{10.4230/LIPIcs.ICDT.2025.32},
+  keywords =	{theory, CRDTs, CALM Theorem, coordination-free queries}
 }
 
 % 2024
+
+% TODO: https://dl.acm.org/doi/10.1145/3695249
+% PaPoC 2025: https://dl.acm.org/doi/10.1145/3721473
+% https://doi.org/10.1145/3721473.3722141
+
+% https://dl.acm.org/doi/10.1145/3714393.3726520
+
+% https://dl.acm.org/doi/pdf/10.1145/3747528
+% https://doi.org/10.1002/spe.3430
+% https://doi.org/10.1109/ACCESS.2025.3568925
+% https://doi.org/10.1109/CLOUD55607
+% https://core.ac.uk/outputs/573431691/
+% https://core.ac.uk/display/479135916
+% https://core.ac.uk/display/187233930
+% https://core.ac.uk/display/552408888
+% https://ieeexplore.ieee.org/document/11024263
+
+% https://www.mdpi.com/2624-831X/6/1/6
+% https://nuno-faria.github.io/papers/crdv.pdf
+
+% https://jakelazaroff.com/words/homomorphically-encrypted-crdts/
+% https://eprint.iacr.org/2023/584.pdf
+
+% https://link.springer.com/content/pdf/10.1007/978-3-030-25543-5_26.pdf
+
+% https://dl.acm.org/doi/pdf/10.1145/3709675
+
+% https://www.mdpi.com/2220-9964/14/12/468
+
+% https://ieeexplore.ieee.org/document/11204478
 
 @inproceedings{Ignat2024Synql,
 author = {Ignat, Claudia-Lavinia and Elvinger, Victorien and Ba, Habibatou},
