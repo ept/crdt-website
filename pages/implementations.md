@@ -98,6 +98,13 @@ collaborative applications and replicated storage systems:
   logarithmic-time operations, support for moving elements, and no interleaving
   issues. Implemented in Rust.
 
+
+* [crdt-merge](https://github.com/mgillr/crdt-merge) applies CRDT theory
+  (specifically OR-Set with Merkle hash verification) to AI model weight merging,
+  dataset deduplication, and agent memory. Implemented in Python with zero
+  dependencies. Supports streaming merge, schema evolution, and provenance
+  tracking with 2,118 tests and mathematical correctness proofs. Patent pending.
+
 ## Byzantine fault tolerant CRDT libraries
 
 * [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ized operational CRDTs for mutability.
