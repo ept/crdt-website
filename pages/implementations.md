@@ -98,12 +98,9 @@ collaborative applications and replicated storage systems:
   logarithmic-time operations, support for moving elements, and no interleaving
   issues. Implemented in Rust.
 
-
 * [crdt-merge](https://github.com/mgillr/crdt-merge) applies CRDT theory
   (specifically OR-Set with Merkle hash verification) to AI model weight merging,
-  dataset deduplication, and agent memory. Implemented in Python with zero
-  dependencies. Supports streaming merge, schema evolution, and provenance
-  tracking with 2,118 tests and mathematical correctness proofs. Patent pending.
+  dataset deduplication, and agent memory.
 
 ## Byzantine fault tolerant CRDT libraries
 
