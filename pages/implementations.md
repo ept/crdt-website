@@ -102,6 +102,8 @@ collaborative applications and replicated storage systems:
   (specifically OR-Set with Merkle hash verification) to AI model weight merging,
   dataset deduplication, and agent memory.
 
+* [Ama.CRDT](https://github.com/phaetto/Ama.CRDT) A .NET 10 high-performance, Native AOT-ready library for building eventually consistent distributed systems using Conflict-free Replicated Data Types (CRDTs). Seamlessly sync, patch, and merge plain C# objects (POCOs) with zero reflection
+
 ## Byzantine fault tolerant CRDT libraries
 
 * [Hyper Hyper Space](https://www.hyperhyperspace.org/) ([GitHub](https://github.com/hyperhyperspace/hyperhyperspace-core/), [Demo](https://hyperhyper.space)) A secure append-only distributed data layer, using Merkle-ized operational CRDTs for mutability.
