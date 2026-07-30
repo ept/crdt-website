@@ -13,7 +13,7 @@ collaborative applications and replicated storage systems:
 
 * [Automerge](https://automerge.org/) is a CRDT implementation with a JSON data model.
   It is implemented in Rust, with bindings to JavaScript (via WebAssembly) and
-  [various other languages](https://automerge.org/docs/api/). Network communication
+  [various other languages](https://automerge.org/docs/reference/api/). Network communication
   and storage are handled by a separate layer, called
   [automerge-repo](https://github.com/automerge/automerge-repo).
 
