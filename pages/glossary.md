@@ -7,9 +7,9 @@ permalink: /glossary
 # CRDT Glossary
 
 Add-wins set (AWSet):
-: A set datatype in which additions take precedence over removals. For example,
+: A set datatype in which an addition takes precedence over a concurrent removal (of the same element). For example,
   if one replica removes and re-adds an element, while another replica
-  concurrently removes the element, then the merged outcome is that the element
+  concurrently removes the same element, then the merged outcome is that the element
   *is* in the set. Contrast with remove-wins set.
 
 Commutative Replicated Data Type (CmRDT):
@@ -72,7 +72,7 @@ Optimistic replication:
   by Yasushi Saito and Marc Shapiro.
 
 Remove-wins set (RWSet):
-: A set datatype in which removals take precedence over additions. For example,
+: A set datatype in which removing an element take precedence over concurrently adding the same element. For example,
   if one replica removes and re-adds an element, while another replica
   concurrently removes the element, then the merged outcome is that the element
   *is not* in the set. Contrast with add-wins set.
